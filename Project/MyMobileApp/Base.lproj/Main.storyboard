@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MyT-sg-gUn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Filter Display View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FilterDisplayViewController" customModule="MyMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFQ-ww-sFy" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-s5-vhh">
+                                        <rect key="frame" x="300" y="492" width="300" height="44"/>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.2901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6vd-rX-0bO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Take Picture">
+                                            <color key="titleColor" red="0.40000000000000002" green="0.94901960780000005" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmu-xO-p1c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKh-HX-ROY">
+                                        <rect key="frame" x="0.0" y="492" width="300" height="44"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.94901960780000005" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" red="0.65098039220000004" green="0.2901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Take Video"/>
+                                        <connections>
+                                            <action selector="takeVideo" destination="BYZ-38-t0r" eventType="touchUpInside" id="R56-Ix-p1R"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-Zp-hc5">
+                                        <rect key="frame" x="13" y="8" width="574" height="31"/>
+                                        <connections>
+                                            <action selector="updateSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="FX6-jr-PGt"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5OS-Zp-hc5" secondAttribute="trailing" constant="15" id="50x-FJ-9sv"/>
+                                    <constraint firstAttribute="bottom" secondItem="oIA-s5-vhh" secondAttribute="bottom" id="6tl-B4-9OY"/>
+                                    <constraint firstAttribute="trailing" secondItem="oIA-s5-vhh" secondAttribute="trailing" id="F06-v1-CO8"/>
+                                    <constraint firstAttribute="bottom" secondItem="EKh-HX-ROY" secondAttribute="bottom" id="L0k-tQ-xdJ"/>
+                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="width" secondItem="oIA-s5-vhh" secondAttribute="width" id="ZTN-nf-jD1"/>
+                                    <constraint firstItem="5OS-Zp-hc5" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="d6Y-mA-QKd"/>
+                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" id="fqA-TV-h3H"/>
+                                    <constraint firstItem="5OS-Zp-hc5" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" constant="15" id="gOt-ry-9dA"/>
+                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="height" secondItem="oIA-s5-vhh" secondAttribute="height" id="wwU-bn-DE1"/>
+                                    <constraint firstItem="oIA-s5-vhh" firstAttribute="leading" secondItem="EKh-HX-ROY" secondAttribute="trailing" id="yy8-q1-WMU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KFQ-ww-sFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6sB-DN-YiA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="bottom" id="80o-sk-KM0"/>
+                            <constraint firstItem="KFQ-ww-sFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XTZ-WQ-kRm"/>
+                            <constraint firstAttribute="trailing" secondItem="KFQ-ww-sFy" secondAttribute="trailing" id="ehh-1C-Psp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cpX-yp-8tu">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="9aF-hO-RlC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EdV-tZ-3RX">
+                                <rect key="frame" x="20" y="0.0" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="YEl-4M-C7O">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v4c-dk-hcD">
+                                <rect key="frame" x="536" y="0.0" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="swapCamera" destination="BYZ-38-t0r" eventType="touchUpInside" id="TLN-Kq-ct3"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="filterSlider" destination="5OS-Zp-hc5" id="YWv-bY-wxE"/>
+                        <outlet property="filterView" destination="KFQ-ww-sFy" id="tw2-LK-4CN"/>
+                        <outlet property="flashView" destination="8bC-Xf-vdC" id="xlL-qv-idv"/>
+                        <outlet property="lastMiniatureButton" destination="EdV-tZ-3RX" id="LMg-RC-iiS"/>
+                        <outlet property="swapCameraButton" destination="v4c-dk-hcD" id="ddG-cG-XUR"/>
+                        <outlet property="takePictureButton" destination="oIA-s5-vhh" id="U09-El-hGf"/>
+                        <outlet property="takeVideoButton" destination="EKh-HX-ROY" id="IRm-gw-5mG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LbG-EI-EpD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MyT-sg-gUn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIJ-B1-GBy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u2N-7z-Q0W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66k-eT-xIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="-386"/>
+        </scene>
+    </scenes>
+</document>
