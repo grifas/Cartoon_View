@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A915AC449099A9A26C1C9DE9 /* Pods_MyMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */; };
+		B90864801C74EB68007451BB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908647F1C74EB68007451BB /* CameraManager.swift */; };
 		B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; };
 		B911A0C11C6D0BB600F66F18 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B98A0FC91C64FA25005F925A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FC81C64FA25005F925A /* AppDelegate.swift */; };
-		B98A0FCB1C64FA25005F925A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FCA1C64FA25005F925A /* ViewController.swift */; };
+		B98A0FCB1C64FA25005F925A /* MyCartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */; };
 		B98A0FCE1C64FA25005F925A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FCC1C64FA25005F925A /* Main.storyboard */; };
 		B98A0FD01C64FA25005F925A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FCF1C64FA25005F925A /* Assets.xcassets */; };
 		B98A0FD31C64FA25005F925A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FD11C64FA25005F925A /* LaunchScreen.storyboard */; };
@@ -65,10 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B908647F1C74EB68007451BB /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B98A0FC51C64FA25005F925A /* MyMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC81C64FA25005F925A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B98A0FCA1C64FA25005F925A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartoonViewController.swift; sourceTree = "<group>"; };
 		B98A0FCD1C64FA25005F925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B98A0FCF1C64FA25005F925A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B98A0FD21C64FA25005F925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		B98A0FF21C64FD5F005F925A /* voroni_points2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voroni_points2.png; sourceTree = "<group>"; };
 		B98A0FF31C64FD5F005F925A /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 		B98A0FF41C64FD5F005F925A /* WID-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WID-small.jpg"; sourceTree = "<group>"; };
+		BAA2DC02B2FA116DC56AF59C /* Pods-MyMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMobileApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DBC2CE73407424B1DA0300EC /* Pods-MyMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMobileApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */,
+				A915AC449099A9A26C1C9DE9 /* Pods_MyMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +118,8 @@
 			children = (
 				B98A0FC71C64FA25005F925A /* MyMobileApp */,
 				B98A0FC61C64FA25005F925A /* Products */,
+				DAB6BC2FAC53090C75585F0A /* Pods */,
+				C7EB7EF2FF34032BAF379D8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,10 +137,10 @@
 				B98A0FC81C64FA25005F925A /* AppDelegate.swift */,
 				B98A0FFF1C65074F005F925A /* Controllers */,
 				B98A0FFD1C6506DD005F925A /* GPUImage */,
+				B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */,
 				B98A0FD41C64FA25005F925A /* Info.plist */,
 				B98A0FD11C64FA25005F925A /* LaunchScreen.storyboard */,
 				B98A0FCC1C64FA25005F925A /* Main.storyboard */,
-				B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */,
 				B98A0FFE1C650729005F925A /* Resources */,
 			);
 			path = MyMobileApp;
@@ -165,9 +174,27 @@
 		B98A0FFF1C65074F005F925A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B98A0FCA1C64FA25005F925A /* ViewController.swift */,
+				B908647F1C74EB68007451BB /* CameraManager.swift */,
+				B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C7EB7EF2FF34032BAF379D8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAB6BC2FAC53090C75585F0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAA2DC02B2FA116DC56AF59C /* Pods-MyMobileApp.debug.xcconfig */,
+				DBC2CE73407424B1DA0300EC /* Pods-MyMobileApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +204,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "MyMobileApp" */;
 			buildPhases = (
+				5B428614EAD6E8EE385A67ED /* Check Pods Manifest.lock */,
 				B98A0FC11C64FA25005F925A /* Sources */,
 				B98A0FC21C64FA25005F925A /* Frameworks */,
 				B98A0FC31C64FA25005F925A /* Resources */,
 				B911A0B51C6D0AE900F66F18 /* Embed Frameworks */,
+				0185A213421A5149AB4C98F9 /* Embed Pods Frameworks */,
+				C4AD94ECE95F3E894AC396BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +299,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0185A213421A5149AB4C98F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B428614EAD6E8EE385A67ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4AD94ECE95F3E894AC396BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B98A0FC11C64FA25005F925A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,8 +354,9 @@
 			files = (
 				B98A0FEA1C64FB8A005F925A /* FilterOperations.swift in Sources */,
 				B98A0FEC1C64FBA4005F925A /* FilterOperationTypes.swift in Sources */,
-				B98A0FCB1C64FA25005F925A /* ViewController.swift in Sources */,
+				B98A0FCB1C64FA25005F925A /* MyCartoonViewController.swift in Sources */,
 				B98A0FC91C64FA25005F925A /* AppDelegate.swift in Sources */,
+				B90864801C74EB68007451BB /* CameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +475,11 @@
 		};
 		B98A0FD81C64FA25005F925A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA2DC02B2FA116DC56AF59C /* Pods-MyMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,10 +488,11 @@
 		};
 		B98A0FD91C64FA25005F925A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC2CE73407424B1DA0300EC /* Pods-MyMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

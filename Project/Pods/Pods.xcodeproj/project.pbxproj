@@ -6,43 +6,221 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		651013BE346634AC94E79628F8C9E940 /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
+		6AC6E03DC2083654C76D67A8746417A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */; };
+		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		CA41FB4DBED7D340EFAA755DC0F2C200 /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5907AED8A9DF4326899BB75F23C48BEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA3DE45975103D8B579EA089BC55312;
+			remoteInfo = LongPressRecordButton;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
+		199E2A6687DEF4DDFDB7821BD6922BFE /* Pods-MyMobileApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-frameworks.sh"; sourceTree = "<group>"; };
+		26E426C03C365C631ED6059B7B7B7B50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		3AC1943B7F5F111BE70B8237B437848C /* Pods-MyMobileApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyMobileApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3BB79DF6D2BD71D0128A65A0126B4C38 /* Pods-MyMobileApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyMobileApp.modulemap"; sourceTree = "<group>"; };
+		3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyMobileApp-umbrella.h"; sourceTree = "<group>"; };
+		892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyMobileApp-dummy.m"; sourceTree = "<group>"; };
+		B16C2BB6DB832C44A767FDABFD0C4D82 /* Pods-MyMobileApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-resources.sh"; sourceTree = "<group>"; };
+		B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA39D839FBBC96C495507E515052CAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
+		E9B9053260768A9D56006129FBC73E6D /* Pods-MyMobileApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyMobileApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		0901F5C34A9710073179402F06B6BB60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC6E03DC2083654C76D67A8746417A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44742874BB7A34AD440290064E5DC471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
+		4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				E475861D794C370DB13F70C31E242650 /* Pods-MyMobileApp */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */,
+				C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */,
+				4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */ = {
 			isa = PBXGroup;
 			children = (
+				D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */,
+				B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = LongPressRecordButton;
+			sourceTree = "<group>";
+		};
+		B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDA39D839FBBC96C495507E515052CAE /* Info.plist */,
+				B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */,
+				2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */,
+				075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */,
+				892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */,
+				F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LongPressRecordButton";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */,
+				BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E475861D794C370DB13F70C31E242650 /* Pods-MyMobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				26E426C03C365C631ED6059B7B7B7B50 /* Info.plist */,
+				3BB79DF6D2BD71D0128A65A0126B4C38 /* Pods-MyMobileApp.modulemap */,
+				3AC1943B7F5F111BE70B8237B437848C /* Pods-MyMobileApp-acknowledgements.markdown */,
+				E9B9053260768A9D56006129FBC73E6D /* Pods-MyMobileApp-acknowledgements.plist */,
+				8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */,
+				199E2A6687DEF4DDFDB7821BD6922BFE /* Pods-MyMobileApp-frameworks.sh */,
+				B16C2BB6DB832C44A767FDABFD0C4D82 /* Pods-MyMobileApp-resources.sh */,
+				7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */,
+				65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */,
+				C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */,
+			);
+			name = "Pods-MyMobileApp";
+			path = "Target Support Files/Pods-MyMobileApp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0397370E35F954AC103F477C62152986 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		470A289AD25C82A9F29FCFD2CFF99C10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA41FB4DBED7D340EFAA755DC0F2C200 /* Pods-MyMobileApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */;
+			buildPhases = (
+				0F22587BAF414BC6D52B166F842033DE /* Sources */,
+				44742874BB7A34AD440290064E5DC471 /* Frameworks */,
+				0397370E35F954AC103F477C62152986 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongPressRecordButton;
+			productName = LongPressRecordButton;
+			productReference = 3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B13A2FB9DBE7DC6172935766B676C350 /* Pods-MyMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 326C11618AA2E7CFBD06A2E7B9FB636F /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildPhases = (
+				37280C99D1D7E91DE340D54A585F517F /* Sources */,
+				0901F5C34A9710073179402F06B6BB60 /* Frameworks */,
+				470A289AD25C82A9F29FCFD2CFF99C10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9996E4B2E376AB04563DD3A06E942E3D /* PBXTargetDependency */,
+			);
+			name = "Pods-MyMobileApp";
+			productName = "Pods-MyMobileApp";
+			productReference = BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,16 +237,78 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */,
+				B13A2FB9DBE7DC6172935766B676C350 /* Pods-MyMobileApp */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		0F22587BAF414BC6D52B166F842033DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */,
+				F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37280C99D1D7E91DE340D54A585F517F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651013BE346634AC94E79628F8C9E940 /* Pods-MyMobileApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9996E4B2E376AB04563DD3A06E942E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LongPressRecordButton;
+			target = 7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */;
+			targetProxy = 5907AED8A9DF4326899BB75F23C48BEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		43D8211A107413817E587C70BCC860C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyMobileApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyMobileApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -100,14 +340,41 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+		65729285732410D01F1E0C039BDD2174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LongPressRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -134,10 +401,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82DFBEB8593E792E09611EE278437D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LongPressRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AACEE23538B3C367DF3ABF44A0F5834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyMobileApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyMobileApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -147,8 +472,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		326C11618AA2E7CFBD06A2E7B9FB636F /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D8211A107413817E587C70BCC860C1 /* Debug */,
+				8AACEE23538B3C367DF3ABF44A0F5834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DFBEB8593E792E09611EE278437D26 /* Debug */,
+				65729285732410D01F1E0C039BDD2174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

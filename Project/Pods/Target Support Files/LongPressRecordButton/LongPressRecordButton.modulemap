@@ -1,0 +1,6 @@
+framework module LongPressRecordButton {
+  umbrella header "LongPressRecordButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

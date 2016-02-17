@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Filter Display View Controller-->
+        <!--My Cartoon View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FilterDisplayViewController" customModule="MyMobileApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyCartoonViewController" customModule="MyMobileApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,49 +20,44 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFQ-ww-sFy" customClass="GPUImageView">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-s5-vhh">
-                                        <rect key="frame" x="300" y="492" width="300" height="44"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.2901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="6vd-rX-0bO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Take Picture">
-                                            <color key="titleColor" red="0.40000000000000002" green="0.94901960780000005" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="takePicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="fmu-xO-p1c"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKh-HX-ROY">
-                                        <rect key="frame" x="0.0" y="492" width="300" height="44"/>
-                                        <color key="backgroundColor" red="0.40000000000000002" green="0.94901960780000005" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <color key="tintColor" red="0.65098039220000004" green="0.2901960784" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Take Video"/>
-                                        <connections>
-                                            <action selector="takeVideo" destination="BYZ-38-t0r" eventType="touchUpInside" id="R56-Ix-p1R"/>
-                                        </connections>
-                                    </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-Zp-hc5">
                                         <rect key="frame" x="13" y="8" width="574" height="31"/>
                                         <connections>
                                             <action selector="updateSliderValue" destination="BYZ-38-t0r" eventType="valueChanged" id="FX6-jr-PGt"/>
                                         </connections>
                                     </slider>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esT-D9-tdg" customClass="LongPressRecordButton" customModule="LongPressRecordButton">
+                                        <rect key="frame" x="265" y="451" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="7qG-ZD-URE"/>
+                                            <constraint firstAttribute="height" constant="70" id="RDo-c4-e1l"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minPressDuration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ringWidth">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="circleMargin">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="ringColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="esT-D9-tdg" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="3eZ-LS-d58"/>
                                     <constraint firstAttribute="trailing" secondItem="5OS-Zp-hc5" secondAttribute="trailing" constant="15" id="50x-FJ-9sv"/>
-                                    <constraint firstAttribute="bottom" secondItem="oIA-s5-vhh" secondAttribute="bottom" id="6tl-B4-9OY"/>
-                                    <constraint firstAttribute="trailing" secondItem="oIA-s5-vhh" secondAttribute="trailing" id="F06-v1-CO8"/>
-                                    <constraint firstAttribute="bottom" secondItem="EKh-HX-ROY" secondAttribute="bottom" id="L0k-tQ-xdJ"/>
-                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="width" secondItem="oIA-s5-vhh" secondAttribute="width" id="ZTN-nf-jD1"/>
+                                    <constraint firstAttribute="bottom" secondItem="esT-D9-tdg" secondAttribute="bottom" constant="15" id="b0X-ye-Lka"/>
                                     <constraint firstItem="5OS-Zp-hc5" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="d6Y-mA-QKd"/>
-                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" id="fqA-TV-h3H"/>
                                     <constraint firstItem="5OS-Zp-hc5" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" constant="15" id="gOt-ry-9dA"/>
-                                    <constraint firstItem="EKh-HX-ROY" firstAttribute="height" secondItem="oIA-s5-vhh" secondAttribute="height" id="wwU-bn-DE1"/>
-                                    <constraint firstItem="oIA-s5-vhh" firstAttribute="leading" secondItem="EKh-HX-ROY" secondAttribute="trailing" id="yy8-q1-WMU"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -101,9 +96,8 @@
                         <outlet property="filterView" destination="KFQ-ww-sFy" id="tw2-LK-4CN"/>
                         <outlet property="flashView" destination="8bC-Xf-vdC" id="xlL-qv-idv"/>
                         <outlet property="lastMiniatureButton" destination="EdV-tZ-3RX" id="LMg-RC-iiS"/>
+                        <outlet property="recordButton" destination="esT-D9-tdg" id="T1g-CM-Dgw"/>
                         <outlet property="swapCameraButton" destination="v4c-dk-hcD" id="ddG-cG-XUR"/>
-                        <outlet property="takePictureButton" destination="oIA-s5-vhh" id="U09-El-hGf"/>
-                        <outlet property="takeVideoButton" destination="EKh-HX-ROY" id="IRm-gw-5mG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
