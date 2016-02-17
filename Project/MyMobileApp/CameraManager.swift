@@ -29,7 +29,6 @@ class CameraManager {
   let filterOperation: FilterOperationInterface = filterOperations[0]
   var slider: UISlider?
   
-  
   // To Video
   var pathToMovie: NSString?
   var movieWritertemp: GPUImageMovieWriter!
@@ -102,15 +101,15 @@ class CameraManager {
   Take a Picture
   */
   func shoot() {
-    videoCamera.pauseCameraCapture()
-    filterOperation.filter.useNextFrameForImageCapture()
+    self.videoCamera.pauseCameraCapture()
+    self.filterOperation.filter.useNextFrameForImageCapture()
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       let capturedImage: UIImage =  self.filterOperation.filter.imageFromCurrentFramebuffer()
       
       UIImageWriteToSavedPhotosAlbum(capturedImage, nil, nil, nil)
       AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     })
-    videoCamera.resumeCameraCapture()
+    self.videoCamera.resumeCameraCapture()
   }
   
   /*
