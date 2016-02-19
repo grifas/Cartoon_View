@@ -70,6 +70,7 @@
 		06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B908647F1C74EB68007451BB /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B96B388D1C77CAF1009578D3 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC51C64FA25005F925A /* MyMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC81C64FA25005F925A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartoonViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B96B388A1C77CAF1009578D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B98A0FC21C64FA25005F925A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B98A0FC51C64FA25005F925A /* MyMobileApp.app */,
+				B96B388D1C77CAF1009578D3 /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +209,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B96B388C1C77CAF1009578D3 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B96B389C1C77CAF1009578D3 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				B96B38891C77CAF1009578D3 /* Sources */,
+				B96B388A1C77CAF1009578D3 /* Frameworks */,
+				B96B388B1C77CAF1009578D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = B96B388D1C77CAF1009578D3 /* test.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B98A0FC41C64FA25005F925A /* MyMobileApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "MyMobileApp" */;
@@ -232,6 +258,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = aurelien.grifasi;
 				TargetAttributes = {
+					B96B388C1C77CAF1009578D3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					B98A0FC41C64FA25005F925A = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -257,6 +286,7 @@
 			projectRoot = "";
 			targets = (
 				B98A0FC41C64FA25005F925A /* MyMobileApp */,
+				B96B388C1C77CAF1009578D3 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +309,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B96B388B1C77CAF1009578D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B98A0FC31C64FA25005F925A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +385,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B96B38891C77CAF1009578D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B98A0FC11C64FA25005F925A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +434,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B96B389D1C77CAF1009578D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B96B389E1C77CAF1009578D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B98A0FD51C64FA25005F925A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,6 +568,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B96B389C1C77CAF1009578D3 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B96B389D1C77CAF1009578D3 /* Debug */,
+				B96B389E1C77CAF1009578D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "MyMobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

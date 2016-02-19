@@ -5,8 +5,8 @@ import JPSVolumeButtonHandler
 
 class MyCartoonViewController: UIViewController {
   
-  @IBOutlet var flashView: UIView!
-  @IBOutlet var filterView: GPUImageView!
+  @IBOutlet weak var flashView: UIView!
+  @IBOutlet weak var filterView: GPUImageView!
   @IBOutlet weak var swapCameraButton: UIButton!
   @IBOutlet weak var lastMiniatureButton: UIButton!
   @IBOutlet weak var recordButton: LongPressRecordButton!
@@ -20,15 +20,11 @@ class MyCartoonViewController: UIViewController {
 
     self.recordButton.delegate = self
   }
-  
+    
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
     self.setup()
-    
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-    self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.view.backgroundColor = UIColor.clearColor()
   }
   
   override func viewWillDisappear(animated: Bool) {
