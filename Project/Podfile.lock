@@ -1,10 +1,13 @@
 PODS:
+  - JPSVolumeButtonHandler (1.0.0)
   - LongPressRecordButton (1.0.2)
 
 DEPENDENCIES:
+  - JPSVolumeButtonHandler
   - LongPressRecordButton
 
 SPEC CHECKSUMS:
+  JPSVolumeButtonHandler: b056ec5c574fbd75a0637c527e25fe0197ec1648
   LongPressRecordButton: 25f93cfb1b8ea09ab40aff5a1267a13eb7d6b671
 
 COCOAPODS: 0.39.0

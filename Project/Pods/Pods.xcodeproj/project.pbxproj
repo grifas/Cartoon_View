@@ -7,55 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		651013BE346634AC94E79628F8C9E940 /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
-		6AC6E03DC2083654C76D67A8746417A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */; };
-		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		CA41FB4DBED7D340EFAA755DC0F2C200 /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */; };
+		14F34465E69169D59E570147F48F838A /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
+		202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */; };
+		34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */; };
+		3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
+		4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */; };
+		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */; };
+		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
+		78EE34C4F6034F7C0650987AB8200670 /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */; };
+		AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9E5A325B4EB34E571243B4052BB459D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
+		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5907AED8A9DF4326899BB75F23C48BEB /* PBXContainerItemProxy */ = {
+		F22136B3A59E336F5E85C3B69AC967FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7BA3DE45975103D8B579EA089BC55312;
 			remoteInfo = LongPressRecordButton;
 		};
+		F2F1E3894F9D67CD53E53FB237576151 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8FDC08BF6F0664C2AE587B7F015C2E7;
+			remoteInfo = JPSVolumeButtonHandler;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
+		0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		199E2A6687DEF4DDFDB7821BD6922BFE /* Pods-MyMobileApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-frameworks.sh"; sourceTree = "<group>"; };
 		26E426C03C365C631ED6059B7B7B7B50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
 		3AC1943B7F5F111BE70B8237B437848C /* Pods-MyMobileApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyMobileApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
 		3BB79DF6D2BD71D0128A65A0126B4C38 /* Pods-MyMobileApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyMobileApp.modulemap"; sourceTree = "<group>"; };
-		3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 		65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C085235A693E330039C129BD4F415C /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		72159BB892DAAFBD4D260FBB9DABBD90 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
+		725E26D5DB175379A622285C024A4393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyMobileApp-umbrella.h"; sourceTree = "<group>"; };
-		892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
 		8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyMobileApp-dummy.m"; sourceTree = "<group>"; };
+		8CE1278D903E712CD276AB4BD1E2BEAB /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
+		8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
+		8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
+		8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
+		93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
 		B16C2BB6DB832C44A767FDABFD0C4D82 /* Pods-MyMobileApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-resources.sh"; sourceTree = "<group>"; };
-		B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDA39D839FBBC96C495507E515052CAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.release.xcconfig"; sourceTree = "<group>"; };
-		D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
 		E9B9053260768A9D56006129FBC73E6D /* Pods-MyMobileApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyMobileApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		EEC88C802B3ADA10413A9013D384582A /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		F6CD0F0C9E28F0FC5DC5C29D82DAAFF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F999599F1A58BCA4D526B32DF7E5493D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0901F5C34A9710073179402F06B6BB60 /* Frameworks */ = {
+		2C1C4FB836A031B540805369655C234D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC6E03DC2083654C76D67A8746417A5 /* Foundation.framework in Frameworks */,
+				202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */,
+				3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */,
+				34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +94,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE88FDBE0F4CF86E0A85FB453FAAFAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E5A325B4EB34E571243B4052BB459D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD3B48CA4E3EC9F8EE53514B10808E7F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29827701332EE7032B8D89D5DB461518 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F999599F1A58BCA4D526B32DF7E5493D /* Info.plist */,
+				70C085235A693E330039C129BD4F415C /* LongPressRecordButton.modulemap */,
+				3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */,
+				B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */,
+				EEC88C802B3ADA10413A9013D384582A /* LongPressRecordButton-prefix.pch */,
+				33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LongPressRecordButton";
+			sourceTree = "<group>";
+		};
+		407FFD8F1699DBBAAA3B206514AC88F4 /* JPSVolumeButtonHandler */ = {
+			isa = PBXGroup;
+			children = (
+				59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */,
+				8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */,
+				F0610B6281DEDEC5F327D6F1BA92DF4F /* Support Files */,
+			);
+			path = JPSVolumeButtonHandler;
+			sourceTree = "<group>";
+		};
 		4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,69 +145,32 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */,
-				C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				A17BFEAA1F0ACD5DED349BBCD1A50E2D /* Pods */,
+				A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */,
 				4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */ = {
+		A17BFEAA1F0ACD5DED349BBCD1A50E2D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */,
-				B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */,
+				407FFD8F1699DBBAAA3B206514AC88F4 /* JPSVolumeButtonHandler */,
+				F3C9B88A12E9BA0CBE82E5DDA98BD29B /* LongPressRecordButton */,
 			);
-			path = LongPressRecordButton;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */ = {
+		A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDA39D839FBBC96C495507E515052CAE /* Info.plist */,
-				B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */,
-				2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */,
-				075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */,
-				892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */,
-				F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LongPressRecordButton";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */,
-				BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */,
+				1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */,
+				0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */,
+				6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +193,39 @@
 			path = "Target Support Files/Pods-MyMobileApp";
 			sourceTree = "<group>";
 		};
+		F0610B6281DEDEC5F327D6F1BA92DF4F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6CD0F0C9E28F0FC5DC5C29D82DAAFF5 /* Info.plist */,
+				72159BB892DAAFBD4D260FBB9DABBD90 /* JPSVolumeButtonHandler.modulemap */,
+				93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */,
+				90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */,
+				8CE1278D903E712CD276AB4BD1E2BEAB /* JPSVolumeButtonHandler-prefix.pch */,
+				8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JPSVolumeButtonHandler";
+			sourceTree = "<group>";
+		};
+		F3C9B88A12E9BA0CBE82E5DDA98BD29B /* LongPressRecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */,
+				29827701332EE7032B8D89D5DB461518 /* Support Files */,
+			);
+			path = LongPressRecordButton;
+			sourceTree = "<group>";
+		};
+		FD3B48CA4E3EC9F8EE53514B10808E7F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */,
+				725E26D5DB175379A622285C024A4393 /* Foundation.framework */,
+				B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -174,17 +237,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		470A289AD25C82A9F29FCFD2CFF99C10 /* Headers */ = {
+		5DD0B112C2BACF4EEE66E3E6BD7ADA56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA41FB4DBED7D340EFAA755DC0F2C200 /* Pods-MyMobileApp-umbrella.h in Headers */,
+				78EE34C4F6034F7C0650987AB8200670 /* Pods-MyMobileApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3CED6AD9CC069B824FFD27A048D99C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */,
+				AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6D4C5A78B169B8773849A83B37773C08 /* Pods-MyMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1117C6205459715992ADD611F1D7EC9 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildPhases = (
+				1B44B4B534F13A2AF797F920FA12F50E /* Sources */,
+				BE88FDBE0F4CF86E0A85FB453FAAFAC4 /* Frameworks */,
+				5DD0B112C2BACF4EEE66E3E6BD7ADA56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5449AC9CCF11BB03307663D0CC5C48B0 /* PBXTargetDependency */,
+				BC5A76544F9DF2AB089E520248CD2A79 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyMobileApp";
+			productName = "Pods-MyMobileApp";
+			productReference = 6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */;
@@ -199,25 +290,24 @@
 			);
 			name = LongPressRecordButton;
 			productName = LongPressRecordButton;
-			productReference = 3C9DAA7D0242A7FC9D765BB329A2F03A /* LongPressRecordButton.framework */;
+			productReference = 0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B13A2FB9DBE7DC6172935766B676C350 /* Pods-MyMobileApp */ = {
+		D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 326C11618AA2E7CFBD06A2E7B9FB636F /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildConfigurationList = 17A409BEA5EFF3E6925A0FF13A50E8D7 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */;
 			buildPhases = (
-				37280C99D1D7E91DE340D54A585F517F /* Sources */,
-				0901F5C34A9710073179402F06B6BB60 /* Frameworks */,
-				470A289AD25C82A9F29FCFD2CFF99C10 /* Headers */,
+				E32BA1A4A305E6656E25E69E092B261C /* Sources */,
+				2C1C4FB836A031B540805369655C234D /* Frameworks */,
+				6E3CED6AD9CC069B824FFD27A048D99C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9996E4B2E376AB04563DD3A06E942E3D /* PBXTargetDependency */,
 			);
-			name = "Pods-MyMobileApp";
-			productName = "Pods-MyMobileApp";
-			productReference = BC6F657A75A74C696D615C2A44A9E8B7 /* Pods_MyMobileApp.framework */;
+			name = JPSVolumeButtonHandler;
+			productName = JPSVolumeButtonHandler;
+			productReference = 1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,12 +327,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C7FC565F9727A2E66D2FABCA24CDAFFF /* Products */;
+			productRefGroup = A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */,
 				7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */,
-				B13A2FB9DBE7DC6172935766B676C350 /* Pods-MyMobileApp */,
+				6D4C5A78B169B8773849A83B37773C08 /* Pods-MyMobileApp */,
 			);
 		};
 /* End PBXProject section */
@@ -257,27 +348,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37280C99D1D7E91DE340D54A585F517F /* Sources */ = {
+		1B44B4B534F13A2AF797F920FA12F50E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651013BE346634AC94E79628F8C9E940 /* Pods-MyMobileApp-dummy.m in Sources */,
+				14F34465E69169D59E570147F48F838A /* Pods-MyMobileApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32BA1A4A305E6656E25E69E092B261C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */,
+				9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9996E4B2E376AB04563DD3A06E942E3D /* PBXTargetDependency */ = {
+		5449AC9CCF11BB03307663D0CC5C48B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JPSVolumeButtonHandler;
+			target = D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */;
+			targetProxy = F2F1E3894F9D67CD53E53FB237576151 /* PBXContainerItemProxy */;
+		};
+		BC5A76544F9DF2AB089E520248CD2A79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LongPressRecordButton;
 			target = 7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */;
-			targetProxy = 5907AED8A9DF4326899BB75F23C48BEB /* PBXContainerItemProxy */;
+			targetProxy = F22136B3A59E336F5E85C3B69AC967FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		43D8211A107413817E587C70BCC860C1 /* Debug */ = {
+		252558738F7D0656BC41F87373B57464 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */;
 			buildSettings = {
@@ -349,7 +455,7 @@
 		};
 		65729285732410D01F1E0C039BDD2174 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = 3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -366,6 +472,33 @@
 				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = LongPressRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		672AC8D282E872689F7942CA278C4CC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +543,7 @@
 		};
 		82DFBEB8593E792E09611EE278437D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = 3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -436,7 +569,7 @@
 			};
 			name = Debug;
 		};
-		8AACEE23538B3C367DF3ABF44A0F5834 /* Release */ = {
+		931CCE6981B06E3B52F65657C817454E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */;
 			buildSettings = {
@@ -466,9 +599,45 @@
 			};
 			name = Release;
 		};
+		DD37B63C381C14B74EE400EE39652CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17A409BEA5EFF3E6925A0FF13A50E8D7 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD37B63C381C14B74EE400EE39652CC6 /* Debug */,
+				672AC8D282E872689F7942CA278C4CC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -478,20 +647,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		326C11618AA2E7CFBD06A2E7B9FB636F /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43D8211A107413817E587C70BCC860C1 /* Debug */,
-				8AACEE23538B3C367DF3ABF44A0F5834 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82DFBEB8593E792E09611EE278437D26 /* Debug */,
 				65729285732410D01F1E0C039BDD2174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1117C6205459715992ADD611F1D7EC9 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252558738F7D0656BC41F87373B57464 /* Debug */,
+				931CCE6981B06E3B52F65657C817454E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

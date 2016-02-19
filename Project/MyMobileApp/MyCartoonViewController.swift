@@ -1,22 +1,22 @@
 import UIKit
 import GPUImage
 import LongPressRecordButton
+import JPSVolumeButtonHandler
 
 class MyCartoonViewController: UIViewController {
   
   @IBOutlet var flashView: UIView!
   @IBOutlet var filterView: GPUImageView!
-  @IBOutlet weak var filterSlider: UISlider!
   @IBOutlet weak var swapCameraButton: UIButton!
   @IBOutlet weak var lastMiniatureButton: UIButton!
   @IBOutlet weak var recordButton: LongPressRecordButton!
   
+  var volumeButtonHandler: JPSVolumeButtonHandler?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    CameraManager.sharedInstance.applyFiltertoView(filterView)
-    CameraManager.sharedInstance.setSlider(filterSlider)
-    CameraManager.sharedInstance.startCameraCapture()
+    self.setup()
 
     self.recordButton.delegate = self
   }
@@ -24,9 +24,7 @@ class MyCartoonViewController: UIViewController {
   override func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     
-    CameraManager.sharedInstance.applyFiltertoView(filterView)
-    CameraManager.sharedInstance.setSlider(filterSlider)
-    CameraManager.sharedInstance.startCameraCapture()
+    self.setup()
     
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
     self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -39,10 +37,6 @@ class MyCartoonViewController: UIViewController {
     CameraManager.sharedInstance.stopCameraCapture()
   }
   
-  @IBAction func updateSliderValue() {
-    CameraManager.sharedInstance.updateSliderWith(self.filterSlider.value)
-  }
-  
   @IBAction func goToLastTakenPicture() {
     
   }
@@ -51,6 +45,17 @@ class MyCartoonViewController: UIViewController {
     CameraManager.sharedInstance.rotateCamera()
   }
   
+  func setup() {
+    CameraManager.sharedInstance.applyFiltertoView(filterView)
+    CameraManager.sharedInstance.startCameraCapture()
+
+    self.volumeButtonHandler = JPSVolumeButtonHandler(upBlock: { () -> Void in
+      CameraManager.sharedInstance.filterUp()
+    }, downBlock: { () -> Void in
+      CameraManager.sharedInstance.filterDown()
+    })
+    
+  }
 }
 
 extension MyCartoonViewController: LongPressRecordButtonDelegate {

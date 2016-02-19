@@ -27,16 +27,17 @@ class CameraManager {
   
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
-  var slider: UISlider?
+  var slider = UISlider()
   
   // To Video
   var pathToMovie: NSString?
   var movieWritertemp: GPUImageMovieWriter!
   
   init() {
+    // Init Camera
     self.videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
     self.videoCamera.outputImageOrientation = .Portrait
-    self.videoCamera.horizontallyMirrorFrontFacingCamera = false
+    self.videoCamera.horizontallyMirrorFrontFacingCamera = true
     self.videoCamera.horizontallyMirrorRearFacingCamera = false
   }
   
@@ -45,24 +46,22 @@ class CameraManager {
     case .SingleInput:
       self.videoCamera.addTarget((self.filterOperation.filter as! GPUImageInput))
       self.filterOperation.filter.addTarget(filterView)
+      self.setSlider()
     default:
       break
     }
   }
   
-  func setSlider(slider: UISlider) {
+  func setSlider() {
     switch self.filterOperation.sliderConfiguration {
-    case .Disabled:
-      slider.hidden = true
     case let .Enabled(minimumValue, maximumValue, initialValue):
-      slider.minimumValue = minimumValue
-      slider.maximumValue = maximumValue
-      slider.value = initialValue
-      slider.hidden = false
-      //      self.updateSliderWith()
+      self.slider.minimumValue = minimumValue
+      self.slider.maximumValue = maximumValue
+      self.slider.value = initialValue
+    default:
+      break
     }
   }
-  
   
   /*
   Start Camera Capture
@@ -83,6 +82,30 @@ class CameraManager {
   */
   func rotateCamera() {
     self.videoCamera.rotateCamera()
+  }
+
+  /*
+  Update filter rate to down
+  */
+  func filterDown() {
+    let value = self.slider.value - 1
+    
+    if value >= self.slider.minimumValue {
+      self.updateSliderWith(value)
+      self.slider.value = value
+    }
+  }
+
+  /*
+  Update filter rate to up
+  */
+  func filterUp() {
+    let value = self.slider.value + 1
+    
+    if value <= self.slider.maximumValue {
+      self.updateSliderWith(value)
+      self.slider.value = value
+    }
   }
   
   /*
