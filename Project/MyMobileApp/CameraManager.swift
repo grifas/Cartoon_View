@@ -23,7 +23,7 @@ class CameraManager {
     return Static.instance!
   }
   
-  let videoCamera: GPUImageVideoCamera
+  let camera: GPUImageStillCamera
   
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
@@ -32,19 +32,19 @@ class CameraManager {
   // To Video
   var pathToMovie: NSString?
   var movieWritertemp: GPUImageMovieWriter!
-    
+  
   init() {
     // Init Camera
-    self.videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
-    self.videoCamera.outputImageOrientation = .Portrait
-    self.videoCamera.horizontallyMirrorFrontFacingCamera = true
-    self.videoCamera.horizontallyMirrorRearFacingCamera = false
+    self.camera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
+    self.camera.outputImageOrientation = .Portrait
+    self.camera.horizontallyMirrorFrontFacingCamera = true
+    self.camera.horizontallyMirrorRearFacingCamera = false
   }
   
   func applyFiltertoView(filterView: GPUImageView) {
     switch self.filterOperation.filterOperationType {
     case .SingleInput:
-      self.videoCamera.addTarget((self.filterOperation.filter as! GPUImageInput))
+      self.camera.addTarget((self.filterOperation.filter as! GPUImageInput))
       self.filterOperation.filter.addTarget(filterView)
       self.setSlider()
     default:
@@ -67,23 +67,23 @@ class CameraManager {
   Start Camera Capture
   */
   func startCameraCapture() {
-    self.videoCamera.startCameraCapture()
+    self.camera.startCameraCapture()
   }
   
   /*
   Stop Camera Capture
   */
   func stopCameraCapture() {
-    self.videoCamera.stopCameraCapture()
+    self.camera.stopCameraCapture()
   }
   
   /*
   Rotate Camera
   */
   func rotateCamera() {
-    self.videoCamera.rotateCamera()
+    self.camera.rotateCamera()
   }
-
+  
   /*
   Update filter rate to down
   */
@@ -95,7 +95,7 @@ class CameraManager {
       self.slider.value = value
     }
   }
-
+  
   /*
   Update filter rate to up
   */
@@ -119,28 +119,100 @@ class CameraManager {
       break
     }
   }
+
+  /*
+  Enable Flash
+  */
+  func enableFlash() {
+    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+      do {
+        try self.camera.inputCamera.lockForConfiguration()
+        self.camera.inputCamera.flashMode = AVCaptureFlashMode.On
+        self.camera.inputCamera.unlockForConfiguration()
+      } catch {
+        print("The Flash can not be enabled")
+      }
+    })
+  }
+
+  /*
+  Disable Flash
+  */
+  func disableFlash() {
+    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+      do {
+        try self.camera.inputCamera.lockForConfiguration()
+        self.camera.inputCamera.flashMode = AVCaptureFlashMode.Off
+        self.camera.inputCamera.unlockForConfiguration()
+      } catch {
+        print("The Flash can not be disabled")
+      }
+    })
+  }
+  
+  /*
+  Enable Torch
+  */
+  func enableTorch() {
+    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+      do {
+        try self.camera.inputCamera.lockForConfiguration()
+        self.camera.inputCamera.torchMode = AVCaptureTorchMode.On
+        self.camera.inputCamera.unlockForConfiguration()
+      } catch {
+        print("The Torch can not be enabled")
+      }
+    })
+  }
+  
+  /*
+  Disable Torch
+  */
+  func disableTorch() {
+    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+      do {
+        try self.camera.inputCamera.lockForConfiguration()
+        self.camera.inputCamera.torchMode = AVCaptureTorchMode.Off
+        self.camera.inputCamera.unlockForConfiguration()
+      } catch {
+        print("The Torch can not be disabled")
+      }
+    })
+  }
+
+  
+  // ---------------- About Picture
   
   /*
   Take a Picture
   */
-  func shoot(imageView: UIImageView) {
-    self.videoCamera.pauseCameraCapture()
-    self.filterOperation.filter.useNextFrameForImageCapture()
+  func shoot(imageView: UIImageView, hasFlash: Bool = false) {
+    if hasFlash == true {
+      self.enableFlash()
+    } else {
+      self.disableFlash()
+    }
+    self.camera.pauseCameraCapture()
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-      let capturedImage = self.filterOperation.filter.imageFromCurrentFramebuffer()
-      
-      UIImageWriteToSavedPhotosAlbum(capturedImage, nil, nil, nil)
-      imageView.image = capturedImage
-      AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+      self.camera.capturePhotoAsImageProcessedUpToFilter(self.filterOperation.filter, withCompletionHandler: { (image, error) -> Void in
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        imageView.image = image
+      })
     })
-    self.videoCamera.resumeCameraCapture()
+    self.camera.resumeCameraCapture()
   }
+  
+  // ---------------- About Video
   
   /*
   Start Video Recording
   */
-  func startRecording() {
-    
+  func startRecording(hasTorch: Bool = false) {
+    if hasTorch == true {
+      self.enableTorch()
+    } else {
+      self.disableTorch()
+    }
     self.pathToMovie = NSHomeDirectory().stringByAppendingString("/Documents/mymobileapp.m4v")
     
     if let path = self.pathToMovie {
@@ -153,7 +225,7 @@ class CameraManager {
       
       let  startTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
       dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
-        self.videoCamera.audioEncodingTarget = self.movieWritertemp
+        self.camera.audioEncodingTarget = self.movieWritertemp
         self.movieWritertemp.startRecording()
       })
     }
@@ -167,11 +239,11 @@ class CameraManager {
       let stopTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
       dispatch_after(stopTime, dispatch_get_main_queue(), { () -> Void in
         self.filterOperation.filter.removeTarget(self.movieWritertemp)
-        self.videoCamera.audioEncodingTarget = nil
+        self.camera.audioEncodingTarget = nil
         self.movieWritertemp.finishRecording()
         UISaveVideoAtPathToSavedPhotosAlbum(path as String, nil, nil, nil)
         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-      }) 
+      })
     }
   }
 }

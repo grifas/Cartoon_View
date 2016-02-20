@@ -12,6 +12,7 @@ class MyCartoonViewController: UIViewController {
   @IBOutlet weak var swapCameraButton: UIButton!
   @IBOutlet weak var recordButton: LongPressRecordButton!
   @IBOutlet weak var lastImageView: UIImageView!
+  @IBOutlet weak var flashSwitch: UISwitch!
   
   var volumeButtonHandler: JPSVolumeButtonHandler?
   
@@ -128,7 +129,7 @@ class MyCartoonViewController: UIViewController {
 extension MyCartoonViewController: LongPressRecordButtonDelegate {
   
   func longPressRecordButtonDidStartLongPress(button: LongPressRecordButton) {
-    CameraManager.sharedInstance.startRecording()
+    CameraManager.sharedInstance.startRecording(self.flashSwitch.on)
   }
   
   func longPressRecordButtonDidStopLongPress(button: LongPressRecordButton) {
@@ -136,8 +137,9 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
   }
   
   func longPressRecordButtonShouldShowToolTip(button: LongPressRecordButton) -> Bool {
-    CameraManager.sharedInstance.shoot(self.lastImageView)
+    CameraManager.sharedInstance.shoot(self.lastImageView, hasFlash: self.flashSwitch.on)
     return false
   }
+
 }
 
