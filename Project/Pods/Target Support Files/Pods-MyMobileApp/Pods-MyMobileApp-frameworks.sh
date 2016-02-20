@@ -84,10 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-MyMobileApp/BSGridCollectionViewLayout.framework"
+  install_framework "Pods-MyMobileApp/BSImagePicker.framework"
   install_framework "Pods-MyMobileApp/JPSVolumeButtonHandler.framework"
   install_framework "Pods-MyMobileApp/LongPressRecordButton.framework"
+  install_framework "Pods-MyMobileApp/UIImageViewModeScaleAspect.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-MyMobileApp/BSGridCollectionViewLayout.framework"
+  install_framework "Pods-MyMobileApp/BSImagePicker.framework"
   install_framework "Pods-MyMobileApp/JPSVolumeButtonHandler.framework"
   install_framework "Pods-MyMobileApp/LongPressRecordButton.framework"
+  install_framework "Pods-MyMobileApp/UIImageViewModeScaleAspect.framework"
 fi

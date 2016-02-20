@@ -575,6 +575,7 @@
 				B96B389E1C77CAF1009578D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "MyMobileApp" */ = {
 			isa = XCConfigurationList;

@@ -32,7 +32,7 @@ class CameraManager {
   // To Video
   var pathToMovie: NSString?
   var movieWritertemp: GPUImageMovieWriter!
-  
+    
   init() {
     // Init Camera
     self.videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
@@ -123,13 +123,14 @@ class CameraManager {
   /*
   Take a Picture
   */
-  func shoot() {
+  func shoot(imageView: UIImageView) {
     self.videoCamera.pauseCameraCapture()
     self.filterOperation.filter.useNextFrameForImageCapture()
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-      let capturedImage: UIImage =  self.filterOperation.filter.imageFromCurrentFramebuffer()
+      let capturedImage = self.filterOperation.filter.imageFromCurrentFramebuffer()
       
       UIImageWriteToSavedPhotosAlbum(capturedImage, nil, nil, nil)
+      imageView.image = capturedImage
       AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     })
     self.videoCamera.resumeCameraCapture()

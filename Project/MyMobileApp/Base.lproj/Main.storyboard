@@ -51,14 +51,35 @@
                                             <action selector="swapCamera" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRK-gZ-3k8"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0q-sD-MEN">
+                                        <rect key="frame" x="541" y="528" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="DyQ-gR-gTE"/>
+                                            <constraint firstAttribute="width" constant="44" id="nGE-So-2EB"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="esT-D9-tdg" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="3eZ-LS-d58"/>
+                                    <constraint firstAttribute="bottom" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="BYJ-IA-wYB"/>
+                                    <constraint firstItem="esT-D9-tdg" firstAttribute="top" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="Hr9-l9-akY"/>
                                     <constraint firstItem="lPe-sW-Bwr" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="Ht0-eI-6Ge"/>
+                                    <constraint firstAttribute="trailing" secondItem="x0q-sD-MEN" secondAttribute="trailing" constant="15" id="PTa-ou-StP"/>
+                                    <constraint firstItem="x0q-sD-MEN" firstAttribute="centerY" secondItem="KFQ-ww-sFy" secondAttribute="centerY" id="VQT-l0-EZM"/>
+                                    <constraint firstItem="x0q-sD-MEN" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="Z6g-lr-jXi"/>
                                     <constraint firstAttribute="bottom" secondItem="esT-D9-tdg" secondAttribute="bottom" constant="15" id="b0X-ye-Lka"/>
+                                    <constraint firstAttribute="trailing" secondItem="x0q-sD-MEN" secondAttribute="trailing" constant="15" id="iQ7-Jt-aQ8"/>
                                     <constraint firstAttribute="trailing" secondItem="lPe-sW-Bwr" secondAttribute="trailing" constant="15" id="lSS-Ha-bv8"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hr9-l9-akY"/>
+                                        <exclude reference="PTa-ou-StP"/>
+                                        <exclude reference="VQT-l0-EZM"/>
+                                        <exclude reference="Z6g-lr-jXi"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <constraints>
@@ -82,6 +103,7 @@
                     <connections>
                         <outlet property="filterView" destination="KFQ-ww-sFy" id="tw2-LK-4CN"/>
                         <outlet property="flashView" destination="8bC-Xf-vdC" id="xlL-qv-idv"/>
+                        <outlet property="lastImageView" destination="x0q-sD-MEN" id="ae7-mx-xSh"/>
                         <outlet property="recordButton" destination="esT-D9-tdg" id="T1g-CM-Dgw"/>
                         <outlet property="swapCameraButton" destination="lPe-sW-Bwr" id="Wey-GO-lUK"/>
                     </connections>

@@ -7,75 +7,229 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14F34465E69169D59E570147F48F838A /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
-		202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */; };
-		34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */; };
-		3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
-		4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */; };
-		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */; };
-		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
-		78EE34C4F6034F7C0650987AB8200670 /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */; };
-		AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9E5A325B4EB34E571243B4052BB459D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725E26D5DB175379A622285C024A4393 /* Foundation.framework */; };
-		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */; };
+		020FAA49E54F3DFA0D24A2D4508306BD /* BSImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3B785754E654B7FE312DE8A5027912 /* BSImagePicker-dummy.m */; };
+		0AE1D7C5C2AE6ACE895F6B267FC9DA7F /* CameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E846D4C05C03C18386FECB0365A1868 /* CameraCell.swift */; };
+		0BC8CA9D876F0078A71FA6DA7E96B4F5 /* add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65933AD9FB303A2E5033707AABEEDD31 /* add_photo@2x.png */; };
+		0F1C84A2FE906A408036822AA11DE763 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51224DD605BC83F53A7B2118C32CB329 /* ZoomAnimator.swift */; };
+		1732ECFC00CD19684F9464F04CA97565 /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
+		1C33FD78005932356FF3E937998CBCC5 /* BSGridCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E728E4F8618DD68558C998CACCDFC6B /* BSGridCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FFE8A6DDCA9246D3EA98372EAD63780 /* UIImageViewModeScaleAspect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 153D0263AD113D7A3FE6071228C58394 /* UIImageViewModeScaleAspect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7884A06417E6074745456E1EBD4ECB3A /* AVFoundation.framework */; };
+		24CD7899389895B19C25119A31699368 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB793FC4792F270AF78B8F2BC913CD0 /* Photos.framework */; };
+		2D328AD191D951FE755FCF0F4FBFD86F /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6188CF26A6E2C88B567200578FD316E9 /* add_photo.png */; };
+		309BA559E28A032D7AB8DA1BFB1ED288 /* arrow_down@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AD46876CC8B751067531C852D86066 /* arrow_down@1x.png */; };
+		34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E16C9A86AAB9CEB16B6A8E8C8A03306 /* MediaPlayer.framework */; };
+		366FD399B9BE5D5882A6F2079617BF67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		39CC77EEA7D338BAC4838DF5A0042FA1 /* BSImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5D54841E18A2417B8FBDAA87DD05274 /* BSImagePicker.bundle */; };
+		3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		40014FF9B9A69253E2C34E8EAF771BA2 /* UIImageViewModeScaleAspect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9678321BC38036EC014B9BDC94D8D /* UIImageViewModeScaleAspect-dummy.m */; };
+		4546E3FB56F3693D2893B773F71C3097 /* BSImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A265F572FB63BD544E50AE732466D0B7 /* BSImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F19B4A25DEFA18F924D9A9DD8E00945 /* JPSVolumeButtonHandler-dummy.m */; };
+		518927A77B9F0D1E5D960E22694EEFE7 /* BSImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB7145CCCBF1A8B9EEC763FE0B1688 /* BSImagePickerViewController.swift */; };
+		519324787413E43E08A6A85B7D0E72AF /* CameraCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A01E042F021A0F64D69BF12C3030B5 /* CameraCollectionViewDataSource.swift */; };
+		53AE57B03773935906E27EAE7D903A75 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5990FBAAC6AB2203CFBFD1CDC46F74 /* Settings.swift */; };
+		543069E7AFC0805EF1CB25199D201424 /* UIImageViewModeScaleAspect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F047F9B51BEB8DD8D02CA269DA9B2206 /* UIImageViewModeScaleAspect.framework */; };
+		60D1BCD436C3EBA8135B3AFC9130CB11 /* ComposedCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC1AEAC7126FA80F846423B94463CE /* ComposedCollectionViewDataSource.swift */; };
+		61B3E8B44D6F2EA17EDE942B24371232 /* BSGridCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C45DF3D3C236371BC4EEC6A61C66C /* BSGridCollectionViewLayout-dummy.m */; };
+		628405FA1E55C5625E3AF83AB53A1D9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2B079D4C36BDE1A8D0E06F5DAB28DB /* LongPressRecordButton-dummy.m */; };
+		7034DE0ED32D95A839CEDFAC4D84BD88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		74D81A016D09E77EC6592AF70252A6FD /* add_photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4548D14CFF14CB14F28B4AE91FDE2B /* add_photo@3x.png */; };
+		7C01D468C87DE13E87024F391334136E /* PhotoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDF7933CED8422EFBF339CE1AC134BA /* PhotoCollectionViewDataSource.swift */; };
+		808ECA8D577A4288E2F06046DE517EED /* Albums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F657FE69D4B4729CAF97040EC3142F15 /* Albums.storyboard */; };
+		878FB8F86BAE97E0179D51D1569FBB60 /* BSImagePickerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77A2633568CF8158794572DAC2D5148 /* BSImagePickerSettings.swift */; };
+		89553EB9F15F76B70F62E8F69BB1684C /* AlbumTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED2EFBE1F214E9B0904011F7EBE4E9F /* AlbumTableViewDataSource.swift */; };
+		8D7EA0A6E5D522BC65CACC0BA7D23B0E /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA07F4A7E26F48D08B2C1AD79A422CCC /* SelectionView.swift */; };
+		9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AF8E553822F9C8017598FFD865CE67 /* JPSVolumeButtonHandler.m */; };
+		98CCDEA46756A3A8A0FC9B9472E682B2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC5218B0FC75AF1B1323204ED70B596 /* PhotoCell.swift */; };
+		A4229F7353B5AF589AD6BF2EAC31F1E7 /* UIButton+NoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99FF0CC29E43F441C86B752BE1D314B /* UIButton+NoAnimation.swift */; };
+		AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 97C1C2FE155A74012F27BEF2F064D69A /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC31F8B2FE473098E961C569C9F7216A /* NSIndexSet+NSIndexPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788D07928D59E69BDEC058DCF5243E0 /* NSIndexSet+NSIndexPath.swift */; };
+		C03AF5706175CAF471B117C5C5F60775 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F47828402AEA80A1C93623F24EF4B /* AlbumsViewController.swift */; };
+		C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BC9FBABCDCDA074330D79D12649528 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6C6E82D44C8E6F311129D11D9BB3C78 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A7EE65949A417D29CA196CAD80A01D /* PhotoCell.xib */; };
+		CCEA26201F74E01FD9621E1CACAD85A8 /* GridCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB17830FF5B908FD281A385326EA3F /* GridCollectionViewLayout.swift */; };
+		CE9BEE1CFB831D54829132A6B365EDAF /* UIImageViewModeScaleAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5092CB244234B7CD0837AE39B0A5E3 /* UIImageViewModeScaleAspect.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D24E773D3868F2EFFD2C78431689CD1D /* UIViewController+BSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC41D6F50983C2564CC4616404B916 /* UIViewController+BSImagePicker.swift */; };
+		D2C51CD71E1F27983032A23C1077A600 /* UIImageViewModeScaleAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B11A2233790223215B974448CE73D1 /* UIImageViewModeScaleAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73125DF8AAFA6A2B34FAF46C8E2E78E2 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6230D411F4CD1882D9E8AB2EE498ACD /* CameraCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F55BB5FF032343570AEFE8D225678 /* CameraCell.xib */; };
+		D68373BD1C186BFF96F83919F47FBC09 /* AlbumTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB60B9B7C8B99FE24B3C005B768656 /* AlbumTitleView.swift */; };
+		D922BBA12D7988EC41FB403F748BBFB8 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A09D61636ABF20C3F9FD6D54FD92B /* AlbumCell.swift */; };
+		D9F6DBCD3A5F40B6B3D92F39B27BA4CA /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC229BB03500121A5EB2162F9DD1E30 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF30802846AB2B195D616F88CDB1AD3 /* PhotosViewController.swift */; };
+		E14B37AEE6265EC234F3676302B0DED6 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA305625EF25F88B5BC942992F60B5E /* PreviewViewController.swift */; };
+		E2488A6A402963C36DD15AC5BAD7B5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CE7035875E4882D823133E2535AED4 /* Foundation.framework */; };
+		E35B1DA23A573B53C34A49472A6B448D /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63C1D19A4D3BADC4FA9C4D1FCC2C7FF /* arrow_down@3x.png */; };
+		EFE98DF46B15DDE171B61A3F52D70D8A /* BSGridCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BAFD4B45516B3F7A2CF13F80BAF097 /* BSGridCollectionViewLayout.framework */; };
+		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F391EFC927E5D1549E148571F067126 /* LongPressRecordButton.swift */; };
+		F6B493A91D4972846A91292F2241F636 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9C443947C92A4AC74DB91A35C0DE65 /* arrow_down@2x.png */; };
+		FC0C60F5ACDB5830427EE4D4D29415C6 /* AlbumTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CD4D63A794C16A3B97777803EEE4DCD /* AlbumTitleView.xib */; };
+		FC7913FBE8955E8CFB0EB9152F13098E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB78C45F84A247F4D177C392B072E6 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F22136B3A59E336F5E85C3B69AC967FD /* PBXContainerItemProxy */ = {
+		171E173D94CE7971F80DE4BC1E6B38B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7BA3DE45975103D8B579EA089BC55312;
-			remoteInfo = LongPressRecordButton;
+			remoteGlobalIDString = C59EE95662AD4757E7FCE220DB1AFA41;
+			remoteInfo = BSImagePicker;
 		};
-		F2F1E3894F9D67CD53E53FB237576151 /* PBXContainerItemProxy */ = {
+		2F6F80BA7A10BAD3DF6C8B7DA80E68F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF38C485BD8E73F614C919F834D6EAB;
+			remoteInfo = UIImageViewModeScaleAspect;
+		};
+		32F1A6CE07342E424DE342C9D5C9B5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FF38C485BD8E73F614C919F834D6EAB;
+			remoteInfo = UIImageViewModeScaleAspect;
+		};
+		3AB1850450B2D2039C9FC0D55B185E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AA3DDB8797222294E1288CB197A8347;
+			remoteInfo = BSGridCollectionViewLayout;
+		};
+		AE9FC31CE0E6C8A6EF7DFEEB1CA862C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D8FDC08BF6F0664C2AE587B7F015C2E7;
 			remoteInfo = JPSVolumeButtonHandler;
 		};
+		B5DE916A8F5FE824842763E27CC6283D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA3DE45975103D8B579EA089BC55312;
+			remoteInfo = LongPressRecordButton;
+		};
+		BFC218CB0601171B9D54C04DFDE706B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AA3DDB8797222294E1288CB197A8347;
+			remoteInfo = BSGridCollectionViewLayout;
+		};
+		C06A237F2852CAE7C244B71783CCAF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DE5171AA3C53DA4E4A078B795C78EE;
+			remoteInfo = "BSImagePicker-BSImagePicker";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		032CD99B1132E6BA2E99EFC0640ED82D /* UIImageViewModeScaleAspect.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIImageViewModeScaleAspect.xcconfig; sourceTree = "<group>"; };
+		077090D2CF50825DFA60B3486395B102 /* UIImageViewModeScaleAspect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIImageViewModeScaleAspect.modulemap; sourceTree = "<group>"; };
+		0788D07928D59E69BDEC058DCF5243E0 /* NSIndexSet+NSIndexPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+NSIndexPath.swift"; path = "Pod/Classes/Extension/NSIndexSet+NSIndexPath.swift"; sourceTree = "<group>"; };
+		09CE7035875E4882D823133E2535AED4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0E846D4C05C03C18386FECB0365A1868 /* CameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCell.swift; path = Pod/Classes/View/CameraCell.swift; sourceTree = "<group>"; };
+		0FBC41D6F50983C2564CC4616404B916 /* UIViewController+BSImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+BSImagePicker.swift"; path = "Pod/Classes/Extension/UIViewController+BSImagePicker.swift"; sourceTree = "<group>"; };
+		0FCD42B34C5BF27B3CA654F81A63041B /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSGridCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		108C45DF3D3C236371BC4EEC6A61C66C /* BSGridCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSGridCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		153D0263AD113D7A3FE6071228C58394 /* UIImageViewModeScaleAspect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewModeScaleAspect-umbrella.h"; sourceTree = "<group>"; };
 		199E2A6687DEF4DDFDB7821BD6922BFE /* Pods-MyMobileApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-frameworks.sh"; sourceTree = "<group>"; };
+		1AA305625EF25F88B5BC942992F60B5E /* PreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = Pod/Classes/Controller/PreviewViewController.swift; sourceTree = "<group>"; };
+		1D4548D14CFF14CB14F28B4AE91FDE2B /* add_photo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@3x.png"; path = "Pod/Assets/add_photo@3x.png"; sourceTree = "<group>"; };
+		1FB793FC4792F270AF78B8F2BC913CD0 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		23D9678321BC38036EC014B9BDC94D8D /* UIImageViewModeScaleAspect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageViewModeScaleAspect-dummy.m"; sourceTree = "<group>"; };
+		24FB7145CCCBF1A8B9EEC763FE0B1688 /* BSImagePickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerViewController.swift; path = Pod/Classes/Controller/BSImagePickerViewController.swift; sourceTree = "<group>"; };
 		26E426C03C365C631ED6059B7B7B7B50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		2956734BD3B603EB3A53F46B7B0DA884 /* BSGridCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BSGridCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		2BF8C8644C51ED33E253AD3745424D0D /* BSGridCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSGridCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		2DFB60B9B7C8B99FE24B3C005B768656 /* AlbumTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTitleView.swift; path = Pod/Classes/View/AlbumTitleView.swift; sourceTree = "<group>"; };
+		2F391EFC927E5D1549E148571F067126 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
+		2FDF7933CED8422EFBF339CE1AC134BA /* PhotoCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewDataSource.swift; path = Pod/Classes/Model/PhotoCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		353603686A98644BC9333903C0EE1F38 /* BSImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A01E042F021A0F64D69BF12C3030B5 /* CameraCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraCollectionViewDataSource.swift; path = Pod/Classes/Model/CameraCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		39E67102A05A5068F8368C0319C867C7 /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
 		3AC1943B7F5F111BE70B8237B437848C /* Pods-MyMobileApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyMobileApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
 		3BB79DF6D2BD71D0128A65A0126B4C38 /* Pods-MyMobileApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyMobileApp.modulemap"; sourceTree = "<group>"; };
-		59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
+		4A4DFBDFA1D2CD098FE2F39AC60138FE /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51224DD605BC83F53A7B2118C32CB329 /* ZoomAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimator.swift; path = Pod/Classes/Controller/ZoomAnimator.swift; sourceTree = "<group>"; };
+		52764C583EC5E3F208D6921854A6941F /* UIImageViewModeScaleAspect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewModeScaleAspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AB17830FF5B908FD281A385326EA3F /* GridCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridCollectionViewLayout.swift; path = Pod/Classes/GridCollectionViewLayout.swift; sourceTree = "<group>"; };
+		58DE3912431D8FBD7B97B134D470CF26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BAFD4B45516B3F7A2CF13F80BAF097 /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSGridCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD4D63A794C16A3B97777803EEE4DCD /* AlbumTitleView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlbumTitleView.xib; path = Pod/Assets/AlbumTitleView.xib; sourceTree = "<group>"; };
+		5E16C9A86AAB9CEB16B6A8E8C8A03306 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		5E728E4F8618DD68558C998CACCDFC6B /* BSGridCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		5ECB78C45F84A247F4D177C392B072E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6188CF26A6E2C88B567200578FD316E9 /* add_photo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = add_photo.png; path = Pod/Assets/add_photo.png; sourceTree = "<group>"; };
+		65933AD9FB303A2E5033707AABEEDD31 /* add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "add_photo@2x.png"; path = "Pod/Assets/add_photo@2x.png"; sourceTree = "<group>"; };
 		65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70C085235A693E330039C129BD4F415C /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
-		72159BB892DAAFBD4D260FBB9DABBD90 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
-		725E26D5DB175379A622285C024A4393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BCDC774AF4DA2A2E682A090F9F2C92E /* UIImageViewModeScaleAspect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageViewModeScaleAspect-prefix.pch"; sourceTree = "<group>"; };
+		6E1F47828402AEA80A1C93623F24EF4B /* AlbumsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumsViewController.swift; path = Pod/Classes/Controller/AlbumsViewController.swift; sourceTree = "<group>"; };
+		73125DF8AAFA6A2B34FAF46C8E2E78E2 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		74EDD44C5352D30091D02F72FC6FC295 /* BSImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BSImagePicker.modulemap; sourceTree = "<group>"; };
+		750F23F39FE885942C9866477C0CF6C3 /* BSImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		7884A06417E6074745456E1EBD4ECB3A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		7F19B4A25DEFA18F924D9A9DD8E00945 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
 		7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyMobileApp-umbrella.h"; sourceTree = "<group>"; };
-		86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
+		88AD46876CC8B751067531C852D86066 /* arrow_down@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@1x.png"; path = "Pod/Assets/arrow_down@1x.png"; sourceTree = "<group>"; };
 		8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyMobileApp-dummy.m"; sourceTree = "<group>"; };
-		8CE1278D903E712CD276AB4BD1E2BEAB /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
-		8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
-		8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
-		8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
-		93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
+		8C5990FBAAC6AB2203CFBFD1CDC46F74 /* Settings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Pod/Classes/Model/Settings.swift; sourceTree = "<group>"; };
+		91A7EE65949A417D29CA196CAD80A01D /* PhotoCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PhotoCell.xib; path = Pod/Assets/PhotoCell.xib; sourceTree = "<group>"; };
+		97C1C2FE155A74012F27BEF2F064D69A /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
+		984445DE1F42DAE7E695AAC11EF07624 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		A265F572FB63BD544E50AE732466D0B7 /* BSImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		AA07F4A7E26F48D08B2C1AD79A422CCC /* SelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectionView.swift; path = Pod/Classes/View/SelectionView.swift; sourceTree = "<group>"; };
+		AE3B785754E654B7FE312DE8A5027912 /* BSImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSImagePicker-dummy.m"; sourceTree = "<group>"; };
+		AF68A5E1ACEA51138ABD95DB5D55FC14 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C2BB6DB832C44A767FDABFD0C4D82 /* Pods-MyMobileApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-resources.sh"; sourceTree = "<group>"; };
-		B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB2B079D4C36BDE1A8D0E06F5DAB28DB /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
+		BED2EFBE1F214E9B0904011F7EBE4E9F /* AlbumTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumTableViewDataSource.swift; path = Pod/Classes/Model/AlbumTableViewDataSource.swift; sourceTree = "<group>"; };
 		C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		C1733DFBBFDCE60026E1BCEF67DFB654 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AF8E553822F9C8017598FFD865CE67 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
+		C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSImagePicker.xcconfig; sourceTree = "<group>"; };
+		C63C1D19A4D3BADC4FA9C4D1FCC2C7FF /* arrow_down@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "Pod/Assets/arrow_down@3x.png"; sourceTree = "<group>"; };
+		C64439E2B458FC0F52BF48039974A4C0 /* BSGridCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSGridCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		C71F633B5A51B81AD92D09AA23D1586A /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99FF0CC29E43F441C86B752BE1D314B /* UIButton+NoAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+NoAnimation.swift"; path = "Pod/Classes/Extension/UIButton+NoAnimation.swift"; sourceTree = "<group>"; };
+		CC2A09D61636ABF20C3F9FD6D54FD92B /* AlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlbumCell.swift; path = Pod/Classes/View/AlbumCell.swift; sourceTree = "<group>"; };
+		CD5092CB244234B7CD0837AE39B0A5E3 /* UIImageViewModeScaleAspect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIImageViewModeScaleAspect.m; path = UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.m; sourceTree = "<group>"; };
+		CE9C443947C92A4AC74DB91A35C0DE65 /* arrow_down@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "Pod/Assets/arrow_down@2x.png"; sourceTree = "<group>"; };
+		CEBC1AEAC7126FA80F846423B94463CE /* ComposedCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComposedCollectionViewDataSource.swift; path = Pod/Classes/Model/ComposedCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		CF4920F2F9A99F9691630E3591B515F1 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		D2B11A2233790223215B974448CE73D1 /* UIImageViewModeScaleAspect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIImageViewModeScaleAspect.h; path = UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.h; sourceTree = "<group>"; };
+		D3E801385974E1C0D38F9546EAA2DBB2 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
+		D77A2633568CF8158794572DAC2D5148 /* BSImagePickerSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BSImagePickerSettings.swift; path = Pod/Classes/Protocol/BSImagePickerSettings.swift; sourceTree = "<group>"; };
+		D84F55BB5FF032343570AEFE8D225678 /* CameraCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CameraCell.xib; path = Pod/Assets/CameraCell.xib; sourceTree = "<group>"; };
+		DEF30802846AB2B195D616F88CDB1AD3 /* PhotosViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotosViewController.swift; path = Pod/Classes/Controller/PhotosViewController.swift; sourceTree = "<group>"; };
+		DFC5218B0FC75AF1B1323204ED70B596 /* PhotoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Pod/Classes/View/PhotoCell.swift; sourceTree = "<group>"; };
+		E2F458605539E25C5AA15BD6006F329B /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		E5D0791ADA6F12FDBFA882113BED9759 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6AD2C2462F3D3F23E9FCA778E96F0A2 /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
 		E9B9053260768A9D56006129FBC73E6D /* Pods-MyMobileApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyMobileApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		EEC88C802B3ADA10413A9013D384582A /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
-		F6CD0F0C9E28F0FC5DC5C29D82DAAFF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F999599F1A58BCA4D526B32DF7E5493D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA507BCA84B23177FCE287486DDD9FDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F047F9B51BEB8DD8D02CA269DA9B2206 /* UIImageViewModeScaleAspect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIImageViewModeScaleAspect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D54841E18A2417B8FBDAA87DD05274 /* BSImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F657FE69D4B4729CAF97040EC3142F15 /* Albums.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Albums.storyboard; path = Pod/Assets/Albums.storyboard; sourceTree = "<group>"; };
+		F7BC9FBABCDCDA074330D79D12649528 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
+		FE8267794AA6481AEBB8D6DC523B1C09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26E2C710DCBB6BEB3C8CCF8EA1ED724F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366FD399B9BE5D5882A6F2079617BF67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C1C4FB836A031B540805369655C234D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,47 +248,105 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE88FDBE0F4CF86E0A85FB453FAAFAC4 /* Frameworks */ = {
+		46EE8E1617E1454BFB2F6FBA85243645 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E5A325B4EB34E571243B4052BB459D /* Foundation.framework in Frameworks */,
+				EFE98DF46B15DDE171B61A3F52D70D8A /* BSGridCollectionViewLayout.framework in Frameworks */,
+				628405FA1E55C5625E3AF83AB53A1D9B /* Foundation.framework in Frameworks */,
+				24CD7899389895B19C25119A31699368 /* Photos.framework in Frameworks */,
+				543069E7AFC0805EF1CB25199D201424 /* UIImageViewModeScaleAspect.framework in Frameworks */,
+				FC7913FBE8955E8CFB0EB9152F13098E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB8CF16A161F76353583481C472A4CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2488A6A402963C36DD15AC5BAD7B5F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5618727741F9984DB77DD1ED625B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7034DE0ED32D95A839CEDFAC4D84BD88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DF032A960BD013C0CBC25313B32F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		0D28FAF4E2C7A90B735C305B6CF0D88F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD3B48CA4E3EC9F8EE53514B10808E7F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		29827701332EE7032B8D89D5DB461518 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F999599F1A58BCA4D526B32DF7E5493D /* Info.plist */,
-				70C085235A693E330039C129BD4F415C /* LongPressRecordButton.modulemap */,
-				3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */,
-				B8538D04F0237EB4D00B6B17BE7FC05C /* LongPressRecordButton-dummy.m */,
-				EEC88C802B3ADA10413A9013D384582A /* LongPressRecordButton-prefix.pch */,
-				33D773309FBF14C8DCCDED48BCE9F398 /* LongPressRecordButton-umbrella.h */,
+				58DE3912431D8FBD7B97B134D470CF26 /* Info.plist */,
+				D3E801385974E1C0D38F9546EAA2DBB2 /* JPSVolumeButtonHandler.modulemap */,
+				39E67102A05A5068F8368C0319C867C7 /* JPSVolumeButtonHandler.xcconfig */,
+				7F19B4A25DEFA18F924D9A9DD8E00945 /* JPSVolumeButtonHandler-dummy.m */,
+				E6AD2C2462F3D3F23E9FCA778E96F0A2 /* JPSVolumeButtonHandler-prefix.pch */,
+				F7BC9FBABCDCDA074330D79D12649528 /* JPSVolumeButtonHandler-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/LongPressRecordButton";
+			path = "../Target Support Files/JPSVolumeButtonHandler";
 			sourceTree = "<group>";
 		};
-		407FFD8F1699DBBAAA3B206514AC88F4 /* JPSVolumeButtonHandler */ = {
+		22B21FC7EDF8513B35102D4A6926670F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59E65AE99E75078D0627F95946D75754 /* JPSVolumeButtonHandler.h */,
-				8F93484A35EDBD82967CCECE311C52E9 /* JPSVolumeButtonHandler.m */,
-				F0610B6281DEDEC5F327D6F1BA92DF4F /* Support Files */,
+				0FCD42B34C5BF27B3CA654F81A63041B /* BSGridCollectionViewLayout.framework */,
+				F5D54841E18A2417B8FBDAA87DD05274 /* BSImagePicker.bundle */,
+				353603686A98644BC9333903C0EE1F38 /* BSImagePicker.framework */,
+				C71F633B5A51B81AD92D09AA23D1586A /* JPSVolumeButtonHandler.framework */,
+				AF68A5E1ACEA51138ABD95DB5D55FC14 /* LongPressRecordButton.framework */,
+				4A4DFBDFA1D2CD098FE2F39AC60138FE /* Pods_MyMobileApp.framework */,
+				52764C583EC5E3F208D6921854A6941F /* UIImageViewModeScaleAspect.framework */,
 			);
-			path = JPSVolumeButtonHandler;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C8B1C8F046ECD2FDECFA9E8F42A3553 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE8267794AA6481AEBB8D6DC523B1C09 /* Info.plist */,
+				077090D2CF50825DFA60B3486395B102 /* UIImageViewModeScaleAspect.modulemap */,
+				032CD99B1132E6BA2E99EFC0640ED82D /* UIImageViewModeScaleAspect.xcconfig */,
+				23D9678321BC38036EC014B9BDC94D8D /* UIImageViewModeScaleAspect-dummy.m */,
+				6BCDC774AF4DA2A2E682A090F9F2C92E /* UIImageViewModeScaleAspect-prefix.pch */,
+				153D0263AD113D7A3FE6071228C58394 /* UIImageViewModeScaleAspect-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIImageViewModeScaleAspect";
+			sourceTree = "<group>";
+		};
+		2D1E57925C5B20151905E37733132FC1 /* LongPressRecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				2F391EFC927E5D1549E148571F067126 /* LongPressRecordButton.swift */,
+				B88BA35116DFCDDC03ABDD915C7572CC /* Support Files */,
+			);
+			path = LongPressRecordButton;
+			sourceTree = "<group>";
+		};
+		3B849834D4A0C26434B553B561995CE0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7884A06417E6074745456E1EBD4ECB3A /* AVFoundation.framework */,
+				09CE7035875E4882D823133E2535AED4 /* Foundation.framework */,
+				5E16C9A86AAB9CEB16B6A8E8C8A03306 /* MediaPlayer.framework */,
+				1FB793FC4792F270AF78B8F2BC913CD0 /* Photos.framework */,
+				5ECB78C45F84A247F4D177C392B072E6 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */ = {
@@ -145,34 +357,143 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		65072FFB69353FB0C168DCE4454D93AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6188CF26A6E2C88B567200578FD316E9 /* add_photo.png */,
+				65933AD9FB303A2E5033707AABEEDD31 /* add_photo@2x.png */,
+				1D4548D14CFF14CB14F28B4AE91FDE2B /* add_photo@3x.png */,
+				F657FE69D4B4729CAF97040EC3142F15 /* Albums.storyboard */,
+				5CD4D63A794C16A3B97777803EEE4DCD /* AlbumTitleView.xib */,
+				88AD46876CC8B751067531C852D86066 /* arrow_down@1x.png */,
+				CE9C443947C92A4AC74DB91A35C0DE65 /* arrow_down@2x.png */,
+				C63C1D19A4D3BADC4FA9C4D1FCC2C7FF /* arrow_down@3x.png */,
+				D84F55BB5FF032343570AEFE8D225678 /* CameraCell.xib */,
+				91A7EE65949A417D29CA196CAD80A01D /* PhotoCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		68289FF6A6F626702D36023B96186DE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59BAFD4B45516B3F7A2CF13F80BAF097 /* BSGridCollectionViewLayout.framework */,
+				F047F9B51BEB8DD8D02CA269DA9B2206 /* UIImageViewModeScaleAspect.framework */,
+				3B849834D4A0C26434B553B561995CE0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				A17BFEAA1F0ACD5DED349BBCD1A50E2D /* Pods */,
-				A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */,
+				68289FF6A6F626702D36023B96186DE4 /* Frameworks */,
+				BDC843DC9D13F2701AD91C6358116CE7 /* Pods */,
+				22B21FC7EDF8513B35102D4A6926670F /* Products */,
 				4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A17BFEAA1F0ACD5DED349BBCD1A50E2D /* Pods */ = {
+		8DC68490E8B09F112D70D25FD869AB8F /* BSImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				407FFD8F1699DBBAAA3B206514AC88F4 /* JPSVolumeButtonHandler */,
-				F3C9B88A12E9BA0CBE82E5DDA98BD29B /* LongPressRecordButton */,
+				CC2A09D61636ABF20C3F9FD6D54FD92B /* AlbumCell.swift */,
+				6E1F47828402AEA80A1C93623F24EF4B /* AlbumsViewController.swift */,
+				BED2EFBE1F214E9B0904011F7EBE4E9F /* AlbumTableViewDataSource.swift */,
+				2DFB60B9B7C8B99FE24B3C005B768656 /* AlbumTitleView.swift */,
+				D77A2633568CF8158794572DAC2D5148 /* BSImagePickerSettings.swift */,
+				24FB7145CCCBF1A8B9EEC763FE0B1688 /* BSImagePickerViewController.swift */,
+				0E846D4C05C03C18386FECB0365A1868 /* CameraCell.swift */,
+				39A01E042F021A0F64D69BF12C3030B5 /* CameraCollectionViewDataSource.swift */,
+				CEBC1AEAC7126FA80F846423B94463CE /* ComposedCollectionViewDataSource.swift */,
+				0788D07928D59E69BDEC058DCF5243E0 /* NSIndexSet+NSIndexPath.swift */,
+				DFC5218B0FC75AF1B1323204ED70B596 /* PhotoCell.swift */,
+				2FDF7933CED8422EFBF339CE1AC134BA /* PhotoCollectionViewDataSource.swift */,
+				DEF30802846AB2B195D616F88CDB1AD3 /* PhotosViewController.swift */,
+				1AA305625EF25F88B5BC942992F60B5E /* PreviewViewController.swift */,
+				AA07F4A7E26F48D08B2C1AD79A422CCC /* SelectionView.swift */,
+				8C5990FBAAC6AB2203CFBFD1CDC46F74 /* Settings.swift */,
+				C99FF0CC29E43F441C86B752BE1D314B /* UIButton+NoAnimation.swift */,
+				0FBC41D6F50983C2564CC4616404B916 /* UIViewController+BSImagePicker.swift */,
+				51224DD605BC83F53A7B2118C32CB329 /* ZoomAnimator.swift */,
+				65072FFB69353FB0C168DCE4454D93AF /* Resources */,
+				E33F1EA0455D4A46791B35B8B73EB53F /* Support Files */,
+			);
+			path = BSImagePicker;
+			sourceTree = "<group>";
+		};
+		9568CF037A2B8F5DF579C7A9320CBEA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2956734BD3B603EB3A53F46B7B0DA884 /* BSGridCollectionViewLayout.modulemap */,
+				2BF8C8644C51ED33E253AD3745424D0D /* BSGridCollectionViewLayout.xcconfig */,
+				108C45DF3D3C236371BC4EEC6A61C66C /* BSGridCollectionViewLayout-dummy.m */,
+				C64439E2B458FC0F52BF48039974A4C0 /* BSGridCollectionViewLayout-prefix.pch */,
+				5E728E4F8618DD68558C998CACCDFC6B /* BSGridCollectionViewLayout-umbrella.h */,
+				E5D0791ADA6F12FDBFA882113BED9759 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BSGridCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+		AA457F837F77DB56568BF27651E853F2 /* JPSVolumeButtonHandler */ = {
+			isa = PBXGroup;
+			children = (
+				97C1C2FE155A74012F27BEF2F064D69A /* JPSVolumeButtonHandler.h */,
+				C3AF8E553822F9C8017598FFD865CE67 /* JPSVolumeButtonHandler.m */,
+				0D28FAF4E2C7A90B735C305B6CF0D88F /* Support Files */,
+			);
+			path = JPSVolumeButtonHandler;
+			sourceTree = "<group>";
+		};
+		B88BA35116DFCDDC03ABDD915C7572CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1733DFBBFDCE60026E1BCEF67DFB654 /* Info.plist */,
+				984445DE1F42DAE7E695AAC11EF07624 /* LongPressRecordButton.modulemap */,
+				E2F458605539E25C5AA15BD6006F329B /* LongPressRecordButton.xcconfig */,
+				BB2B079D4C36BDE1A8D0E06F5DAB28DB /* LongPressRecordButton-dummy.m */,
+				CF4920F2F9A99F9691630E3591B515F1 /* LongPressRecordButton-prefix.pch */,
+				73125DF8AAFA6A2B34FAF46C8E2E78E2 /* LongPressRecordButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LongPressRecordButton";
+			sourceTree = "<group>";
+		};
+		BDC843DC9D13F2701AD91C6358116CE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9FA60F5763AEC35A7202C66BF5845A3 /* BSGridCollectionViewLayout */,
+				8DC68490E8B09F112D70D25FD869AB8F /* BSImagePicker */,
+				AA457F837F77DB56568BF27651E853F2 /* JPSVolumeButtonHandler */,
+				2D1E57925C5B20151905E37733132FC1 /* LongPressRecordButton */,
+				F0B6733D656CDC2065325ACAE06ABC5F /* UIImageViewModeScaleAspect */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */ = {
+		C9FA60F5763AEC35A7202C66BF5845A3 /* BSGridCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */,
-				0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */,
-				6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */,
+				52AB17830FF5B908FD281A385326EA3F /* GridCollectionViewLayout.swift */,
+				9568CF037A2B8F5DF579C7A9320CBEA6 /* Support Files */,
 			);
-			name = Products;
+			path = BSGridCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		E33F1EA0455D4A46791B35B8B73EB53F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74EDD44C5352D30091D02F72FC6FC295 /* BSImagePicker.modulemap */,
+				C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */,
+				AE3B785754E654B7FE312DE8A5027912 /* BSImagePicker-dummy.m */,
+				750F23F39FE885942C9866477C0CF6C3 /* BSImagePicker-prefix.pch */,
+				A265F572FB63BD544E50AE732466D0B7 /* BSImagePicker-umbrella.h */,
+				EA507BCA84B23177FCE287486DDD9FDA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BSImagePicker";
 			sourceTree = "<group>";
 		};
 		E475861D794C370DB13F70C31E242650 /* Pods-MyMobileApp */ = {
@@ -193,37 +514,14 @@
 			path = "Target Support Files/Pods-MyMobileApp";
 			sourceTree = "<group>";
 		};
-		F0610B6281DEDEC5F327D6F1BA92DF4F /* Support Files */ = {
+		F0B6733D656CDC2065325ACAE06ABC5F /* UIImageViewModeScaleAspect */ = {
 			isa = PBXGroup;
 			children = (
-				F6CD0F0C9E28F0FC5DC5C29D82DAAFF5 /* Info.plist */,
-				72159BB892DAAFBD4D260FBB9DABBD90 /* JPSVolumeButtonHandler.modulemap */,
-				93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */,
-				90590C4A840A8A19416D08B19695CFF1 /* JPSVolumeButtonHandler-dummy.m */,
-				8CE1278D903E712CD276AB4BD1E2BEAB /* JPSVolumeButtonHandler-prefix.pch */,
-				8D173994505F1A803C80813EE4499C51 /* JPSVolumeButtonHandler-umbrella.h */,
+				D2B11A2233790223215B974448CE73D1 /* UIImageViewModeScaleAspect.h */,
+				CD5092CB244234B7CD0837AE39B0A5E3 /* UIImageViewModeScaleAspect.m */,
+				2C8B1C8F046ECD2FDECFA9E8F42A3553 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JPSVolumeButtonHandler";
-			sourceTree = "<group>";
-		};
-		F3C9B88A12E9BA0CBE82E5DDA98BD29B /* LongPressRecordButton */ = {
-			isa = PBXGroup;
-			children = (
-				86F8A1C3E475CCF1D18AEA79CDEB11F5 /* LongPressRecordButton.swift */,
-				29827701332EE7032B8D89D5DB461518 /* Support Files */,
-			);
-			path = LongPressRecordButton;
-			sourceTree = "<group>";
-		};
-		FD3B48CA4E3EC9F8EE53514B10808E7F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8FD593837FF556BAA3FDED076181552B /* AVFoundation.framework */,
-				725E26D5DB175379A622285C024A4393 /* Foundation.framework */,
-				B4BAC00A16FC5D03F3DF0E27891CD050 /* MediaPlayer.framework */,
-			);
-			name = iOS;
+			path = UIImageViewModeScaleAspect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,11 +535,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DD0B112C2BACF4EEE66E3E6BD7ADA56 /* Headers */ = {
+		065AB1770809C8DECF2EE82BB58A3A23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78EE34C4F6034F7C0650987AB8200670 /* Pods-MyMobileApp-umbrella.h in Headers */,
+				1FFE8A6DDCA9246D3EA98372EAD63780 /* UIImageViewModeScaleAspect-umbrella.h in Headers */,
+				D2C51CD71E1F27983032A23C1077A600 /* UIImageViewModeScaleAspect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CF74984BE8439049E4C80ABE4DD3C06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4546E3FB56F3693D2893B773F71C3097 /* BSImagePicker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,26 +561,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCE611FF59203C57951C5EA18DC90FC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C33FD78005932356FF3E937998CBCC5 /* BSGridCollectionViewLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E75CB63430A0B90673F89E38DE152625 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F6DBCD3A5F40B6B3D92F39B27BA4CA /* Pods-MyMobileApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6D4C5A78B169B8773849A83B37773C08 /* Pods-MyMobileApp */ = {
+		0FF38C485BD8E73F614C919F834D6EAB /* UIImageViewModeScaleAspect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1117C6205459715992ADD611F1D7EC9 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildConfigurationList = 9F1716D804B22F3E073389A93AF3013F /* Build configuration list for PBXNativeTarget "UIImageViewModeScaleAspect" */;
 			buildPhases = (
-				1B44B4B534F13A2AF797F920FA12F50E /* Sources */,
-				BE88FDBE0F4CF86E0A85FB453FAAFAC4 /* Frameworks */,
-				5DD0B112C2BACF4EEE66E3E6BD7ADA56 /* Headers */,
+				A5E1464BA7D59F46A45F72855FA1CCD5 /* Sources */,
+				7E5618727741F9984DB77DD1ED625B94 /* Frameworks */,
+				065AB1770809C8DECF2EE82BB58A3A23 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5449AC9CCF11BB03307663D0CC5C48B0 /* PBXTargetDependency */,
-				BC5A76544F9DF2AB089E520248CD2A79 /* PBXTargetDependency */,
 			);
-			name = "Pods-MyMobileApp";
-			productName = "Pods-MyMobileApp";
-			productReference = 6EF35CC851BE8D26EC1EF868281E6B08 /* Pods_MyMobileApp.framework */;
+			name = UIImageViewModeScaleAspect;
+			productName = UIImageViewModeScaleAspect;
+			productReference = 52764C583EC5E3F208D6921854A6941F /* UIImageViewModeScaleAspect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */ = {
@@ -290,7 +611,67 @@
 			);
 			name = LongPressRecordButton;
 			productName = LongPressRecordButton;
-			productReference = 0300A7CCC111E87DEC812642F2D97EF0 /* LongPressRecordButton.framework */;
+			productReference = AF68A5E1ACEA51138ABD95DB5D55FC14 /* LongPressRecordButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AA3DDB8797222294E1288CB197A8347 /* BSGridCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63412E7E42A91BBEB478A10316F237E /* Build configuration list for PBXNativeTarget "BSGridCollectionViewLayout" */;
+			buildPhases = (
+				D518FFBEA35BDE226139B5CE2081F913 /* Sources */,
+				26E2C710DCBB6BEB3C8CCF8EA1ED724F /* Frameworks */,
+				CCE611FF59203C57951C5EA18DC90FC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSGridCollectionViewLayout;
+			productName = BSGridCollectionViewLayout;
+			productReference = 0FCD42B34C5BF27B3CA654F81A63041B /* BSGridCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C14231A9651BB1F7D6E70EB4A0F30FD7 /* Pods-MyMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5375B0C366D6D0D14F12E4E156BB4C0 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildPhases = (
+				0DC19E966D717E987B80BACDD71AB693 /* Sources */,
+				7CB8CF16A161F76353583481C472A4CE /* Frameworks */,
+				E75CB63430A0B90673F89E38DE152625 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4028E04C6A433A9C4084744B0BA3B4B7 /* PBXTargetDependency */,
+				06DC5E5F525191A6095E05C0C9B20CBB /* PBXTargetDependency */,
+				17A36E84B880703D6F444E533A2CA6CC /* PBXTargetDependency */,
+				307E723C40D5A82C6932A703A75808FB /* PBXTargetDependency */,
+				9048B43575AD44CED2F7F17D645C8327 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyMobileApp";
+			productName = "Pods-MyMobileApp";
+			productReference = 4A4DFBDFA1D2CD098FE2F39AC60138FE /* Pods_MyMobileApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C59EE95662AD4757E7FCE220DB1AFA41 /* BSImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABC76132944103AB2F64CC8ACB5E2F6 /* Build configuration list for PBXNativeTarget "BSImagePicker" */;
+			buildPhases = (
+				5BED8FE08969CC7BFAF674FB700A451B /* Sources */,
+				46EE8E1617E1454BFB2F6FBA85243645 /* Frameworks */,
+				E8DBE0D4A340EA6EA028C39FF0164968 /* Resources */,
+				3CF74984BE8439049E4C80ABE4DD3C06 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92574C4688015CAB4202425D6FE5C116 /* PBXTargetDependency */,
+				BE65A667FEE88EA4593A2D51E0DDF237 /* PBXTargetDependency */,
+				EF168E787231EE5ED7C0A3DCB6A8CAF0 /* PBXTargetDependency */,
+			);
+			name = BSImagePicker;
+			productName = BSImagePicker;
+			productReference = 353603686A98644BC9333903C0EE1F38 /* BSImagePicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */ = {
@@ -307,8 +688,25 @@
 			);
 			name = JPSVolumeButtonHandler;
 			productName = JPSVolumeButtonHandler;
-			productReference = 1576952353CF289BE270F8C3E639A3DD /* JPSVolumeButtonHandler.framework */;
+			productReference = C71F633B5A51B81AD92D09AA23D1586A /* JPSVolumeButtonHandler.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		F7DE5171AA3C53DA4E4A078B795C78EE /* BSImagePicker-BSImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D9F344B1892929C41C7A2E9C856B715 /* Build configuration list for PBXNativeTarget "BSImagePicker-BSImagePicker" */;
+			buildPhases = (
+				F75291B5B1B2C0A41644A8C611748358 /* Sources */,
+				84DF032A960BD013C0CBC25313B32F8D /* Frameworks */,
+				036F21CAC63DDAA330FF207688FA96FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSImagePicker-BSImagePicker";
+			productName = "BSImagePicker-BSImagePicker";
+			productReference = F5D54841E18A2417B8FBDAA87DD05274 /* BSImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -327,18 +725,58 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A56F98D8127CABBB2A9D3E3DB245C7B2 /* Products */;
+			productRefGroup = 22B21FC7EDF8513B35102D4A6926670F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8AA3DDB8797222294E1288CB197A8347 /* BSGridCollectionViewLayout */,
+				C59EE95662AD4757E7FCE220DB1AFA41 /* BSImagePicker */,
+				F7DE5171AA3C53DA4E4A078B795C78EE /* BSImagePicker-BSImagePicker */,
 				D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */,
 				7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */,
-				6D4C5A78B169B8773849A83B37773C08 /* Pods-MyMobileApp */,
+				C14231A9651BB1F7D6E70EB4A0F30FD7 /* Pods-MyMobileApp */,
+				0FF38C485BD8E73F614C919F834D6EAB /* UIImageViewModeScaleAspect */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		036F21CAC63DDAA330FF207688FA96FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D328AD191D951FE755FCF0F4FBFD86F /* add_photo.png in Resources */,
+				0BC8CA9D876F0078A71FA6DA7E96B4F5 /* add_photo@2x.png in Resources */,
+				74D81A016D09E77EC6592AF70252A6FD /* add_photo@3x.png in Resources */,
+				808ECA8D577A4288E2F06046DE517EED /* Albums.storyboard in Resources */,
+				FC0C60F5ACDB5830427EE4D4D29415C6 /* AlbumTitleView.xib in Resources */,
+				309BA559E28A032D7AB8DA1BFB1ED288 /* arrow_down@1x.png in Resources */,
+				F6B493A91D4972846A91292F2241F636 /* arrow_down@2x.png in Resources */,
+				E35B1DA23A573B53C34A49472A6B448D /* arrow_down@3x.png in Resources */,
+				D6230D411F4CD1882D9E8AB2EE498ACD /* CameraCell.xib in Resources */,
+				C6C6E82D44C8E6F311129D11D9BB3C78 /* PhotoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DBE0D4A340EA6EA028C39FF0164968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CC77EEA7D338BAC4838DF5A0042FA1 /* BSImagePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0DC19E966D717E987B80BACDD71AB693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1732ECFC00CD19684F9464F04CA97565 /* Pods-MyMobileApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F22587BAF414BC6D52B166F842033DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,11 +786,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1B44B4B534F13A2AF797F920FA12F50E /* Sources */ = {
+		5BED8FE08969CC7BFAF674FB700A451B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F34465E69169D59E570147F48F838A /* Pods-MyMobileApp-dummy.m in Sources */,
+				D922BBA12D7988EC41FB403F748BBFB8 /* AlbumCell.swift in Sources */,
+				C03AF5706175CAF471B117C5C5F60775 /* AlbumsViewController.swift in Sources */,
+				89553EB9F15F76B70F62E8F69BB1684C /* AlbumTableViewDataSource.swift in Sources */,
+				D68373BD1C186BFF96F83919F47FBC09 /* AlbumTitleView.swift in Sources */,
+				020FAA49E54F3DFA0D24A2D4508306BD /* BSImagePicker-dummy.m in Sources */,
+				878FB8F86BAE97E0179D51D1569FBB60 /* BSImagePickerSettings.swift in Sources */,
+				518927A77B9F0D1E5D960E22694EEFE7 /* BSImagePickerViewController.swift in Sources */,
+				0AE1D7C5C2AE6ACE895F6B267FC9DA7F /* CameraCell.swift in Sources */,
+				519324787413E43E08A6A85B7D0E72AF /* CameraCollectionViewDataSource.swift in Sources */,
+				60D1BCD436C3EBA8135B3AFC9130CB11 /* ComposedCollectionViewDataSource.swift in Sources */,
+				AC31F8B2FE473098E961C569C9F7216A /* NSIndexSet+NSIndexPath.swift in Sources */,
+				98CCDEA46756A3A8A0FC9B9472E682B2 /* PhotoCell.swift in Sources */,
+				7C01D468C87DE13E87024F391334136E /* PhotoCollectionViewDataSource.swift in Sources */,
+				DBC229BB03500121A5EB2162F9DD1E30 /* PhotosViewController.swift in Sources */,
+				E14B37AEE6265EC234F3676302B0DED6 /* PreviewViewController.swift in Sources */,
+				8D7EA0A6E5D522BC65CACC0BA7D23B0E /* SelectionView.swift in Sources */,
+				53AE57B03773935906E27EAE7D903A75 /* Settings.swift in Sources */,
+				A4229F7353B5AF589AD6BF2EAC31F1E7 /* UIButton+NoAnimation.swift in Sources */,
+				D24E773D3868F2EFFD2C78431689CD1D /* UIViewController+BSImagePicker.swift in Sources */,
+				0F1C84A2FE906A408036822AA11DE763 /* ZoomAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E1464BA7D59F46A45F72855FA1CCD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40014FF9B9A69253E2C34E8EAF771BA2 /* UIImageViewModeScaleAspect-dummy.m in Sources */,
+				CE9BEE1CFB831D54829132A6B365EDAF /* UIImageViewModeScaleAspect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D518FFBEA35BDE226139B5CE2081F913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B3E8B44D6F2EA17EDE942B24371232 /* BSGridCollectionViewLayout-dummy.m in Sources */,
+				CCEA26201F74E01FD9621E1CACAD85A8 /* GridCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,25 +840,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F75291B5B1B2C0A41644A8C611748358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5449AC9CCF11BB03307663D0CC5C48B0 /* PBXTargetDependency */ = {
+		06DC5E5F525191A6095E05C0C9B20CBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSImagePicker;
+			target = C59EE95662AD4757E7FCE220DB1AFA41 /* BSImagePicker */;
+			targetProxy = 171E173D94CE7971F80DE4BC1E6B38B7 /* PBXContainerItemProxy */;
+		};
+		17A36E84B880703D6F444E533A2CA6CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JPSVolumeButtonHandler;
 			target = D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */;
-			targetProxy = F2F1E3894F9D67CD53E53FB237576151 /* PBXContainerItemProxy */;
+			targetProxy = AE9FC31CE0E6C8A6EF7DFEEB1CA862C4 /* PBXContainerItemProxy */;
 		};
-		BC5A76544F9DF2AB089E520248CD2A79 /* PBXTargetDependency */ = {
+		307E723C40D5A82C6932A703A75808FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LongPressRecordButton;
 			target = 7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */;
-			targetProxy = F22136B3A59E336F5E85C3B69AC967FD /* PBXContainerItemProxy */;
+			targetProxy = B5DE916A8F5FE824842763E27CC6283D /* PBXContainerItemProxy */;
+		};
+		4028E04C6A433A9C4084744B0BA3B4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSGridCollectionViewLayout;
+			target = 8AA3DDB8797222294E1288CB197A8347 /* BSGridCollectionViewLayout */;
+			targetProxy = BFC218CB0601171B9D54C04DFDE706B5 /* PBXContainerItemProxy */;
+		};
+		9048B43575AD44CED2F7F17D645C8327 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewModeScaleAspect;
+			target = 0FF38C485BD8E73F614C919F834D6EAB /* UIImageViewModeScaleAspect */;
+			targetProxy = 2F6F80BA7A10BAD3DF6C8B7DA80E68F6 /* PBXContainerItemProxy */;
+		};
+		92574C4688015CAB4202425D6FE5C116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BSGridCollectionViewLayout;
+			target = 8AA3DDB8797222294E1288CB197A8347 /* BSGridCollectionViewLayout */;
+			targetProxy = 3AB1850450B2D2039C9FC0D55B185E3F /* PBXContainerItemProxy */;
+		};
+		BE65A667FEE88EA4593A2D51E0DDF237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BSImagePicker-BSImagePicker";
+			target = F7DE5171AA3C53DA4E4A078B795C78EE /* BSImagePicker-BSImagePicker */;
+			targetProxy = C06A237F2852CAE7C244B71783CCAF1C /* PBXContainerItemProxy */;
+		};
+		EF168E787231EE5ED7C0A3DCB6A8CAF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIImageViewModeScaleAspect;
+			target = 0FF38C485BD8E73F614C919F834D6EAB /* UIImageViewModeScaleAspect */;
+			targetProxy = 32F1A6CE07342E424DE342C9D5C9B5CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		252558738F7D0656BC41F87373B57464 /* Debug */ = {
+		098E0B56A67B8C3B03D01CC08AFDF1AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032CD99B1132E6BA2E99EFC0640ED82D /* UIImageViewModeScaleAspect.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewModeScaleAspect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIImageViewModeScaleAspect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B567949677005B2721CB6A064C6FEB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */;
 			buildSettings = {
@@ -405,6 +950,61 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_MyMobileApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		471DBFA9A29D41FCC3294DDCC18AB8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF8C8644C51ED33E253AD3745424D0D /* BSGridCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSGridCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BSGridCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5486D0672DC07D235F9D2C28C2193A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSImagePicker/BSImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSImagePicker/BSImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BSImagePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -455,7 +1055,7 @@
 		};
 		65729285732410D01F1E0C039BDD2174 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = E2F458605539E25C5AA15BD6006F329B /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -482,7 +1082,7 @@
 		};
 		672AC8D282E872689F7942CA278C4CC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */;
+			baseConfigurationReference = 39E67102A05A5068F8368C0319C867C7 /* JPSVolumeButtonHandler.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -499,6 +1099,45 @@
 				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69918031690C99608AECA0A4FE932717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7309B0EDDC10D3EC13762F058EEB1934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSImagePicker/BSImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSImagePicker/BSImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BSImagePicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,7 +1182,7 @@
 		};
 		82DFBEB8593E792E09611EE278437D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7BE6839F7D2DD09EA4B9BC307742F0 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = E2F458605539E25C5AA15BD6006F329B /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -569,7 +1208,101 @@
 			};
 			name = Debug;
 		};
-		931CCE6981B06E3B52F65657C817454E /* Release */ = {
+		96C243E501FDCFD7C117C1222C441074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43FB28CC4FC8F4D640C52AC85E2B2F9 /* BSImagePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BSImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A433BBB4262A1141994E95DDE354BEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032CD99B1132E6BA2E99EFC0640ED82D /* UIImageViewModeScaleAspect.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIImageViewModeScaleAspect/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIImageViewModeScaleAspect/UIImageViewModeScaleAspect.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIImageViewModeScaleAspect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0C0C6F8A0837A954DB8404CA3A5E0E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF8C8644C51ED33E253AD3745424D0D /* BSGridCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSGridCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BSGridCollectionViewLayout/BSGridCollectionViewLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BSGridCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD37B63C381C14B74EE400EE39652CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E67102A05A5068F8368C0319C867C7 /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F91795B455AFD2AE37206ED07C75347A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */;
 			buildSettings = {
@@ -599,33 +1332,6 @@
 			};
 			name = Release;
 		};
-		DD37B63C381C14B74EE400EE39652CC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D91B4FF2715572068EBC90A40283B8 /* JPSVolumeButtonHandler.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JPSVolumeButtonHandler;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -647,6 +1353,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4D9F344B1892929C41C7A2E9C856B715 /* Build configuration list for PBXNativeTarget "BSImagePicker-BSImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C243E501FDCFD7C117C1222C441074 /* Debug */,
+				69918031690C99608AECA0A4FE932717 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -656,11 +1371,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1117C6205459715992ADD611F1D7EC9 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+		8ABC76132944103AB2F64CC8ACB5E2F6 /* Build configuration list for PBXNativeTarget "BSImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				252558738F7D0656BC41F87373B57464 /* Debug */,
-				931CCE6981B06E3B52F65657C817454E /* Release */,
+				5486D0672DC07D235F9D2C28C2193A92 /* Debug */,
+				7309B0EDDC10D3EC13762F058EEB1934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F1716D804B22F3E073389A93AF3013F /* Build configuration list for PBXNativeTarget "UIImageViewModeScaleAspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A433BBB4262A1141994E95DDE354BEFE /* Debug */,
+				098E0B56A67B8C3B03D01CC08AFDF1AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63412E7E42A91BBEB478A10316F237E /* Build configuration list for PBXNativeTarget "BSGridCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C0C6F8A0837A954DB8404CA3A5E0E9 /* Debug */,
+				471DBFA9A29D41FCC3294DDCC18AB8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5375B0C366D6D0D14F12E4E156BB4C0 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B567949677005B2721CB6A064C6FEB7 /* Debug */,
+				F91795B455AFD2AE37206ED07C75347A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
