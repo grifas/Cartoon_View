@@ -157,7 +157,9 @@ class CameraManager {
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       do {
         try self.camera.inputCamera.lockForConfiguration()
-        self.camera.inputCamera.torchMode = AVCaptureTorchMode.On
+        if self.camera.inputCamera.torchAvailable {
+          self.camera.inputCamera.torchMode = AVCaptureTorchMode.On
+        }
         self.camera.inputCamera.unlockForConfiguration()
       } catch {
         print("The Torch can not be enabled")
@@ -208,11 +210,6 @@ class CameraManager {
   Start Video Recording
   */
   func startRecording(hasTorch: Bool = false) {
-    if hasTorch == true {
-      self.enableTorch()
-    } else {
-      self.disableTorch()
-    }
     self.pathToMovie = NSHomeDirectory().stringByAppendingString("/Documents/mymobileapp.m4v")
     
     if let path = self.pathToMovie {
@@ -227,6 +224,11 @@ class CameraManager {
       dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
         self.camera.audioEncodingTarget = self.movieWritertemp
         self.movieWritertemp.startRecording()
+        if hasTorch == true {
+          self.enableTorch()
+        } else {
+          self.disableTorch()
+        }
       })
     }
   }
