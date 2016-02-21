@@ -7,5 +7,5 @@ xcodeproj 'MyMobileApp.xcodeproj'
 target 'MyMobileApp' do
   pod 'LongPressRecordButton'
   pod 'JPSVolumeButtonHandler'
-  pod 'BSImagePicker', '~> 2.2'
+  pod 'OHQBImagePicker'
 end

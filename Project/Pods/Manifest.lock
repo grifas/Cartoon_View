@@ -1,22 +1,16 @@
 PODS:
-  - BSGridCollectionViewLayout (1.0.1)
-  - BSImagePicker (2.2.0):
-    - BSGridCollectionViewLayout (~> 1.0)
-    - UIImageViewModeScaleAspect (~> 1.3)
   - JPSVolumeButtonHandler (1.0.0)
   - LongPressRecordButton (1.0.2)
-  - UIImageViewModeScaleAspect (1.3)
+  - OHQBImagePicker (1.0.7)
 
 DEPENDENCIES:
-  - BSImagePicker (~> 2.2)
   - JPSVolumeButtonHandler
   - LongPressRecordButton
+  - OHQBImagePicker
 
 SPEC CHECKSUMS:
-  BSGridCollectionViewLayout: 60f542a260887148f9f4db1fc0e637e3d560df91
-  BSImagePicker: 99c38db9ead99229d1dd4d09e6d5a707328405a5
   JPSVolumeButtonHandler: b056ec5c574fbd75a0637c527e25fe0197ec1648
   LongPressRecordButton: 25f93cfb1b8ea09ab40aff5a1267a13eb7d6b671
-  UIImageViewModeScaleAspect: ec78901acfc20d3782154111a21d34390f8f71ad
+  OHQBImagePicker: af0e9e254ab3296e7e07c007e2b2bc427a2ef713
 
 COCOAPODS: 0.39.0

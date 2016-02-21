@@ -8,6 +8,7 @@
 
 import UIKit
 import GPUImage
+import Photos
 
 class CameraManager {
   
@@ -25,12 +26,18 @@ class CameraManager {
   
   let camera: GPUImageStillCamera
   
+  // To Create Folder
+  var assetCollection: PHAssetCollection!
+  var albumFound : Bool = false
+  var photosAsset: PHFetchResult!
+  var assetCollectionPlaceholder: PHObjectPlaceholder!
+  
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
   var slider = UISlider()
   
   // To Video
-  var pathToMovie: NSString?
+  var movieURL: NSURL!
   var movieWritertemp: GPUImageMovieWriter!
   
   init() {
@@ -39,6 +46,33 @@ class CameraManager {
     self.camera.outputImageOrientation = .Portrait
     self.camera.horizontallyMirrorFrontFacingCamera = true
     self.camera.horizontallyMirrorRearFacingCamera = false
+    self.createFolder()
+  }
+  
+  /*
+  Create the Cartoon Folder
+  */
+  func createFolder() {
+    let fetchOptions = PHFetchOptions()
+    fetchOptions.predicate = NSPredicate(format: "title = %@", "Cartoon")
+    let collection : PHFetchResult = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: fetchOptions)
+    
+    if let firstObj: AnyObject = collection.firstObject {
+      self.albumFound = true
+      self.assetCollection = firstObj as! PHAssetCollection
+    } else {
+      PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+        let createAlbumRequest : PHAssetCollectionChangeRequest = PHAssetCollectionChangeRequest.creationRequestForAssetCollectionWithTitle("Cartoon")
+        self.assetCollectionPlaceholder = createAlbumRequest.placeholderForCreatedAssetCollection
+        }, completionHandler: { success, error in
+          self.albumFound = success ? true: false
+          
+          if success {
+            let collectionFetchResult = PHAssetCollection.fetchAssetCollectionsWithLocalIdentifiers([self.assetCollectionPlaceholder.localIdentifier], options: nil)
+            self.assetCollection = collectionFetchResult.firstObject as! PHAssetCollection
+          }
+      })
+    }
   }
   
   func applyFiltertoView(filterView: GPUImageView) {
@@ -119,7 +153,7 @@ class CameraManager {
       break
     }
   }
-
+  
   /*
   Enable Flash
   */
@@ -134,7 +168,7 @@ class CameraManager {
       }
     })
   }
-
+  
   /*
   Disable Flash
   */
@@ -181,7 +215,7 @@ class CameraManager {
       }
     })
   }
-
+  
   
   // ---------------- About Picture
   
@@ -197,12 +231,29 @@ class CameraManager {
     self.camera.pauseCameraCapture()
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       self.camera.capturePhotoAsImageProcessedUpToFilter(self.filterOperation.filter, withCompletionHandler: { (image, error) -> Void in
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         imageView.image = image
+        self.saveImage(image)
       })
     })
     self.camera.resumeCameraCapture()
   }
+  
+  /*
+  Save Picture in Cartoon Folder
+  */
+  func saveImage(image: UIImage) {
+    PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+      let assetRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(image)
+      let assetPlaceholder = assetRequest.placeholderForCreatedAsset
+      self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
+      
+      if let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
+        albumChangeRequest.addAssets([assetPlaceholder!])
+      }
+      }, completionHandler: { success, error in
+    })
+  }
+  
   
   // ---------------- About Video
   
@@ -210,42 +261,57 @@ class CameraManager {
   Start Video Recording
   */
   func startRecording(hasTorch: Bool = false) {
-    self.pathToMovie = NSHomeDirectory().stringByAppendingString("/Documents/mymobileapp.m4v")
+    let pathToMovie: NSString = NSHomeDirectory().stringByAppendingString("/Documents/mymobileapp.m4v")
+
+    unlink(pathToMovie.UTF8String)
+    self.movieURL = NSURL.fileURLWithPath(pathToMovie as String)
+      
+    self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(480, 320))
+    self.movieWritertemp.encodingLiveVideo = true
+    self.filterOperation.filter.addTarget(self.movieWritertemp)
     
-    if let path = self.pathToMovie {
-      unlink(path.UTF8String)
-      let movieURL: NSURL = NSURL.fileURLWithPath(path as String)
-      
-      self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(480, 320))
-      self.movieWritertemp.encodingLiveVideo = true
-      self.filterOperation.filter.addTarget(self.movieWritertemp)
-      
-      let  startTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
-      dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
-        self.camera.audioEncodingTarget = self.movieWritertemp
-        self.movieWritertemp.startRecording()
-        if hasTorch == true {
-          self.enableTorch()
-        } else {
-          self.disableTorch()
-        }
-      })
-    }
+    let startTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+    dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
+      self.camera.audioEncodingTarget = self.movieWritertemp
+      self.movieWritertemp.startRecording()
+      if hasTorch == true {
+        self.enableTorch()
+      } else {
+        self.disableTorch()
+      }
+    })
   }
-  
+
   /*
   Stop Video Recording
   */
   func stopRecording() {
-    if let path = self.pathToMovie {
-      let stopTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
-      dispatch_after(stopTime, dispatch_get_main_queue(), { () -> Void in
-        self.filterOperation.filter.removeTarget(self.movieWritertemp)
-        self.camera.audioEncodingTarget = nil
-        self.movieWritertemp.finishRecording()
-        UISaveVideoAtPathToSavedPhotosAlbum(path as String, nil, nil, nil)
-        AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-      })
-    }
+    let stopTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+    dispatch_after(stopTime, dispatch_get_main_queue(), { () -> Void in
+      self.filterOperation.filter.removeTarget(self.movieWritertemp)
+      self.camera.audioEncodingTarget = nil
+      self.movieWritertemp.finishRecording()
+      self.saveVideo()
+    })
   }
+  
+  /*
+  Save Video in Cartoon Folder
+  */
+  func saveVideo() {
+    PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+      let assetRequest = PHAssetChangeRequest.creationRequestForAssetFromVideoAtFileURL(self.movieURL)
+      let assetPlaceholder = assetRequest!.placeholderForCreatedAsset
+      self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
+      
+      if let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
+        albumChangeRequest.addAssets([assetPlaceholder!])
+      }
+      }, completionHandler: { success, error in
+        if success {
+          AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+        }
+    })
+  }
+
 }

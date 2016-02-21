@@ -11,6 +11,7 @@
 		B90864801C74EB68007451BB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908647F1C74EB68007451BB /* CameraManager.swift */; };
 		B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; };
 		B911A0C11C6D0BB600F66F18 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B94E50381C79F5AE006B503E /* ActionSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94E50371C79F5AE006B503E /* ActionSheetManager.swift */; };
 		B98A0FC91C64FA25005F925A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FC81C64FA25005F925A /* AppDelegate.swift */; };
 		B98A0FCB1C64FA25005F925A /* MyCartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */; };
 		B98A0FCE1C64FA25005F925A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FCC1C64FA25005F925A /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B908647F1C74EB68007451BB /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B94E50371C79F5AE006B503E /* ActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetManager.swift; sourceTree = "<group>"; };
 		B96B388D1C77CAF1009578D3 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC51C64FA25005F925A /* MyMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC81C64FA25005F925A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				B908647F1C74EB68007451BB /* CameraManager.swift */,
 				B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */,
+				B94E50371C79F5AE006B503E /* ActionSheetManager.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				B98A0FCB1C64FA25005F925A /* MyCartoonViewController.swift in Sources */,
 				B98A0FC91C64FA25005F925A /* AppDelegate.swift in Sources */,
 				B90864801C74EB68007451BB /* CameraManager.swift in Sources */,
+				B94E50381C79F5AE006B503E /* ActionSheetManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

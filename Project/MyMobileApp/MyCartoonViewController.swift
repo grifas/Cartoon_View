@@ -3,8 +3,8 @@ import GPUImage
 import LongPressRecordButton
 import JPSVolumeButtonHandler
 import Photos
-import BSImagePicker
-
+import OHQBImagePicker
+//#import <OHQBImagePicker/QBImagePicker.h>
 class MyCartoonViewController: UIViewController {
   
   @IBOutlet weak var flashView: UIView!
@@ -15,6 +15,8 @@ class MyCartoonViewController: UIViewController {
   @IBOutlet weak var flashSwitch: UISwitch!
   
   var volumeButtonHandler: JPSVolumeButtonHandler?
+  let actionSheet: [String]! = ["Envoyer", "Delete"]
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -89,20 +91,28 @@ class MyCartoonViewController: UIViewController {
   Launch a Photo Gallery
   */
   func goToAlbum(gesture: UITapGestureRecognizer) {
-    let vc = BSImagePickerViewController()
+    let imagePickerController: QBImagePickerController = QBImagePickerController()
     
-    bs_presentImagePickerController(vc, animated: true,
-      select: { (asset: PHAsset) -> Void in
-        // User selected an asset.
-        // Do something with it, start upload perhaps?
-      }, deselect: { (asset: PHAsset) -> Void in
-        // User deselected an assets.
-        // Do something, cancel upload?
-      }, cancel: { (assets: [PHAsset]) -> Void in
-        // User cancelled. And this where the assets currently selected.
-      }, finish: { (assets: [PHAsset]) -> Void in
-        // User finished with these assets
-      }, completion: nil)
+    imagePickerController.delegate = self
+    imagePickerController.allowsMultipleSelection = true
+    imagePickerController.maximumNumberOfSelection = 6
+    imagePickerController.showsNumberOfSelectedItems = true
+    
+    self.presentViewController(imagePickerController, animated: true, completion: nil)
+//        if assets.count > 0 {
+//          ActionSheetManager.showActionSheet(self, title: "Action On Photos", items: self.actionSheet) {
+//            (choice: String?) -> Void in
+//            if choice == self.actionSheet[0] {
+//              
+//            } else if choice == self.actionSheet[1] {
+//              
+//            } else {
+//              
+//            }
+//          }
+//        }
+//        // User finished with these assets
+//      }, completion: nil)
   }
   
   /*
@@ -139,6 +149,24 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
   func longPressRecordButtonShouldShowToolTip(button: LongPressRecordButton) -> Bool {
     CameraManager.sharedInstance.shoot(self.lastImageView, hasFlash: self.flashSwitch.on)
     return false
+  }
+}
+
+extension MyCartoonViewController: QBImagePickerControllerDelegate {
+  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didDeselectItem item: NSObject!) {
+    
+  }
+  
+  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didFinishPickingItems items: [AnyObject]!) {
+    
+  }
+  
+  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didSelectItem item: NSObject!) {
+    
+  }
+    
+  func qb_imagePickerControllerDidCancel(imagePickerController: QBImagePickerController!) {
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
 
 }
