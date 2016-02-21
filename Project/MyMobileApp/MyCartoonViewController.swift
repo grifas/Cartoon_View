@@ -93,26 +93,14 @@ class MyCartoonViewController: UIViewController {
   func goToAlbum(gesture: UITapGestureRecognizer) {
     let imagePickerController: QBImagePickerController = QBImagePickerController()
     
+    imagePickerController.navigationController?.navigationItem.rightBarButtonItem = nil
+    imagePickerController.navigationController?.navigationItem.rightBarButtonItem
     imagePickerController.delegate = self
     imagePickerController.allowsMultipleSelection = true
-    imagePickerController.maximumNumberOfSelection = 6
+    imagePickerController.maximumNumberOfSelection = 1
     imagePickerController.showsNumberOfSelectedItems = true
     
     self.presentViewController(imagePickerController, animated: true, completion: nil)
-//        if assets.count > 0 {
-//          ActionSheetManager.showActionSheet(self, title: "Action On Photos", items: self.actionSheet) {
-//            (choice: String?) -> Void in
-//            if choice == self.actionSheet[0] {
-//              
-//            } else if choice == self.actionSheet[1] {
-//              
-//            } else {
-//              
-//            }
-//          }
-//        }
-//        // User finished with these assets
-//      }, completion: nil)
   }
   
   /*
@@ -153,18 +141,20 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
 }
 
 extension MyCartoonViewController: QBImagePickerControllerDelegate {
-  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didDeselectItem item: NSObject!) {
     
-  }
-  
-  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didFinishPickingItems items: [AnyObject]!) {
-    
-  }
-  
   func qb_imagePickerController(imagePickerController: QBImagePickerController!, didSelectItem item: NSObject!) {
-    
+    ActionSheetManager.showActionSheet(imagePickerController, title: "Action", items: self.actionSheet) {
+      (choice: String?) -> Void in
+      if choice == self.actionSheet[0] {
+        
+      } else if choice == self.actionSheet[1] {
+        AlbumManager.deleteInAlbum(item as! PHAsset)
+      } else {
+        
+      }
+    }
   }
-    
+
   func qb_imagePickerControllerDidCancel(imagePickerController: QBImagePickerController!) {
     self.dismissViewControllerAnimated(true, completion: nil)
   }

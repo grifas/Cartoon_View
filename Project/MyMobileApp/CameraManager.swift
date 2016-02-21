@@ -8,7 +8,6 @@
 
 import UIKit
 import GPUImage
-import Photos
 
 class CameraManager {
   
@@ -25,13 +24,7 @@ class CameraManager {
   }
   
   let camera: GPUImageStillCamera
-  
-  // To Create Folder
-  var assetCollection: PHAssetCollection!
-  var albumFound : Bool = false
-  var photosAsset: PHFetchResult!
-  var assetCollectionPlaceholder: PHObjectPlaceholder!
-  
+    
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
   var slider = UISlider()
@@ -39,42 +32,22 @@ class CameraManager {
   // To Video
   var movieURL: NSURL!
   var movieWritertemp: GPUImageMovieWriter!
-  
+
+  /*
+  Init Camera and Create folder if needed
+  */
   init() {
-    // Init Camera
     self.camera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
     self.camera.outputImageOrientation = .Portrait
     self.camera.horizontallyMirrorFrontFacingCamera = true
     self.camera.horizontallyMirrorRearFacingCamera = false
-    self.createFolder()
+    
+    AlbumManager.createFolder()
   }
   
   /*
-  Create the Cartoon Folder
+  Apply filter on provided view
   */
-  func createFolder() {
-    let fetchOptions = PHFetchOptions()
-    fetchOptions.predicate = NSPredicate(format: "title = %@", "Cartoon")
-    let collection : PHFetchResult = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: fetchOptions)
-    
-    if let firstObj: AnyObject = collection.firstObject {
-      self.albumFound = true
-      self.assetCollection = firstObj as! PHAssetCollection
-    } else {
-      PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-        let createAlbumRequest : PHAssetCollectionChangeRequest = PHAssetCollectionChangeRequest.creationRequestForAssetCollectionWithTitle("Cartoon")
-        self.assetCollectionPlaceholder = createAlbumRequest.placeholderForCreatedAssetCollection
-        }, completionHandler: { success, error in
-          self.albumFound = success ? true: false
-          
-          if success {
-            let collectionFetchResult = PHAssetCollection.fetchAssetCollectionsWithLocalIdentifiers([self.assetCollectionPlaceholder.localIdentifier], options: nil)
-            self.assetCollection = collectionFetchResult.firstObject as! PHAssetCollection
-          }
-      })
-    }
-  }
-  
   func applyFiltertoView(filterView: GPUImageView) {
     switch self.filterOperation.filterOperationType {
     case .SingleInput:
@@ -86,6 +59,9 @@ class CameraManager {
     }
   }
   
+  /*
+  Set slider
+  */
   func setSlider() {
     switch self.filterOperation.sliderConfiguration {
     case let .Enabled(minimumValue, maximumValue, initialValue):
@@ -216,9 +192,6 @@ class CameraManager {
     })
   }
   
-  
-  // ---------------- About Picture
-  
   /*
   Take a Picture
   */
@@ -232,31 +205,12 @@ class CameraManager {
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       self.camera.capturePhotoAsImageProcessedUpToFilter(self.filterOperation.filter, withCompletionHandler: { (image, error) -> Void in
         imageView.image = image
-        self.saveImage(image)
+        AlbumManager.saveImage(image)
       })
     })
     self.camera.resumeCameraCapture()
   }
-  
-  /*
-  Save Picture in Cartoon Folder
-  */
-  func saveImage(image: UIImage) {
-    PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-      let assetRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(image)
-      let assetPlaceholder = assetRequest.placeholderForCreatedAsset
-      self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
-      
-      if let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
-        albumChangeRequest.addAssets([assetPlaceholder!])
-      }
-      }, completionHandler: { success, error in
-    })
-  }
-  
-  
-  // ---------------- About Video
-  
+
   /*
   Start Video Recording
   */
@@ -291,27 +245,7 @@ class CameraManager {
       self.filterOperation.filter.removeTarget(self.movieWritertemp)
       self.camera.audioEncodingTarget = nil
       self.movieWritertemp.finishRecording()
-      self.saveVideo()
+      AlbumManager.saveVideo(self.movieURL)
     })
   }
-  
-  /*
-  Save Video in Cartoon Folder
-  */
-  func saveVideo() {
-    PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-      let assetRequest = PHAssetChangeRequest.creationRequestForAssetFromVideoAtFileURL(self.movieURL)
-      let assetPlaceholder = assetRequest!.placeholderForCreatedAsset
-      self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
-      
-      if let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
-        albumChangeRequest.addAssets([assetPlaceholder!])
-      }
-      }, completionHandler: { success, error in
-        if success {
-          AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-        }
-    })
-  }
-
 }
