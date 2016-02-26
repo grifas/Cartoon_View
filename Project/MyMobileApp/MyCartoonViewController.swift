@@ -25,16 +25,6 @@ class MyCartoonViewController: UIViewController {
     self.setup()
   }
   
-  @IBAction func flashChanged(sender: UIButton) {
-    flashBool = !flashBool
-
-    if flashBool == true {
-      flashButton.setImage(UIImage(named: "flash"), forState: UIControlState.Normal)
-    } else {
-      flashButton.setImage(UIImage(named: "noflash"), forState: UIControlState.Normal)
-    }
-  }
-
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
     
@@ -45,6 +35,19 @@ class MyCartoonViewController: UIViewController {
     super.viewWillDisappear(animated)
     
     CameraManager.sharedInstance.stopCameraCapture()
+  }
+  
+  /*
+  Enable/Disable Flash/Torch
+  */
+  @IBAction func flashChanged(sender: UIButton) {
+    flashBool = !flashBool
+    
+    if flashBool == true {
+      flashButton.setImage(UIImage(named: "flash"), forState: UIControlState.Normal)
+    } else {
+      flashButton.setImage(UIImage(named: "noflash"), forState: UIControlState.Normal)
+    }
   }
   
   /*
