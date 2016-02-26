@@ -4,7 +4,7 @@ import LongPressRecordButton
 import JPSVolumeButtonHandler
 import Photos
 import OHQBImagePicker
-//#import <OHQBImagePicker/QBImagePicker.h>
+
 class MyCartoonViewController: UIViewController {
   
   @IBOutlet weak var flashView: UIView!
@@ -12,8 +12,9 @@ class MyCartoonViewController: UIViewController {
   @IBOutlet weak var swapCameraButton: UIButton!
   @IBOutlet weak var recordButton: LongPressRecordButton!
   @IBOutlet weak var lastImageView: UIImageView!
-  @IBOutlet weak var flashSwitch: UISwitch!
-  
+  @IBOutlet weak var flashButton: UIButton!
+
+  var flashBool = false
   var volumeButtonHandler: JPSVolumeButtonHandler?
   let actionSheet: [String]! = ["Envoyer", "Delete"]
   
@@ -22,6 +23,16 @@ class MyCartoonViewController: UIViewController {
     super.viewDidLoad()
     
     self.setup()
+  }
+  
+  @IBAction func flashChanged(sender: UIButton) {
+    flashBool = !flashBool
+
+    if flashBool == true {
+      flashButton.setImage(UIImage(named: "flash"), forState: UIControlState.Normal)
+    } else {
+      flashButton.setImage(UIImage(named: "noflash"), forState: UIControlState.Normal)
+    }
   }
 
   override func viewWillAppear(animated: Bool) {
@@ -127,7 +138,7 @@ class MyCartoonViewController: UIViewController {
 extension MyCartoonViewController: LongPressRecordButtonDelegate {
   
   func longPressRecordButtonDidStartLongPress(button: LongPressRecordButton) {
-    CameraManager.sharedInstance.startRecording(self.flashSwitch.on)
+    CameraManager.sharedInstance.startRecording(self.flashBool)
   }
   
   func longPressRecordButtonDidStopLongPress(button: LongPressRecordButton) {
@@ -135,7 +146,7 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
   }
   
   func longPressRecordButtonShouldShowToolTip(button: LongPressRecordButton) -> Bool {
-    CameraManager.sharedInstance.shoot(self.lastImageView, hasFlash: self.flashSwitch.on)
+    CameraManager.sharedInstance.shoot(self.lastImageView, hasFlash: self.flashBool)
     return false
   }
 }

@@ -58,15 +58,16 @@
                                             <constraint firstAttribute="width" constant="44" id="nGE-So-2EB"/>
                                         </constraints>
                                     </imageView>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-vI-Nsr">
-                                        <rect key="frame" x="15" y="8" width="51" height="31"/>
-                                        <color key="onTintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-gw-5HR">
+                                        <rect key="frame" x="15" y="8" width="44" height="44"/>
+                                        <state key="normal" image="noflash"/>
+                                        <connections>
+                                            <action selector="flashChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9I-Uw-M4z"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="TLK-vI-Nsr" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" constant="15" id="036-6E-RJi"/>
                                     <constraint firstItem="esT-D9-tdg" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="3eZ-LS-d58"/>
                                     <constraint firstAttribute="bottom" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="BYJ-IA-wYB"/>
                                     <constraint firstItem="esT-D9-tdg" firstAttribute="top" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="Hr9-l9-akY"/>
@@ -75,8 +76,9 @@
                                     <constraint firstItem="x0q-sD-MEN" firstAttribute="centerY" secondItem="KFQ-ww-sFy" secondAttribute="centerY" id="VQT-l0-EZM"/>
                                     <constraint firstItem="x0q-sD-MEN" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="Z6g-lr-jXi"/>
                                     <constraint firstAttribute="bottom" secondItem="esT-D9-tdg" secondAttribute="bottom" constant="15" id="b0X-ye-Lka"/>
-                                    <constraint firstItem="TLK-vI-Nsr" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="gtq-oE-L12"/>
+                                    <constraint firstItem="hqF-gw-5HR" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="c7G-6f-5rW"/>
                                     <constraint firstAttribute="trailing" secondItem="x0q-sD-MEN" secondAttribute="trailing" constant="15" id="iQ7-Jt-aQ8"/>
+                                    <constraint firstItem="hqF-gw-5HR" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" constant="15" id="juo-2v-2hN"/>
                                     <constraint firstAttribute="trailing" secondItem="lPe-sW-Bwr" secondAttribute="trailing" constant="15" id="lSS-Ha-bv8"/>
                                 </constraints>
                                 <variation key="default">
@@ -99,7 +101,7 @@
                     <navigationItem key="navigationItem" id="cpX-yp-8tu"/>
                     <connections>
                         <outlet property="filterView" destination="KFQ-ww-sFy" id="tw2-LK-4CN"/>
-                        <outlet property="flashSwitch" destination="TLK-vI-Nsr" id="0Sp-6I-I1r"/>
+                        <outlet property="flashButton" destination="hqF-gw-5HR" id="Q0t-lg-CdT"/>
                         <outlet property="flashView" destination="8bC-Xf-vdC" id="xlL-qv-idv"/>
                         <outlet property="lastImageView" destination="x0q-sD-MEN" id="ae7-mx-xSh"/>
                         <outlet property="recordButton" destination="esT-D9-tdg" id="T1g-CM-Dgw"/>
@@ -112,6 +114,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="noflash" width="44" height="44"/>
         <image name="rotate" width="50" height="37"/>
     </resources>
 </document>
