@@ -1,16 +1,13 @@
 PODS:
-  - JPSVolumeButtonHandler (1.0.0)
   - LongPressRecordButton (1.0.2)
-  - OHQBImagePicker (1.0.7)
+  - WPMediaPicker (0.8.2)
 
 DEPENDENCIES:
-  - JPSVolumeButtonHandler
   - LongPressRecordButton
-  - OHQBImagePicker
+  - WPMediaPicker
 
 SPEC CHECKSUMS:
-  JPSVolumeButtonHandler: b056ec5c574fbd75a0637c527e25fe0197ec1648
   LongPressRecordButton: 25f93cfb1b8ea09ab40aff5a1267a13eb7d6b671
-  OHQBImagePicker: af0e9e254ab3296e7e07c007e2b2bc427a2ef713
+  WPMediaPicker: 29d9b97e11c872f62fc36a268a4c23b18ed53525
 
 COCOAPODS: 0.39.0

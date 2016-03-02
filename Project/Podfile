@@ -6,6 +6,5 @@ xcodeproj 'MyMobileApp.xcodeproj'
 
 target 'MyMobileApp' do
   pod 'LongPressRecordButton'
-  pod 'JPSVolumeButtonHandler'
-  pod 'OHQBImagePicker'
+  pod 'WPMediaPicker'
 end

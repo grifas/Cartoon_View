@@ -1,21 +1,19 @@
 import UIKit
 import GPUImage
 import LongPressRecordButton
-import JPSVolumeButtonHandler
 import Photos
-import OHQBImagePicker
+import WPMediaPicker
 
 class MyCartoonViewController: UIViewController {
   
-  @IBOutlet weak var flashView: UIView!
   @IBOutlet weak var filterView: GPUImageView!
   @IBOutlet weak var swapCameraButton: UIButton!
   @IBOutlet weak var recordButton: LongPressRecordButton!
   @IBOutlet weak var lastImageView: UIImageView!
   @IBOutlet weak var flashButton: UIButton!
-
+  @IBOutlet weak var filterSlide: UISlider!
+  
   var flashBool = false
-  var volumeButtonHandler: JPSVolumeButtonHandler?
   let actionSheet: [String]! = ["Envoyer", "Delete"]
   
   
@@ -67,6 +65,10 @@ class MyCartoonViewController: UIViewController {
     self.fetchLastPicture()
   }
   
+  @IBAction func updateFilter(sender: UISlider) {
+    CameraManager.sharedInstance.updateSliderWith(self.filterSlide.value)
+  }
+  
   /*
   This function is called each time the app disappears to screen
   */
@@ -80,14 +82,8 @@ class MyCartoonViewController: UIViewController {
   */
   func setup() {
     CameraManager.sharedInstance.applyFiltertoView(self.filterView)
+    CameraManager.sharedInstance.setSlider(self.filterSlide)
     self.recordButton.delegate = self
-
-    // Override Volume Control
-    self.volumeButtonHandler = JPSVolumeButtonHandler(upBlock: { () -> Void in
-      CameraManager.sharedInstance.filterUp()
-      }, downBlock: { () -> Void in
-        CameraManager.sharedInstance.filterDown()
-    })
     
     // Config the miniature
     self.lastImageView.layer.borderWidth = 1
@@ -105,16 +101,11 @@ class MyCartoonViewController: UIViewController {
   Launch a Photo Gallery
   */
   func goToAlbum(gesture: UITapGestureRecognizer) {
-    let imagePickerController: QBImagePickerController = QBImagePickerController()
+    let mediaPicker: WPMediaPickerViewController = WPMediaPickerViewController()
+    mediaPicker.delegate = self
+    mediaPicker.allowCaptureOfMedia = false
+    self.presentViewController(mediaPicker, animated: true, completion:nil)
     
-    imagePickerController.navigationController?.navigationItem.rightBarButtonItem = nil
-    imagePickerController.navigationController?.navigationItem.rightBarButtonItem
-    imagePickerController.delegate = self
-    imagePickerController.allowsMultipleSelection = true
-    imagePickerController.maximumNumberOfSelection = 1
-    imagePickerController.showsNumberOfSelectedItems = true
-    
-    self.presentViewController(imagePickerController, animated: true, completion: nil)
   }
   
   /*
@@ -154,24 +145,24 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
   }
 }
 
-extension MyCartoonViewController: QBImagePickerControllerDelegate {
-    
-  func qb_imagePickerController(imagePickerController: QBImagePickerController!, didSelectItem item: NSObject!) {
-    ActionSheetManager.showActionSheet(imagePickerController, title: "Action", items: self.actionSheet) {
+extension MyCartoonViewController: WPMediaPickerViewControllerDelegate {
+  
+  func mediaPickerControllerDidCancel(picker: WPMediaPickerViewController) {
+   self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func mediaPickerController(picker: WPMediaPickerViewController, didFinishPickingAssets assets: [AnyObject]) {
+    ActionSheetManager.showActionSheet(picker, title: "Action", items: self.actionSheet) {
       (choice: String?) -> Void in
       if choice == self.actionSheet[0] {
         
       } else if choice == self.actionSheet[1] {
-        AlbumManager.deleteInAlbum(item as! PHAsset)
+        for asset in assets {
+          AlbumManager.deleteInAlbum(asset as! PHAsset)
+        }
       } else {
         
       }
     }
   }
-
-  func qb_imagePickerControllerDidCancel(imagePickerController: QBImagePickerController!) {
-    self.dismissViewControllerAnimated(true, completion: nil)
-  }
-
 }
-

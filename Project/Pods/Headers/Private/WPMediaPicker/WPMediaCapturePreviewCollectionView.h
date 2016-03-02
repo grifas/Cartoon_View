@@ -1,0 +1,1 @@
+../../../WPMediaPicker/Pod/Classes/WPMediaCapturePreviewCollectionView.h

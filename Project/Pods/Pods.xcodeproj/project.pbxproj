@@ -7,185 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15904AA10CC6AF8A38F70098B34F78E7 /* QBSlomoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5A3332078A9A10E32E524538686016 /* QBSlomoIconView.m */; };
-		1DC798AA677E650AB545FB5E5A817DD8 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DD4D5BEA9C2C53E659D7B37B6E2DF52F /* pl.lproj */; };
-		1FE7E96F567CB1A10654270E4FEB18F0 /* QBAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 700E030F1765E311648FFF08FF8C10B9 /* QBAssetsViewController.m */; };
-		202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD625B5656B3C6071451E706FAFCF76D /* AVFoundation.framework */; };
-		214043422590927B91DFF3A333090F91 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E764E2DBF78BC61B230A1467F40D7531 /* de.lproj */; };
-		2662DFDECA4CFF28DA51F518589FD4B2 /* QBItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6FC450CB2AA487F21F2B87797975B6 /* QBItemViewController.m */; };
-		2C8DA93C516EEFB6E4D76C88322D0051 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 092E9E0D0B451E0D22186F9CDB594B0A /* zh-Hans.lproj */; };
-		3005AF5CF84472392EFF85B4300CB772 /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
-		34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACB18632AD74DD008D881635B2E0E20 /* MediaPlayer.framework */; };
-		39C3D7264A93FB8156B6B8D3DD6689EC /* QBAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2008108484A6A9F91A3B2A9A78255EDD /* QBAssetsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39F318FFA1BC15B233F38BAA25320D4F /* QBImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE0B46B8F3298F83484D94484C942C2 /* QBImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C69C2E2AC54923EA3A46FD2BC5149FA /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EC517980AFB76953625E0A653CB0FA4 /* QBItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0201DF564FC566A9D67CDE45999C18A4 /* QBItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F5D099C7771478A3283EF4392602296 /* OHQBImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB3231DA0717D1316D2A46F1A70104FE /* OHQBImagePicker.bundle */; };
-		3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4156AB206978A47014F3B3D075456A1A /* Foundation.framework */; };
-		4735FB78B28940EBC43995E93AF49773 /* QBItemViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A92D3561492396E157CF669022E1A3 /* QBItemViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A605ED01BB863993DFA96FEF2F9643 /* JPSVolumeButtonHandler-dummy.m */; };
-		530AD3911A382305F96F16D2B9FAE3BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4156AB206978A47014F3B3D075456A1A /* Foundation.framework */; };
-		5AA9EC3DB141BAE146AFC118D6EA35B3 /* QBImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E0773C14B2C5775B16659115A3078 /* QBImagePicker.storyboard */; };
-		5C1571CC8D9C0C8CC027ED34823C3AB5 /* QBVideoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 599265889197E01428BAC779BA9AE7B6 /* QBVideoIconView.m */; };
-		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBC646863E6A7412DC9457E5E1C37F8 /* LongPressRecordButton-dummy.m */; };
-		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4156AB206978A47014F3B3D075456A1A /* Foundation.framework */; };
-		82008620F2F75FC465D5D2081B4967E4 /* QBSlomoIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B9161A61EA937128D6313C9C41E6DD5 /* QBSlomoIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82846001F815B8C53027D9A7CB840AC1 /* QBAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6D13F98C3E04DFB1585764F37F74AF /* QBAlbumCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85A9A06A1664E097B40116A2F7999F84 /* QBVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = AD86E5B4D50FA7C32FC5A6AAE849354E /* QBVideoIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8838F162B0F690DCF37492491E8E90AA /* QBAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EE36CA39B2539D8111E8427A99F69E /* QBAlbumCell.m */; };
-		912B7CE00E0916F44C2319AEBA5F913D /* QBAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D94406F09FDF79FBB53A9894F0C13F /* QBAlbumsViewController.m */; };
-		951ACD967D29D4539C81FB4370003088 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 19B2850F777DC066CECD432C1F8B034B /* ja.lproj */; };
-		9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC3A8BDF47635B72852387F0824D022 /* JPSVolumeButtonHandler.m */; };
-		9BA0583D6EA7DD0CC5251697B59D8E08 /* QBImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C33C0F898036C23EC242A1ABA922552 /* QBImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F1F3E9B7FA5B254CE74D623848E820C /* QBItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE68167D89C57E0BC67ABF4CB82B8F3 /* QBItemCell.m */; };
-		AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7D9DAEEFD7792B2562CD6BD81D1A05 /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3AED8BDBECB6EFD342BB3AA410DEC43 /* QBVideoIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5ED5C734817287B2B87D647764843D /* QBVideoIconView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD5637595228F1F9DB00EEF31B5B1DC4 /* QBCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDEF36397157D0A37E0A5A9E0816693 /* QBCheckmarkView.m */; };
-		C1D7EB8CFE355DFB986A11C75A4E0C3C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B181C3258D0434174418A60208B52A99 /* Photos.framework */; };
-		C3303B4DA27C1B2B80D6923624645D65 /* QBVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA40DCD35701FAA02BF24417D3239FF /* QBVideoIndicatorView.m */; };
-		C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA13DD17672C86C08FB854C1C9618371 /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB9AF22F33E49C2B8A2FB35CA4C41534 /* OHQBImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E87DD3B8A460CBA9E946C3F5755ACDE0 /* OHQBImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0ABC6F44579760221D009F82F04F068 /* QBAlbumsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 578E83885F57CBB975448C33B293149F /* QBAlbumsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF27B229209CA354C0E034F5415CEBE /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D38C72F15B74D5C99A461BD9C906E050 /* OHQBImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4616E2980AADF672F8FF56CCB1C6A56C /* OHQBImagePicker-dummy.m */; };
-		D785314363110CD21BC490971DAA8E2E /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6B0CEF8E010816160EA15C7CD28B858B /* es.lproj */; };
-		DA7369A228F89BF3075B70236C99AD34 /* QBCheckmarkView.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FA10423FE47F009C9A1D1DB0F5EA53 /* QBCheckmarkView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF6B0FE8A9A75D157E581CF0A615F029 /* QBItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65DCB620C9EE8ACE702B96BAC9688C1C /* QBItemCell.xib */; };
-		E1369CFAA37FE153AF7632046F74F796 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4156AB206978A47014F3B3D075456A1A /* Foundation.framework */; };
-		E73954C23CC3F2C613D69F95FDD34B22 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB9EE4D873FD3C6E8240C25EB08925B /* QBImagePickerController.m */; };
-		F087877756FD588AB918562B28DB050F /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 798286A7494B446C809A4D3C6DD23F9B /* en.lproj */; };
-		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD02277FBC1E5101177AB7CEEDFF74 /* LongPressRecordButton.swift */; };
+		01C063285D927AEBFBD42EEF7D90C3A4 /* WPMediaPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617044A640C0EA32218C37AC64ACC1A8 /* WPMediaPickerViewController.m */; };
+		02651B68652001CABFEB84F3E259E30E /* WPMediaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9F6D2AC3506C161325190AD55470E /* WPMediaCollectionViewController.m */; };
+		158770584D7F1614ABF51630E5CD82D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F269FDD7FF9914105E711391FDA293 /* Foundation.framework */; };
+		2522D3946B2E6574C2D92548CE70ABE0 /* WPMediaGroupTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F7060B699D6215242A9EF1F990413DA /* WPMediaGroupTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29D0E1E12A6BE9838C3AF61944341420 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1E30345F662095A53185F715F17AD /* video.png */; };
+		2A039476E8A4F344061235AE9F6C6764 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 468AEEDF6B2381505581C869BD570D21 /* camera.png */; };
+		386ED3EEE671D0F1C76C130285027214 /* WPMediaCapturePreviewCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8DC15DAE790E0771D5D4F36BD93655 /* WPMediaCapturePreviewCollectionView.m */; };
+		38BBCE763DBF5AE3EFF9E99474F469AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F269FDD7FF9914105E711391FDA293 /* Foundation.framework */; };
+		3BF1858CEF1BEA1A014E7786CBAEF162 /* WPMediaPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A876EC47B2D534EC1F4BB1DA6E100943 /* WPMediaPicker.bundle */; };
+		472CBACA44003C290E9433940A44A711 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437D04E8458CF5510BFCB54C07802E37 /* ImageIO.framework */; };
+		55A81FC7C5F126A289F197A4F87AC34C /* WPMediaCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4A5B5E2C854A6468AD59F1BBCF0C9F /* WPMediaCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626D11AF2D4ECF8904C5FC910FA6B378 /* Pods-MyMobileApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63827DF9EC8202E678AF1D81A2E394D7 /* WPPHAssetDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B585DF7CF0329914DD54CA356BEBE7D /* WPPHAssetDataSource.m */; };
+		6384590F53AE85F5A16E5D30BF745192 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246164E7D07BAF995D5378A585901BAD /* camera@3x.png */; };
+		66EFEBBB8C3C9ED6F4D90735BB87D24B /* Pods-MyMobileApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */; };
+		68B557B9EF820FC92AC5145D95E87D8D /* WPMediaPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B4AA124B1E23BB4CE6A06F2A9BA6F2 /* WPMediaPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D9748CA3FC0E046C27DB37C4694646F /* WPMediaGroupPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4D910C7B8F3767D5DF39898BCA2E0 /* WPMediaGroupPickerViewController.m */; };
+		6F69EDB5B5ADB5797CDDE6F44E6EDE98 /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2605DB2248EDBEA678F287E2E0B87 /* LongPressRecordButton-dummy.m */; };
+		70CEAAF7709CF4C8C9F1145AD3EEE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F269FDD7FF9914105E711391FDA293 /* Foundation.framework */; };
+		8FE86D6F995B0234046325FABF75F2F5 /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD3C480BE9C899F63DD3BA378345F3E2 /* video@3x.png */; };
+		9030860B6CD4B4B02191FB80BC59983B /* WPMediaPickerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = C37E93FF0D1A2AFD0C683C6766715399 /* WPMediaPickerResources.m */; };
+		95DCEAEC764EF647A761BB926D95419E /* WPMediaPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D8ED1BBEF6CEF02AB5641732AAF6AC /* WPMediaPicker-dummy.m */; };
+		9B3D6073895A00AEBF509786EB915697 /* WPMediaPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEF1EAF8CF4C6EB8876017F1716B171 /* WPMediaPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F96524C92B78050B13BAB167B3E7889 /* WPMediaPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1464B6648CF19F1999A488240B3B9E /* WPMediaPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0471B6FBCC59539CA4C66F9B3F30748 /* WPMediaCollectionDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8978F4E4FDBD05C014481CBEECD22285 /* WPMediaCollectionDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFAE84CF7EA70AF09FDEEBCCE1B8AA2 /* WPMediaGroupPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 147C9EFD985E81F61323174AB8B79830 /* WPMediaGroupPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD65D1755ED2BE310144F4B4680D94E8 /* WPMediaCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B59340FE95ABF714B0B81EAECD40FD /* WPMediaCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7ECC824BC2C3D674EA85E3D84E82441 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A594B88394DC848ED4FB887639AD3C /* camera@2x.png */; };
+		BF31700EB02C5E5FAF41DF169074EEB3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9DF414C36C75B6F1C7FE214F1ACBD4 /* AVFoundation.framework */; };
+		CD7CCB719C753FA388D8FD0FBBAF29E1 /* WPMediaPickerResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CE92465F3ABEFFCAA6A7919CEC74A6 /* WPMediaPickerResources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2C8CB3B42A46F9BB28239F3E6EFB4D9 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C43F9A250C3B47F07BD729F5855CB32 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2DFD1D688FFCBA4DD13FCF3F2BFE039 /* WPMediaGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A783F7AB5418DB0F598057526094CCA /* WPMediaGroupTableViewCell.m */; };
+		E0309BEF84D5F23FC6BDD3DED0B30122 /* WPMediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D96B4C91C320AC234C603ABCEDA6AA60 /* WPMediaCollectionViewCell.m */; };
+		E71C7F9E3D75356295E06D16D7ED0255 /* WPMediaCapturePreviewCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 778E05FC0362809228D3C2411872F525 /* WPMediaCapturePreviewCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA90D5DC8694B1A6DC0552DFB42FA571 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E85A25E9AEBA83EC43D444A1517471 /* Photos.framework */; };
+		EDBF2A65CF50DDF40221DD274EBD73E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C994F7293639AC61D46D46E63B6C29D /* UIKit.framework */; };
+		F20849D8236E75E3B16DCF1C28395AE7 /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460E952B1B6B81FD047F83BAA726DF6B /* LongPressRecordButton.swift */; };
+		F2F255BE3D78A3C77903F2D81EC147BE /* WPPHAssetDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DD39BC0EE586A4384291F7B7EB14AD /* WPPHAssetDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D635D7CFE86BD36C122AD7687811AF /* video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACADF28C95BA9C1B2EC1202E358A2CF8 /* video@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5DEBC004309D59DE95AE6E175B3EF0BF /* PBXContainerItemProxy */ = {
+		3FC0025FCA7CAE760390DA991D167A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9F3ACF3EACCF23723CF530031D5530;
+			remoteInfo = WPMediaPicker;
+		};
+		601FC1C78987586B956808263526B537 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7BA3DE45975103D8B579EA089BC55312;
 			remoteInfo = LongPressRecordButton;
 		};
-		8849AC7B35D32473CD57C3D3BE1D4993 /* PBXContainerItemProxy */ = {
+		E8FADE30CA04FD55421D43612D8E5FFB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F623BB3F105230A7973DB8AA68F036A;
-			remoteInfo = "OHQBImagePicker-OHQBImagePicker";
-		};
-		91D390C0B82EB1FB2098255359CBF004 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D8FDC08BF6F0664C2AE587B7F015C2E7;
-			remoteInfo = JPSVolumeButtonHandler;
-		};
-		92A9CF990F4DD44C77BC73F3A7AACDF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 16B5E8B2DE47EFD16AD8F4E6A5C37C75;
-			remoteInfo = OHQBImagePicker;
+			remoteGlobalIDString = D565E1C87169E9737CDD38B4B53273C6;
+			remoteInfo = "WPMediaPicker-WPMediaPicker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0201DF564FC566A9D67CDE45999C18A4 /* QBItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBItemCell.h; path = OHQBImagePicker/QBItemCell.h; sourceTree = "<group>"; };
-		092E9E0D0B451E0D22186F9CDB594B0A /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "OHQBImagePicker/zh-Hans.lproj"; sourceTree = "<group>"; };
-		09EE36CA39B2539D8111E8427A99F69E /* QBAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAlbumCell.m; path = OHQBImagePicker/QBAlbumCell.m; sourceTree = "<group>"; };
-		0B18655BC8374F63DABCD7F7D82E889E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CB9EE4D873FD3C6E8240C25EB08925B /* QBImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBImagePickerController.m; path = OHQBImagePicker/QBImagePickerController.m; sourceTree = "<group>"; };
-		0DE68167D89C57E0BC67ABF4CB82B8F3 /* QBItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBItemCell.m; path = OHQBImagePicker/QBItemCell.m; sourceTree = "<group>"; };
-		0EA40DCD35701FAA02BF24417D3239FF /* QBVideoIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBVideoIndicatorView.m; path = OHQBImagePicker/QBVideoIndicatorView.m; sourceTree = "<group>"; };
-		1410501E407C1BDAB68891F489243604 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		189F43D8994DECA2CD51BE0265112B90 /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
+		0D1464B6648CF19F1999A488240B3B9E /* WPMediaPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMediaPicker-umbrella.h"; sourceTree = "<group>"; };
+		0D25818D50724126CFE9F57F2527552E /* WPMediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WPMediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		147C9EFD985E81F61323174AB8B79830 /* WPMediaGroupPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaGroupPickerViewController.h; path = Pod/Classes/WPMediaGroupPickerViewController.h; sourceTree = "<group>"; };
 		199E2A6687DEF4DDFDB7821BD6922BFE /* Pods-MyMobileApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-frameworks.sh"; sourceTree = "<group>"; };
-		19B2850F777DC066CECD432C1F8B034B /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = OHQBImagePicker/ja.lproj; sourceTree = "<group>"; };
-		2008108484A6A9F91A3B2A9A78255EDD /* QBAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAssetsViewController.h; path = OHQBImagePicker/QBAssetsViewController.h; sourceTree = "<group>"; };
+		1C994F7293639AC61D46D46E63B6C29D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1C9DF414C36C75B6F1C7FE214F1ACBD4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		1FA1E30345F662095A53185F715F17AD /* video.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = video.png; path = Pod/Assets/video.png; sourceTree = "<group>"; };
+		246164E7D07BAF995D5378A585901BAD /* camera@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera@3x.png"; path = "Pod/Assets/camera@3x.png"; sourceTree = "<group>"; };
 		26E426C03C365C631ED6059B7B7B7B50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B9161A61EA937128D6313C9C41E6DD5 /* QBSlomoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBSlomoIconView.h; path = OHQBImagePicker/QBSlomoIconView.h; sourceTree = "<group>"; };
-		2DE0B46B8F3298F83484D94484C942C2 /* QBImagePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBImagePicker.h; path = OHQBImagePicker/QBImagePicker.h; sourceTree = "<group>"; };
-		2F5ED5C734817287B2B87D647764843D /* QBVideoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIconView.h; path = OHQBImagePicker/QBVideoIconView.h; sourceTree = "<group>"; };
-		334244F6CA3FA2C1881A9C9128C0D496 /* OHQBImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHQBImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39533F2745D18ECE9791E6AA452692DB /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPMediaPicker.xcconfig; sourceTree = "<group>"; };
+		394091FE9B8A5B453B082FF3B501CB7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AC1943B7F5F111BE70B8237B437848C /* Pods-MyMobileApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyMobileApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3BB79DF6D2BD71D0128A65A0126B4C38 /* Pods-MyMobileApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyMobileApp.modulemap"; sourceTree = "<group>"; };
-		3C33C0F898036C23EC242A1ABA922552 /* QBImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBImagePickerController.h; path = OHQBImagePicker/QBImagePickerController.h; sourceTree = "<group>"; };
-		4156AB206978A47014F3B3D075456A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4616E2980AADF672F8FF56CCB1C6A56C /* OHQBImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHQBImagePicker-dummy.m"; sourceTree = "<group>"; };
-		578E83885F57CBB975448C33B293149F /* QBAlbumsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAlbumsViewController.h; path = OHQBImagePicker/QBAlbumsViewController.h; sourceTree = "<group>"; };
-		58FA10423FE47F009C9A1D1DB0F5EA53 /* QBCheckmarkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBCheckmarkView.h; path = OHQBImagePicker/QBCheckmarkView.h; sourceTree = "<group>"; };
-		599265889197E01428BAC779BA9AE7B6 /* QBVideoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBVideoIconView.m; path = OHQBImagePicker/QBVideoIconView.m; sourceTree = "<group>"; };
-		653A1919EFA82C78108D02D9B88F2549 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		437D04E8458CF5510BFCB54C07802E37 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		460E952B1B6B81FD047F83BAA726DF6B /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
+		468AEEDF6B2381505581C869BD570D21 /* camera.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = camera.png; path = Pod/Assets/camera.png; sourceTree = "<group>"; };
+		4DEF1EAF8CF4C6EB8876017F1716B171 /* WPMediaPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaPickerViewController.h; path = Pod/Classes/WPMediaPickerViewController.h; sourceTree = "<group>"; };
+		4EFBC3B89DEA5F011A42A8D53E5F1A01 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		51A594B88394DC848ED4FB887639AD3C /* camera@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "camera@2x.png"; path = "Pod/Assets/camera@2x.png"; sourceTree = "<group>"; };
+		51CE92465F3ABEFFCAA6A7919CEC74A6 /* WPMediaPickerResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaPickerResources.h; path = Pod/Classes/WPMediaPickerResources.h; sourceTree = "<group>"; };
+		5B4A5B5E2C854A6468AD59F1BBCF0C9F /* WPMediaCollectionViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaCollectionViewController.h; path = Pod/Classes/WPMediaCollectionViewController.h; sourceTree = "<group>"; };
+		5F7060B699D6215242A9EF1F990413DA /* WPMediaGroupTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaGroupTableViewCell.h; path = Pod/Classes/WPMediaGroupTableViewCell.h; sourceTree = "<group>"; };
+		617044A640C0EA32218C37AC64ACC1A8 /* WPMediaPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaPickerViewController.m; path = Pod/Classes/WPMediaPickerViewController.m; sourceTree = "<group>"; };
 		65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
-		65DCB620C9EE8ACE702B96BAC9688C1C /* QBItemCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = QBItemCell.xib; path = OHQBImagePicker/QBItemCell.xib; sourceTree = "<group>"; };
-		6B0CEF8E010816160EA15C7CD28B858B /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = OHQBImagePicker/es.lproj; sourceTree = "<group>"; };
-		700E030F1765E311648FFF08FF8C10B9 /* QBAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAssetsViewController.m; path = OHQBImagePicker/QBAssetsViewController.m; sourceTree = "<group>"; };
-		798286A7494B446C809A4D3C6DD23F9B /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = OHQBImagePicker/en.lproj; sourceTree = "<group>"; };
-		7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHQBImagePicker.xcconfig; sourceTree = "<group>"; };
-		7C668DFBE2F17C6B6B657352634DA0E3 /* OHQBImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHQBImagePicker.modulemap; sourceTree = "<group>"; };
+		778E05FC0362809228D3C2411872F525 /* WPMediaCapturePreviewCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaCapturePreviewCollectionView.h; path = Pod/Classes/WPMediaCapturePreviewCollectionView.h; sourceTree = "<group>"; };
+		7BC28011BD85363F8CBAB12AB514119B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC9F6D2AC3506C161325190AD55470E /* WPMediaCollectionViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaCollectionViewController.m; path = Pod/Classes/WPMediaCollectionViewController.m; sourceTree = "<group>"; };
+		7C43F9A250C3B47F07BD729F5855CB32 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
 		7F80B0BEC0CF0CFED3EA9B6570DB0813 /* Pods-MyMobileApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyMobileApp-umbrella.h"; sourceTree = "<group>"; };
-		808E0773C14B2C5775B16659115A3078 /* QBImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = QBImagePicker.storyboard; path = OHQBImagePicker/QBImagePicker.storyboard; sourceTree = "<group>"; };
+		805BA5FB1410F6B4B90EEA1E754FDBBE /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		8978F4E4FDBD05C014481CBEECD22285 /* WPMediaCollectionDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaCollectionDataSource.h; path = Pod/Classes/WPMediaCollectionDataSource.h; sourceTree = "<group>"; };
 		8A363D6B75DA5B3989CA6D0EE61E8DE9 /* Pods-MyMobileApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyMobileApp-dummy.m"; sourceTree = "<group>"; };
-		8FA8F68641CDFFF2ED680EB33EE1B933 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BDEF36397157D0A37E0A5A9E0816693 /* QBCheckmarkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBCheckmarkView.m; path = OHQBImagePicker/QBCheckmarkView.m; sourceTree = "<group>"; };
-		9D7D9DAEEFD7792B2562CD6BD81D1A05 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
-		9EC3A8BDF47635B72852387F0824D022 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
-		A9C4816599B62FAE8D8A4E16F00E1C06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AACB18632AD74DD008D881635B2E0E20 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		AD86E5B4D50FA7C32FC5A6AAE849354E /* QBVideoIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIndicatorView.h; path = OHQBImagePicker/QBVideoIndicatorView.h; sourceTree = "<group>"; };
+		9A783F7AB5418DB0F598057526094CCA /* WPMediaGroupTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaGroupTableViewCell.m; path = Pod/Classes/WPMediaGroupTableViewCell.m; sourceTree = "<group>"; };
+		9B585DF7CF0329914DD54CA356BEBE7D /* WPPHAssetDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPPHAssetDataSource.m; path = Pod/Classes/WPPHAssetDataSource.m; sourceTree = "<group>"; };
+		9F844E0F6FF8DDEF9D24F32DCA3E535B /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A876EC47B2D534EC1F4BB1DA6E100943 /* WPMediaPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPMediaPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAF0C150737F0CEEAD387462A9968CD /* WPMediaPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WPMediaPicker.modulemap; sourceTree = "<group>"; };
+		AAFF74356A7CE039E9CA0455D7200DDC /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		ABF2605DB2248EDBEA678F287E2E0B87 /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
+		ACADF28C95BA9C1B2EC1202E358A2CF8 /* video@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video@2x.png"; path = "Pod/Assets/video@2x.png"; sourceTree = "<group>"; };
 		B16C2BB6DB832C44A767FDABFD0C4D82 /* Pods-MyMobileApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyMobileApp-resources.sh"; sourceTree = "<group>"; };
-		B181C3258D0434174418A60208B52A99 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		BA52C280FA2BA95A0D272ADEDD0DF261 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC8DC15DAE790E0771D5D4F36BD93655 /* WPMediaCapturePreviewCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaCapturePreviewCollectionView.m; path = Pod/Classes/WPMediaCapturePreviewCollectionView.m; sourceTree = "<group>"; };
+		C0A4D910C7B8F3767D5DF39898BCA2E0 /* WPMediaGroupPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaGroupPickerViewController.m; path = Pod/Classes/WPMediaGroupPickerViewController.m; sourceTree = "<group>"; };
 		C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyMobileApp.release.xcconfig"; sourceTree = "<group>"; };
-		C6DACD336AD2D834669B637DFA895B12 /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD5A3332078A9A10E32E524538686016 /* QBSlomoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBSlomoIconView.m; path = OHQBImagePicker/QBSlomoIconView.m; sourceTree = "<group>"; };
-		D5CD02277FBC1E5101177AB7CEEDFF74 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
-		D6A92D3561492396E157CF669022E1A3 /* QBItemViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBItemViewController.h; path = OHQBImagePicker/QBItemViewController.h; sourceTree = "<group>"; };
-		D9EB591ADB33F2DCAC816F7A9DCA711A /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA13DD17672C86C08FB854C1C9618371 /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
-		DD4D5BEA9C2C53E659D7B37B6E2DF52F /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = OHQBImagePicker/pl.lproj; sourceTree = "<group>"; };
-		DD625B5656B3C6071451E706FAFCF76D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		E220480039ACAED29255D68BCC161B75 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
-		E2E7098A0F86D5B7B6E23C083BDCC969 /* OHQBImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHQBImagePicker-prefix.pch"; sourceTree = "<group>"; };
-		E764E2DBF78BC61B230A1467F40D7531 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = OHQBImagePicker/de.lproj; sourceTree = "<group>"; };
-		E87DD3B8A460CBA9E946C3F5755ACDE0 /* OHQBImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHQBImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		C2B59340FE95ABF714B0B81EAECD40FD /* WPMediaCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaCollectionViewCell.h; path = Pod/Classes/WPMediaCollectionViewCell.h; sourceTree = "<group>"; };
+		C37E93FF0D1A2AFD0C683C6766715399 /* WPMediaPickerResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaPickerResources.m; path = Pod/Classes/WPMediaPickerResources.m; sourceTree = "<group>"; };
+		C9DD39BC0EE586A4384291F7B7EB14AD /* WPPHAssetDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPPHAssetDataSource.h; path = Pod/Classes/WPPHAssetDataSource.h; sourceTree = "<group>"; };
+		D0E85A25E9AEBA83EC43D444A1517471 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		D3D823930464692CD82936B465BC6A02 /* WPMediaPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPMediaPicker-prefix.pch"; sourceTree = "<group>"; };
+		D96B4C91C320AC234C603ABCEDA6AA60 /* WPMediaCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPMediaCollectionViewCell.m; path = Pod/Classes/WPMediaCollectionViewCell.m; sourceTree = "<group>"; };
+		D9F269FDD7FF9914105E711391FDA293 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD3C480BE9C899F63DD3BA378345F3E2 /* video@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video@3x.png"; path = "Pod/Assets/video@3x.png"; sourceTree = "<group>"; };
+		E2B4AA124B1E23BB4CE6A06F2A9BA6F2 /* WPMediaPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPMediaPicker.h; path = Pod/Classes/WPMediaPicker.h; sourceTree = "<group>"; };
 		E9B9053260768A9D56006129FBC73E6D /* Pods-MyMobileApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyMobileApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		EFBC646863E6A7412DC9457E5E1C37F8 /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
-		F28BAADE9178FD2C050BCE09190B2A2B /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
-		F4D94406F09FDF79FBB53A9894F0C13F /* QBAlbumsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAlbumsViewController.m; path = OHQBImagePicker/QBAlbumsViewController.m; sourceTree = "<group>"; };
-		F7A605ED01BB863993DFA96FEF2F9643 /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
-		FB3231DA0717D1316D2A46F1A70104FE /* OHQBImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OHQBImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB6D13F98C3E04DFB1585764F37F74AF /* QBAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAlbumCell.h; path = OHQBImagePicker/QBAlbumCell.h; sourceTree = "<group>"; };
-		FD6FC450CB2AA487F21F2B87797975B6 /* QBItemViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBItemViewController.m; path = OHQBImagePicker/QBItemViewController.m; sourceTree = "<group>"; };
-		FDF27B229209CA354C0E034F5415CEBE /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		F2BD35B96A15263E536D1196E5ADF1A1 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D8ED1BBEF6CEF02AB5641732AAF6AC /* WPMediaPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPMediaPicker-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17764DCF01EE5DC6F217F0410B30337E /* Frameworks */ = {
+		0FD684D0261E0AF6B38E6E2D735591F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1369CFAA37FE153AF7632046F74F796 /* Foundation.framework in Frameworks */,
-				C1D7EB8CFE355DFB986A11C75A4E0C3C /* Photos.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C1C4FB836A031B540805369655C234D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				202BE199FF1FF7660A0A43BF9519EC72 /* AVFoundation.framework in Frameworks */,
-				3FD75BAFA8D1FABB9A1F710DB7A66B81 /* Foundation.framework in Frameworks */,
-				34C770D5DAF0E131D8C353139C414C92 /* MediaPlayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2FF7FFFC478E9EAB3B28F7875BC66394 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				530AD3911A382305F96F16D2B9FAE3BC /* Foundation.framework in Frameworks */,
+				158770584D7F1614ABF51630E5CD82D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +149,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C5A16F464A5313E431B315EE8FD5E6B /* Frameworks */ = {
+		4F06A623A13990381A635519194519E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF31700EB02C5E5FAF41DF169074EEB3 /* AVFoundation.framework in Frameworks */,
+				38BBCE763DBF5AE3EFF9E99474F469AD /* Foundation.framework in Frameworks */,
+				472CBACA44003C290E9433940A44A711 /* ImageIO.framework in Frameworks */,
+				EA90D5DC8694B1A6DC0552DFB42FA571 /* Photos.framework in Frameworks */,
+				EDBF2A65CF50DDF40221DD274EBD73E7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB2A2984233D8A73CAC55DC1700DD440 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,62 +171,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		08EA9B0F2E3C1BF6BFB8AEBA72AF6C1E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2A93B68B0BA0299B5697CF203C6DD522 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		16FE113A3E5D98F17944237EF26C507C /* OHQBImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				FB6D13F98C3E04DFB1585764F37F74AF /* QBAlbumCell.h */,
-				09EE36CA39B2539D8111E8427A99F69E /* QBAlbumCell.m */,
-				578E83885F57CBB975448C33B293149F /* QBAlbumsViewController.h */,
-				F4D94406F09FDF79FBB53A9894F0C13F /* QBAlbumsViewController.m */,
-				2008108484A6A9F91A3B2A9A78255EDD /* QBAssetsViewController.h */,
-				700E030F1765E311648FFF08FF8C10B9 /* QBAssetsViewController.m */,
-				58FA10423FE47F009C9A1D1DB0F5EA53 /* QBCheckmarkView.h */,
-				9BDEF36397157D0A37E0A5A9E0816693 /* QBCheckmarkView.m */,
-				2DE0B46B8F3298F83484D94484C942C2 /* QBImagePicker.h */,
-				3C33C0F898036C23EC242A1ABA922552 /* QBImagePickerController.h */,
-				0CB9EE4D873FD3C6E8240C25EB08925B /* QBImagePickerController.m */,
-				0201DF564FC566A9D67CDE45999C18A4 /* QBItemCell.h */,
-				0DE68167D89C57E0BC67ABF4CB82B8F3 /* QBItemCell.m */,
-				D6A92D3561492396E157CF669022E1A3 /* QBItemViewController.h */,
-				FD6FC450CB2AA487F21F2B87797975B6 /* QBItemViewController.m */,
-				2B9161A61EA937128D6313C9C41E6DD5 /* QBSlomoIconView.h */,
-				CD5A3332078A9A10E32E524538686016 /* QBSlomoIconView.m */,
-				2F5ED5C734817287B2B87D647764843D /* QBVideoIconView.h */,
-				599265889197E01428BAC779BA9AE7B6 /* QBVideoIconView.m */,
-				AD86E5B4D50FA7C32FC5A6AAE849354E /* QBVideoIndicatorView.h */,
-				0EA40DCD35701FAA02BF24417D3239FF /* QBVideoIndicatorView.m */,
-				51DA80F35FEEA7B29A2ECE85171ECD47 /* Resources */,
-				F48756720FBE018FE870B9DFE928E77E /* Support Files */,
-			);
-			path = OHQBImagePicker;
-			sourceTree = "<group>";
-		};
-		2A93B68B0BA0299B5697CF203C6DD522 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DD625B5656B3C6071451E706FAFCF76D /* AVFoundation.framework */,
-				4156AB206978A47014F3B3D075456A1A /* Foundation.framework */,
-				AACB18632AD74DD008D881635B2E0E20 /* MediaPlayer.framework */,
-				B181C3258D0434174418A60208B52A99 /* Photos.framework */,
+				1C9DF414C36C75B6F1C7FE214F1ACBD4 /* AVFoundation.framework */,
+				D9F269FDD7FF9914105E711391FDA293 /* Foundation.framework */,
+				437D04E8458CF5510BFCB54C07802E37 /* ImageIO.framework */,
+				D0E85A25E9AEBA83EC43D444A1517471 /* Photos.framework */,
+				1C994F7293639AC61D46D46E63B6C29D /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		409E68DE377C5DC5CC83C1E43FAB3EA1 /* LongPressRecordButton */ = {
+		153BDA5DB6788A5688AC433C8B36A95F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5CD02277FBC1E5101177AB7CEEDFF74 /* LongPressRecordButton.swift */,
-				CC44478F2A283F229AB2F2E19B2A061C /* Support Files */,
+				65DEEE44D8FFDE9010CA2CDC9825C3D8 /* LongPressRecordButton */,
+				5A8A565D85E83C5FC9CC384E2E7A791A /* WPMediaPicker */,
 			);
-			path = LongPressRecordButton;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EA9B0F2E3C1BF6BFB8AEBA72AF6C1E /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */ = {
@@ -273,17 +208,65 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		51DA80F35FEEA7B29A2ECE85171ECD47 /* Resources */ = {
+		5A8A565D85E83C5FC9CC384E2E7A791A /* WPMediaPicker */ = {
 			isa = PBXGroup;
 			children = (
-				E764E2DBF78BC61B230A1467F40D7531 /* de.lproj */,
-				798286A7494B446C809A4D3C6DD23F9B /* en.lproj */,
-				6B0CEF8E010816160EA15C7CD28B858B /* es.lproj */,
-				19B2850F777DC066CECD432C1F8B034B /* ja.lproj */,
-				DD4D5BEA9C2C53E659D7B37B6E2DF52F /* pl.lproj */,
-				808E0773C14B2C5775B16659115A3078 /* QBImagePicker.storyboard */,
-				65DCB620C9EE8ACE702B96BAC9688C1C /* QBItemCell.xib */,
-				092E9E0D0B451E0D22186F9CDB594B0A /* zh-Hans.lproj */,
+				778E05FC0362809228D3C2411872F525 /* WPMediaCapturePreviewCollectionView.h */,
+				BC8DC15DAE790E0771D5D4F36BD93655 /* WPMediaCapturePreviewCollectionView.m */,
+				8978F4E4FDBD05C014481CBEECD22285 /* WPMediaCollectionDataSource.h */,
+				C2B59340FE95ABF714B0B81EAECD40FD /* WPMediaCollectionViewCell.h */,
+				D96B4C91C320AC234C603ABCEDA6AA60 /* WPMediaCollectionViewCell.m */,
+				5B4A5B5E2C854A6468AD59F1BBCF0C9F /* WPMediaCollectionViewController.h */,
+				7BC9F6D2AC3506C161325190AD55470E /* WPMediaCollectionViewController.m */,
+				147C9EFD985E81F61323174AB8B79830 /* WPMediaGroupPickerViewController.h */,
+				C0A4D910C7B8F3767D5DF39898BCA2E0 /* WPMediaGroupPickerViewController.m */,
+				5F7060B699D6215242A9EF1F990413DA /* WPMediaGroupTableViewCell.h */,
+				9A783F7AB5418DB0F598057526094CCA /* WPMediaGroupTableViewCell.m */,
+				E2B4AA124B1E23BB4CE6A06F2A9BA6F2 /* WPMediaPicker.h */,
+				51CE92465F3ABEFFCAA6A7919CEC74A6 /* WPMediaPickerResources.h */,
+				C37E93FF0D1A2AFD0C683C6766715399 /* WPMediaPickerResources.m */,
+				4DEF1EAF8CF4C6EB8876017F1716B171 /* WPMediaPickerViewController.h */,
+				617044A640C0EA32218C37AC64ACC1A8 /* WPMediaPickerViewController.m */,
+				C9DD39BC0EE586A4384291F7B7EB14AD /* WPPHAssetDataSource.h */,
+				9B585DF7CF0329914DD54CA356BEBE7D /* WPPHAssetDataSource.m */,
+				7103601EFD37C671917C59C951699C8C /* Resources */,
+				6D8F1A7FC23752BF6ABDF94563EDB017 /* Support Files */,
+			);
+			path = WPMediaPicker;
+			sourceTree = "<group>";
+		};
+		65DEEE44D8FFDE9010CA2CDC9825C3D8 /* LongPressRecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				460E952B1B6B81FD047F83BAA726DF6B /* LongPressRecordButton.swift */,
+				ECFAEE211D03574B412E619C672A7C0C /* Support Files */,
+			);
+			path = LongPressRecordButton;
+			sourceTree = "<group>";
+		};
+		6D8F1A7FC23752BF6ABDF94563EDB017 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				394091FE9B8A5B453B082FF3B501CB7A /* Info.plist */,
+				AAAF0C150737F0CEEAD387462A9968CD /* WPMediaPicker.modulemap */,
+				37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */,
+				F7D8ED1BBEF6CEF02AB5641732AAF6AC /* WPMediaPicker-dummy.m */,
+				D3D823930464692CD82936B465BC6A02 /* WPMediaPicker-prefix.pch */,
+				0D1464B6648CF19F1999A488240B3B9E /* WPMediaPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WPMediaPicker";
+			sourceTree = "<group>";
+		};
+		7103601EFD37C671917C59C951699C8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				468AEEDF6B2381505581C869BD570D21 /* camera.png */,
+				51A594B88394DC848ED4FB887639AD3C /* camera@2x.png */,
+				246164E7D07BAF995D5378A585901BAD /* camera@3x.png */,
+				1FA1E30345F662095A53185F715F17AD /* video.png */,
+				ACADF28C95BA9C1B2EC1202E358A2CF8 /* video@2x.png */,
+				DD3C480BE9C899F63DD3BA378345F3E2 /* video@3x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -292,71 +275,22 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				99D6F0121DE2D31D15739CE451560F05 /* Pods */,
-				A306D4D8575547D153CCB4DACCCF2764 /* Products */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				153BDA5DB6788A5688AC433C8B36A95F /* Pods */,
+				ADA47587EDF66430791506A2E4B665C8 /* Products */,
 				4F9BA1F7A548ECEC9D4C116A56780154 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81A0169EDD61AE07D342392BC7BDD14C /* JPSVolumeButtonHandler */ = {
+		ADA47587EDF66430791506A2E4B665C8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D7D9DAEEFD7792B2562CD6BD81D1A05 /* JPSVolumeButtonHandler.h */,
-				9EC3A8BDF47635B72852387F0824D022 /* JPSVolumeButtonHandler.m */,
-				AA02BF5797C839EAB5B52EC702A56A99 /* Support Files */,
-			);
-			path = JPSVolumeButtonHandler;
-			sourceTree = "<group>";
-		};
-		99D6F0121DE2D31D15739CE451560F05 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				81A0169EDD61AE07D342392BC7BDD14C /* JPSVolumeButtonHandler */,
-				409E68DE377C5DC5CC83C1E43FAB3EA1 /* LongPressRecordButton */,
-				16FE113A3E5D98F17944237EF26C507C /* OHQBImagePicker */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A306D4D8575547D153CCB4DACCCF2764 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C6DACD336AD2D834669B637DFA895B12 /* JPSVolumeButtonHandler.framework */,
-				1410501E407C1BDAB68891F489243604 /* LongPressRecordButton.framework */,
-				FB3231DA0717D1316D2A46F1A70104FE /* OHQBImagePicker.bundle */,
-				334244F6CA3FA2C1881A9C9128C0D496 /* OHQBImagePicker.framework */,
-				D9EB591ADB33F2DCAC816F7A9DCA711A /* Pods_MyMobileApp.framework */,
+				F2BD35B96A15263E536D1196E5ADF1A1 /* LongPressRecordButton.framework */,
+				9F844E0F6FF8DDEF9D24F32DCA3E535B /* Pods_MyMobileApp.framework */,
+				A876EC47B2D534EC1F4BB1DA6E100943 /* WPMediaPicker.bundle */,
+				0D25818D50724126CFE9F57F2527552E /* WPMediaPicker.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AA02BF5797C839EAB5B52EC702A56A99 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FA8F68641CDFFF2ED680EB33EE1B933 /* Info.plist */,
-				BA52C280FA2BA95A0D272ADEDD0DF261 /* JPSVolumeButtonHandler.modulemap */,
-				189F43D8994DECA2CD51BE0265112B90 /* JPSVolumeButtonHandler.xcconfig */,
-				F7A605ED01BB863993DFA96FEF2F9643 /* JPSVolumeButtonHandler-dummy.m */,
-				F28BAADE9178FD2C050BCE09190B2A2B /* JPSVolumeButtonHandler-prefix.pch */,
-				DA13DD17672C86C08FB854C1C9618371 /* JPSVolumeButtonHandler-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JPSVolumeButtonHandler";
-			sourceTree = "<group>";
-		};
-		CC44478F2A283F229AB2F2E19B2A061C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B18655BC8374F63DABCD7F7D82E889E /* Info.plist */,
-				653A1919EFA82C78108D02D9B88F2549 /* LongPressRecordButton.modulemap */,
-				E220480039ACAED29255D68BCC161B75 /* LongPressRecordButton.xcconfig */,
-				EFBC646863E6A7412DC9457E5E1C37F8 /* LongPressRecordButton-dummy.m */,
-				39533F2745D18ECE9791E6AA452692DB /* LongPressRecordButton-prefix.pch */,
-				FDF27B229209CA354C0E034F5415CEBE /* LongPressRecordButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LongPressRecordButton";
 			sourceTree = "<group>";
 		};
 		E475861D794C370DB13F70C31E242650 /* Pods-MyMobileApp */ = {
@@ -377,18 +311,18 @@
 			path = "Target Support Files/Pods-MyMobileApp";
 			sourceTree = "<group>";
 		};
-		F48756720FBE018FE870B9DFE928E77E /* Support Files */ = {
+		ECFAEE211D03574B412E619C672A7C0C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9C4816599B62FAE8D8A4E16F00E1C06 /* Info.plist */,
-				7C668DFBE2F17C6B6B657352634DA0E3 /* OHQBImagePicker.modulemap */,
-				7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */,
-				4616E2980AADF672F8FF56CCB1C6A56C /* OHQBImagePicker-dummy.m */,
-				E2E7098A0F86D5B7B6E23C083BDCC969 /* OHQBImagePicker-prefix.pch */,
-				E87DD3B8A460CBA9E946C3F5755ACDE0 /* OHQBImagePicker-umbrella.h */,
+				7BC28011BD85363F8CBAB12AB514119B /* Info.plist */,
+				AAFF74356A7CE039E9CA0455D7200DDC /* LongPressRecordButton.modulemap */,
+				805BA5FB1410F6B4B90EEA1E754FDBBE /* LongPressRecordButton.xcconfig */,
+				ABF2605DB2248EDBEA678F287E2E0B87 /* LongPressRecordButton-dummy.m */,
+				4EFBC3B89DEA5F011A42A8D53E5F1A01 /* LongPressRecordButton-prefix.pch */,
+				7C43F9A250C3B47F07BD729F5855CB32 /* LongPressRecordButton-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/OHQBImagePicker";
+			path = "../Target Support Files/LongPressRecordButton";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,62 +336,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15257B07EEC989FF6BAADF298D53FBC6 /* Headers */ = {
+		63D35819A40CBE6D9432F94F19288AB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9AF22F33E49C2B8A2FB35CA4C41534 /* OHQBImagePicker-umbrella.h in Headers */,
-				82846001F815B8C53027D9A7CB840AC1 /* QBAlbumCell.h in Headers */,
-				D0ABC6F44579760221D009F82F04F068 /* QBAlbumsViewController.h in Headers */,
-				39C3D7264A93FB8156B6B8D3DD6689EC /* QBAssetsViewController.h in Headers */,
-				DA7369A228F89BF3075B70236C99AD34 /* QBCheckmarkView.h in Headers */,
-				39F318FFA1BC15B233F38BAA25320D4F /* QBImagePicker.h in Headers */,
-				9BA0583D6EA7DD0CC5251697B59D8E08 /* QBImagePickerController.h in Headers */,
-				3EC517980AFB76953625E0A653CB0FA4 /* QBItemCell.h in Headers */,
-				4735FB78B28940EBC43995E93AF49773 /* QBItemViewController.h in Headers */,
-				82008620F2F75FC465D5D2081B4967E4 /* QBSlomoIconView.h in Headers */,
-				B3AED8BDBECB6EFD342BB3AA410DEC43 /* QBVideoIconView.h in Headers */,
-				85A9A06A1664E097B40116A2F7999F84 /* QBVideoIndicatorView.h in Headers */,
+				626D11AF2D4ECF8904C5FC910FA6B378 /* Pods-MyMobileApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		221DFBA2FC64FE0AB32E6A9332F8D075 /* Headers */ = {
+		732169AAB035FD7D49DFB82CAEB10A3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C69C2E2AC54923EA3A46FD2BC5149FA /* Pods-MyMobileApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E3CED6AD9CC069B824FFD27A048D99C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6766BBDB8CEB27CF2ADAD7D7A958AF5 /* JPSVolumeButtonHandler-umbrella.h in Headers */,
-				AA928BEB8CA262F15AF05C9742AF2492 /* JPSVolumeButtonHandler.h in Headers */,
+				E71C7F9E3D75356295E06D16D7ED0255 /* WPMediaCapturePreviewCollectionView.h in Headers */,
+				A0471B6FBCC59539CA4C66F9B3F30748 /* WPMediaCollectionDataSource.h in Headers */,
+				AD65D1755ED2BE310144F4B4680D94E8 /* WPMediaCollectionViewCell.h in Headers */,
+				55A81FC7C5F126A289F197A4F87AC34C /* WPMediaCollectionViewController.h in Headers */,
+				AAFAE84CF7EA70AF09FDEEBCCE1B8AA2 /* WPMediaGroupPickerViewController.h in Headers */,
+				2522D3946B2E6574C2D92548CE70ABE0 /* WPMediaGroupTableViewCell.h in Headers */,
+				9F96524C92B78050B13BAB167B3E7889 /* WPMediaPicker-umbrella.h in Headers */,
+				68B557B9EF820FC92AC5145D95E87D8D /* WPMediaPicker.h in Headers */,
+				CD7CCB719C753FA388D8FD0FBBAF29E1 /* WPMediaPickerResources.h in Headers */,
+				9B3D6073895A00AEBF509786EB915697 /* WPMediaPickerViewController.h in Headers */,
+				F2F255BE3D78A3C77903F2D81EC147BE /* WPPHAssetDataSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16B5E8B2DE47EFD16AD8F4E6A5C37C75 /* OHQBImagePicker */ = {
+		3372B728F9657311C7489F74FE9CBF6E /* Pods-MyMobileApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74731146CB1661D7CF98B95B1097B634 /* Build configuration list for PBXNativeTarget "OHQBImagePicker" */;
+			buildConfigurationList = 3A85E36D26B91959600507AD45823702 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
 			buildPhases = (
-				5B04C3F4CFAEC371792FA491D65F025A /* Sources */,
-				17764DCF01EE5DC6F217F0410B30337E /* Frameworks */,
-				46C0A25F9DEC25DD608AF841A3669917 /* Resources */,
-				15257B07EEC989FF6BAADF298D53FBC6 /* Headers */,
+				9FA1EDE28D2062D340A6817132E4D8D6 /* Sources */,
+				0FD684D0261E0AF6B38E6E2D735591F9 /* Frameworks */,
+				63D35819A40CBE6D9432F94F19288AB3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				374F964A2EE6F439359215904C9AB62B /* PBXTargetDependency */,
+				E576B8BB7E51A2C7016A05B144567C02 /* PBXTargetDependency */,
+				47CF83DC5325FD6A2B9C051F05AA57A1 /* PBXTargetDependency */,
 			);
-			name = OHQBImagePicker;
-			productName = OHQBImagePicker;
-			productReference = 334244F6CA3FA2C1881A9C9128C0D496 /* OHQBImagePicker.framework */;
+			name = "Pods-MyMobileApp";
+			productName = "Pods-MyMobileApp";
+			productReference = 9F844E0F6FF8DDEF9D24F32DCA3E535B /* Pods_MyMobileApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */ = {
@@ -474,62 +398,44 @@
 			);
 			name = LongPressRecordButton;
 			productName = LongPressRecordButton;
-			productReference = 1410501E407C1BDAB68891F489243604 /* LongPressRecordButton.framework */;
+			productReference = F2BD35B96A15263E536D1196E5ADF1A1 /* LongPressRecordButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9DA1F6D86275446B4CC420AE115EF820 /* Pods-MyMobileApp */ = {
+		BD9F3ACF3EACCF23723CF530031D5530 /* WPMediaPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6898D22FAE3DB3C81E124BD4BAF624D0 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */;
+			buildConfigurationList = 0A55742E8C6FFA99AA5B3ABD296EA58E /* Build configuration list for PBXNativeTarget "WPMediaPicker" */;
 			buildPhases = (
-				C5C75F49DF070A294E646211C1A0C7BD /* Sources */,
-				2FF7FFFC478E9EAB3B28F7875BC66394 /* Frameworks */,
-				221DFBA2FC64FE0AB32E6A9332F8D075 /* Headers */,
+				FD82D4A8FEBFAD6643E9C0BA65E152F3 /* Sources */,
+				4F06A623A13990381A635519194519E7 /* Frameworks */,
+				D37934CCE8CE35C2686890AA09BE2DDB /* Resources */,
+				732169AAB035FD7D49DFB82CAEB10A3E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D6B569C356B1B2EF544C86041D2E836D /* PBXTargetDependency */,
-				6B1185EA16075E60C256B8645C7312EB /* PBXTargetDependency */,
-				68B251783DCE2F604FB9051E213E91FA /* PBXTargetDependency */,
+				9817B6F3E09199D67DD352209864D785 /* PBXTargetDependency */,
 			);
-			name = "Pods-MyMobileApp";
-			productName = "Pods-MyMobileApp";
-			productReference = D9EB591ADB33F2DCAC816F7A9DCA711A /* Pods_MyMobileApp.framework */;
+			name = WPMediaPicker;
+			productName = WPMediaPicker;
+			productReference = 0D25818D50724126CFE9F57F2527552E /* WPMediaPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F623BB3F105230A7973DB8AA68F036A /* OHQBImagePicker-OHQBImagePicker */ = {
+		D565E1C87169E9737CDD38B4B53273C6 /* WPMediaPicker-WPMediaPicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC3AC0FD86434D9C2D152E5CC24238A7 /* Build configuration list for PBXNativeTarget "OHQBImagePicker-OHQBImagePicker" */;
+			buildConfigurationList = CBFB7671A0E2B30AAA3C506E75166635 /* Build configuration list for PBXNativeTarget "WPMediaPicker-WPMediaPicker" */;
 			buildPhases = (
-				00906EEC2B3FF0278C8C36185F47E0DA /* Sources */,
-				9C5A16F464A5313E431B315EE8FD5E6B /* Frameworks */,
-				44FBB8409391B3991403D6D48CF0FE55 /* Resources */,
+				1BCEA85DCFF673F269B0E2B4D6047C09 /* Sources */,
+				BB2A2984233D8A73CAC55DC1700DD440 /* Frameworks */,
+				58E0449035D346694F8E45D5EFF3D48A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "OHQBImagePicker-OHQBImagePicker";
-			productName = "OHQBImagePicker-OHQBImagePicker";
-			productReference = FB3231DA0717D1316D2A46F1A70104FE /* OHQBImagePicker.bundle */;
+			name = "WPMediaPicker-WPMediaPicker";
+			productName = "WPMediaPicker-WPMediaPicker";
+			productReference = A876EC47B2D534EC1F4BB1DA6E100943 /* WPMediaPicker.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 17A409BEA5EFF3E6925A0FF13A50E8D7 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */;
-			buildPhases = (
-				E32BA1A4A305E6656E25E69E092B261C /* Sources */,
-				2C1C4FB836A031B540805369655C234D /* Frameworks */,
-				6E3CED6AD9CC069B824FFD27A048D99C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JPSVolumeButtonHandler;
-			productName = JPSVolumeButtonHandler;
-			productReference = C6DACD336AD2D834669B637DFA895B12 /* JPSVolumeButtonHandler.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -548,53 +454,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A306D4D8575547D153CCB4DACCCF2764 /* Products */;
+			productRefGroup = ADA47587EDF66430791506A2E4B665C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */,
 				7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */,
-				16B5E8B2DE47EFD16AD8F4E6A5C37C75 /* OHQBImagePicker */,
-				9F623BB3F105230A7973DB8AA68F036A /* OHQBImagePicker-OHQBImagePicker */,
-				9DA1F6D86275446B4CC420AE115EF820 /* Pods-MyMobileApp */,
+				3372B728F9657311C7489F74FE9CBF6E /* Pods-MyMobileApp */,
+				BD9F3ACF3EACCF23723CF530031D5530 /* WPMediaPicker */,
+				D565E1C87169E9737CDD38B4B53273C6 /* WPMediaPicker-WPMediaPicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		44FBB8409391B3991403D6D48CF0FE55 /* Resources */ = {
+		58E0449035D346694F8E45D5EFF3D48A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214043422590927B91DFF3A333090F91 /* de.lproj in Resources */,
-				F087877756FD588AB918562B28DB050F /* en.lproj in Resources */,
-				D785314363110CD21BC490971DAA8E2E /* es.lproj in Resources */,
-				951ACD967D29D4539C81FB4370003088 /* ja.lproj in Resources */,
-				1DC798AA677E650AB545FB5E5A817DD8 /* pl.lproj in Resources */,
-				5AA9EC3DB141BAE146AFC118D6EA35B3 /* QBImagePicker.storyboard in Resources */,
-				DF6B0FE8A9A75D157E581CF0A615F029 /* QBItemCell.xib in Resources */,
-				2C8DA93C516EEFB6E4D76C88322D0051 /* zh-Hans.lproj in Resources */,
+				2A039476E8A4F344061235AE9F6C6764 /* camera.png in Resources */,
+				B7ECC824BC2C3D674EA85E3D84E82441 /* camera@2x.png in Resources */,
+				6384590F53AE85F5A16E5D30BF745192 /* camera@3x.png in Resources */,
+				29D0E1E12A6BE9838C3AF61944341420 /* video.png in Resources */,
+				F4D635D7CFE86BD36C122AD7687811AF /* video@2x.png in Resources */,
+				8FE86D6F995B0234046325FABF75F2F5 /* video@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46C0A25F9DEC25DD608AF841A3669917 /* Resources */ = {
+		D37934CCE8CE35C2686890AA09BE2DDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5D099C7771478A3283EF4392602296 /* OHQBImagePicker.bundle in Resources */,
+				3BF1858CEF1BEA1A014E7786CBAEF162 /* WPMediaPicker.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00906EEC2B3FF0278C8C36185F47E0DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0F22587BAF414BC6D52B166F842033DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -604,77 +500,106 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B04C3F4CFAEC371792FA491D65F025A /* Sources */ = {
+		1BCEA85DCFF673F269B0E2B4D6047C09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38C72F15B74D5C99A461BD9C906E050 /* OHQBImagePicker-dummy.m in Sources */,
-				8838F162B0F690DCF37492491E8E90AA /* QBAlbumCell.m in Sources */,
-				912B7CE00E0916F44C2319AEBA5F913D /* QBAlbumsViewController.m in Sources */,
-				1FE7E96F567CB1A10654270E4FEB18F0 /* QBAssetsViewController.m in Sources */,
-				BD5637595228F1F9DB00EEF31B5B1DC4 /* QBCheckmarkView.m in Sources */,
-				E73954C23CC3F2C613D69F95FDD34B22 /* QBImagePickerController.m in Sources */,
-				9F1F3E9B7FA5B254CE74D623848E820C /* QBItemCell.m in Sources */,
-				2662DFDECA4CFF28DA51F518589FD4B2 /* QBItemViewController.m in Sources */,
-				15904AA10CC6AF8A38F70098B34F78E7 /* QBSlomoIconView.m in Sources */,
-				5C1571CC8D9C0C8CC027ED34823C3AB5 /* QBVideoIconView.m in Sources */,
-				C3303B4DA27C1B2B80D6923624645D65 /* QBVideoIndicatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5C75F49DF070A294E646211C1A0C7BD /* Sources */ = {
+		9FA1EDE28D2062D340A6817132E4D8D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3005AF5CF84472392EFF85B4300CB772 /* Pods-MyMobileApp-dummy.m in Sources */,
+				66EFEBBB8C3C9ED6F4D90735BB87D24B /* Pods-MyMobileApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E32BA1A4A305E6656E25E69E092B261C /* Sources */ = {
+		FD82D4A8FEBFAD6643E9C0BA65E152F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDF68B14903C0ADA88DE415AE1B627D /* JPSVolumeButtonHandler-dummy.m in Sources */,
-				9681841A025BABC138D0CFEB86752D79 /* JPSVolumeButtonHandler.m in Sources */,
+				386ED3EEE671D0F1C76C130285027214 /* WPMediaCapturePreviewCollectionView.m in Sources */,
+				E0309BEF84D5F23FC6BDD3DED0B30122 /* WPMediaCollectionViewCell.m in Sources */,
+				02651B68652001CABFEB84F3E259E30E /* WPMediaCollectionViewController.m in Sources */,
+				6D9748CA3FC0E046C27DB37C4694646F /* WPMediaGroupPickerViewController.m in Sources */,
+				D2DFD1D688FFCBA4DD13FCF3F2BFE039 /* WPMediaGroupTableViewCell.m in Sources */,
+				95DCEAEC764EF647A761BB926D95419E /* WPMediaPicker-dummy.m in Sources */,
+				9030860B6CD4B4B02191FB80BC59983B /* WPMediaPickerResources.m in Sources */,
+				01C063285D927AEBFBD42EEF7D90C3A4 /* WPMediaPickerViewController.m in Sources */,
+				63827DF9EC8202E678AF1D81A2E394D7 /* WPPHAssetDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		374F964A2EE6F439359215904C9AB62B /* PBXTargetDependency */ = {
+		47CF83DC5325FD6A2B9C051F05AA57A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "OHQBImagePicker-OHQBImagePicker";
-			target = 9F623BB3F105230A7973DB8AA68F036A /* OHQBImagePicker-OHQBImagePicker */;
-			targetProxy = 8849AC7B35D32473CD57C3D3BE1D4993 /* PBXContainerItemProxy */;
+			name = WPMediaPicker;
+			target = BD9F3ACF3EACCF23723CF530031D5530 /* WPMediaPicker */;
+			targetProxy = 3FC0025FCA7CAE760390DA991D167A4C /* PBXContainerItemProxy */;
 		};
-		68B251783DCE2F604FB9051E213E91FA /* PBXTargetDependency */ = {
+		9817B6F3E09199D67DD352209864D785 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = OHQBImagePicker;
-			target = 16B5E8B2DE47EFD16AD8F4E6A5C37C75 /* OHQBImagePicker */;
-			targetProxy = 92A9CF990F4DD44C77BC73F3A7AACDF8 /* PBXContainerItemProxy */;
+			name = "WPMediaPicker-WPMediaPicker";
+			target = D565E1C87169E9737CDD38B4B53273C6 /* WPMediaPicker-WPMediaPicker */;
+			targetProxy = E8FADE30CA04FD55421D43612D8E5FFB /* PBXContainerItemProxy */;
 		};
-		6B1185EA16075E60C256B8645C7312EB /* PBXTargetDependency */ = {
+		E576B8BB7E51A2C7016A05B144567C02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LongPressRecordButton;
 			target = 7BA3DE45975103D8B579EA089BC55312 /* LongPressRecordButton */;
-			targetProxy = 5DEBC004309D59DE95AE6E175B3EF0BF /* PBXContainerItemProxy */;
-		};
-		D6B569C356B1B2EF544C86041D2E836D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JPSVolumeButtonHandler;
-			target = D8FDC08BF6F0664C2AE587B7F015C2E7 /* JPSVolumeButtonHandler */;
-			targetProxy = 91D390C0B82EB1FB2098255359CBF004 /* PBXContainerItemProxy */;
+			targetProxy = 601FC1C78987586B956808263526B537 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5039D48E528A363E66B9FE4A069A2FC6 /* Debug */ = {
+		2E64A9A29568C8F05A61DCC5970A7C65 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */;
+			baseConfigurationReference = 37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WPMediaPicker/WPMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPMediaPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPMediaPicker/WPMediaPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = WPMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C65A39104542F3FAEDC090CE0FCFE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = OHQBImagePicker;
+				PRODUCT_NAME = WPMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		479CA4527E54FA4B4262C0A348B5D431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = WPMediaPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -720,36 +645,9 @@
 			};
 			name = Debug;
 		};
-		632E77F422D4F88E71F7F1DDD861DBB1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OHQBImagePicker/OHQBImagePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHQBImagePicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHQBImagePicker/OHQBImagePicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = OHQBImagePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		65729285732410D01F1E0C039BDD2174 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E220480039ACAED29255D68BCC161B75 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = 805BA5FB1410F6B4B90EEA1E754FDBBE /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -774,9 +672,9 @@
 			};
 			name = Release;
 		};
-		672AC8D282E872689F7942CA278C4CC1 /* Release */ = {
+		6E16D5C553C0A8819F5412E117DD7878 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 189F43D8994DECA2CD51BE0265112B90 /* JPSVolumeButtonHandler.xcconfig */;
+			baseConfigurationReference = C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -785,14 +683,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyMobileApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JPSVolumeButtonHandler;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyMobileApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -835,9 +736,36 @@
 			};
 			name = Release;
 		};
+		7DF17E38EF6C2664FD67418EC4B41D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F89282DCCB89722DD1BDF0BC6D7B9F /* WPMediaPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WPMediaPicker/WPMediaPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPMediaPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPMediaPicker/WPMediaPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = WPMediaPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		82DFBEB8593E792E09611EE278437D26 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E220480039ACAED29255D68BCC161B75 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = 805BA5FB1410F6B4B90EEA1E754FDBBE /* LongPressRecordButton.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -863,37 +791,7 @@
 			};
 			name = Debug;
 		};
-		99447BB8F75F1653AF69A80B3ED756C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0C8B75689D493D809D1EBF70681BCAF /* Pods-MyMobileApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MyMobileApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_MyMobileApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A78DB4C677C2C87ABB443C263A1C59BE /* Debug */ = {
+		E086B42993BC38B18C5B4830257E6AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65A0F4E574F83B54C6B433261DBBF7A7 /* Pods-MyMobileApp.debug.xcconfig */;
 			buildSettings = {
@@ -924,80 +822,14 @@
 			};
 			name = Debug;
 		};
-		DD37B63C381C14B74EE400EE39652CC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 189F43D8994DECA2CD51BE0265112B90 /* JPSVolumeButtonHandler.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = JPSVolumeButtonHandler;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2D1289C14E445A9A13D9A2BCC6FB053 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OHQBImagePicker/OHQBImagePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHQBImagePicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHQBImagePicker/OHQBImagePicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = OHQBImagePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EB6D4EEC2CF68095CB53437F75CC8C4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C112168EEF1FA598948A84E6B424EA4 /* OHQBImagePicker.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = OHQBImagePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17A409BEA5EFF3E6925A0FF13A50E8D7 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */ = {
+		0A55742E8C6FFA99AA5B3ABD296EA58E /* Build configuration list for PBXNativeTarget "WPMediaPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD37B63C381C14B74EE400EE39652CC6 /* Debug */,
-				672AC8D282E872689F7942CA278C4CC1 /* Release */,
+				7DF17E38EF6C2664FD67418EC4B41D66 /* Debug */,
+				2E64A9A29568C8F05A61DCC5970A7C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1011,6 +843,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3A85E36D26B91959600507AD45823702 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E086B42993BC38B18C5B4830257E6AF7 /* Debug */,
+				6E16D5C553C0A8819F5412E117DD7878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6813F777795796FFB64EA56AEF06A646 /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1020,29 +861,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6898D22FAE3DB3C81E124BD4BAF624D0 /* Build configuration list for PBXNativeTarget "Pods-MyMobileApp" */ = {
+		CBFB7671A0E2B30AAA3C506E75166635 /* Build configuration list for PBXNativeTarget "WPMediaPicker-WPMediaPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A78DB4C677C2C87ABB443C263A1C59BE /* Debug */,
-				99447BB8F75F1653AF69A80B3ED756C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		74731146CB1661D7CF98B95B1097B634 /* Build configuration list for PBXNativeTarget "OHQBImagePicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2D1289C14E445A9A13D9A2BCC6FB053 /* Debug */,
-				632E77F422D4F88E71F7F1DDD861DBB1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC3AC0FD86434D9C2D152E5CC24238A7 /* Build configuration list for PBXNativeTarget "OHQBImagePicker-OHQBImagePicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5039D48E528A363E66B9FE4A069A2FC6 /* Debug */,
-				EB6D4EEC2CF68095CB53437F75CC8C4A /* Release */,
+				479CA4527E54FA4B4262C0A348B5D431 /* Debug */,
+				3C65A39104542F3FAEDC090CE0FCFE5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

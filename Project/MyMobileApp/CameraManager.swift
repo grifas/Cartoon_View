@@ -27,7 +27,6 @@ class CameraManager {
     
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
-  var slider = UISlider()
   
   // To Video
   var movieURL: NSURL!
@@ -53,7 +52,6 @@ class CameraManager {
     case .SingleInput:
       self.camera.addTarget((self.filterOperation.filter as! GPUImageInput))
       self.filterOperation.filter.addTarget(filterView)
-      self.setSlider()
     default:
       break
     }
@@ -62,12 +60,12 @@ class CameraManager {
   /*
   Set slider
   */
-  func setSlider() {
+  func setSlider(slider: UISlider) {
     switch self.filterOperation.sliderConfiguration {
     case let .Enabled(minimumValue, maximumValue, initialValue):
-      self.slider.minimumValue = minimumValue
-      self.slider.maximumValue = maximumValue
-      self.slider.value = initialValue
+      slider.minimumValue = minimumValue
+      slider.maximumValue = maximumValue
+      slider.value = initialValue
     default:
       break
     }
@@ -92,30 +90,6 @@ class CameraManager {
   */
   func rotateCamera() {
     self.camera.rotateCamera()
-  }
-  
-  /*
-  Update filter rate to down
-  */
-  func filterDown() {
-    let value = self.slider.value - 1
-    
-    if value >= self.slider.minimumValue {
-      self.updateSliderWith(value)
-      self.slider.value = value
-    }
-  }
-  
-  /*
-  Update filter rate to up
-  */
-  func filterUp() {
-    let value = self.slider.value + 1
-    
-    if value <= self.slider.maximumValue {
-      self.updateSliderWith(value)
-      self.slider.value = value
-    }
   }
   
   /*
@@ -184,7 +158,9 @@ class CameraManager {
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       do {
         try self.camera.inputCamera.lockForConfiguration()
-        self.camera.inputCamera.torchMode = AVCaptureTorchMode.Off
+        if self.camera.inputCamera.torchAvailable == true {
+          self.camera.inputCamera.torchMode = AVCaptureTorchMode.Off
+        }
         self.camera.inputCamera.unlockForConfiguration()
       } catch {
         print("The Torch can not be disabled")
@@ -204,8 +180,10 @@ class CameraManager {
     self.camera.pauseCameraCapture()
     dispatch_async(dispatch_get_main_queue(), { () -> Void in
       self.camera.capturePhotoAsImageProcessedUpToFilter(self.filterOperation.filter, withCompletionHandler: { (image, error) -> Void in
-        imageView.image = image
-        AlbumManager.saveImage(image)
+        if let image = image {
+          imageView.image = image
+          AlbumManager.saveImage(image)
+        }
       })
     })
     self.camera.resumeCameraCapture()
@@ -223,10 +201,10 @@ class CameraManager {
     self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(480, 320))
     self.movieWritertemp.encodingLiveVideo = true
     self.filterOperation.filter.addTarget(self.movieWritertemp)
+    self.camera.audioEncodingTarget = self.movieWritertemp
     
     let startTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
     dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
-      self.camera.audioEncodingTarget = self.movieWritertemp
       self.movieWritertemp.startRecording()
       if hasTorch == true {
         self.enableTorch()

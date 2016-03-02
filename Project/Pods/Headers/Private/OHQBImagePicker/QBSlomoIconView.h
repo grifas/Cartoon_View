@@ -1,1 +1,0 @@
-../../../OHQBImagePicker/OHQBImagePicker/QBSlomoIconView.h
