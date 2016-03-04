@@ -75,7 +75,7 @@
 		B94E50371C79F5AE006B503E /* ActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetManager.swift; sourceTree = "<group>"; };
 		B94E50401C7A2DFA006B503E /* AlbumManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
 		B96B388D1C77CAF1009578D3 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B98A0FC51C64FA25005F925A /* MyMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98A0FC51C64FA25005F925A /* Cartoon View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cartoon View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A0FC81C64FA25005F925A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartoonViewController.swift; sourceTree = "<group>"; };
 		B98A0FCD1C64FA25005F925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		B98A0FC61C64FA25005F925A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B98A0FC51C64FA25005F925A /* MyMobileApp.app */,
+				B98A0FC51C64FA25005F925A /* Cartoon View.app */,
 				B96B388D1C77CAF1009578D3 /* test.app */,
 			);
 			name = Products;
@@ -232,9 +232,9 @@
 			productReference = B96B388D1C77CAF1009578D3 /* test.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B98A0FC41C64FA25005F925A /* MyMobileApp */ = {
+		B98A0FC41C64FA25005F925A /* Cartoon View */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "MyMobileApp" */;
+			buildConfigurationList = B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "Cartoon View" */;
 			buildPhases = (
 				5B428614EAD6E8EE385A67ED /* Check Pods Manifest.lock */,
 				B98A0FC11C64FA25005F925A /* Sources */,
@@ -249,9 +249,9 @@
 			dependencies = (
 				B911A0C31C6D0BB600F66F18 /* PBXTargetDependency */,
 			);
-			name = MyMobileApp;
+			name = "Cartoon View";
 			productName = MyMobileApp;
-			productReference = B98A0FC51C64FA25005F925A /* MyMobileApp.app */;
+			productReference = B98A0FC51C64FA25005F925A /* Cartoon View.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -272,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "MyMobileApp" */;
+			buildConfigurationList = B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "Cartoon View" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -291,7 +291,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				B98A0FC41C64FA25005F925A /* MyMobileApp */,
+				B98A0FC41C64FA25005F925A /* Cartoon View */,
 				B96B388C1C77CAF1009578D3 /* test */,
 			);
 		};
@@ -556,7 +556,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cartoon View";
 			};
 			name = Debug;
 		};
@@ -569,7 +569,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Cartoon View";
 			};
 			name = Release;
 		};
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "MyMobileApp" */ = {
+		B98A0FC01C64FA25005F925A /* Build configuration list for PBXProject "Cartoon View" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B98A0FD51C64FA25005F925A /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "MyMobileApp" */ = {
+		B98A0FD71C64FA25005F925A /* Build configuration list for PBXNativeTarget "Cartoon View" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B98A0FD81C64FA25005F925A /* Debug */,
