@@ -17,8 +17,7 @@ class MyCartoonViewController: UIViewController {
   var timer = NSTimer()
   var time = 10
   var flashBool = false
-  let actionSheet: [String]! = ["Envoyer", "Delete"]
-  
+  let actionSheet: [String]! = ["Delete"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -52,7 +51,7 @@ class MyCartoonViewController: UIViewController {
     case UIDeviceOrientation.PortraitUpsideDown:
       orient = UIInterfaceOrientation.PortraitUpsideDown
     default:
-      orient = interfaceOrientation
+      orient = UIInterfaceOrientation.Portrait
     }
     CameraManager.sharedInstance.camera.outputImageOrientation = orient
   }
@@ -196,16 +195,14 @@ extension MyCartoonViewController: WPMediaPickerViewControllerDelegate {
   }
   
   func mediaPickerController(picker: WPMediaPickerViewController, didFinishPickingAssets assets: [AnyObject]) {
-    ActionSheetManager.showActionSheet(picker, title: "Action", items: self.actionSheet) {
-      (choice: String?) -> Void in
-      if choice == self.actionSheet[0] {
-        
-      } else if choice == self.actionSheet[1] {
-        for asset in assets {
-          AlbumManager.deleteInAlbum(asset as! PHAsset)
+    if assets.count > 0 {
+      ActionSheetManager.showActionSheet(picker, title: "Action", items: self.actionSheet) {
+        (choice: String?) -> Void in
+        if choice == self.actionSheet[0] {
+          for asset in assets {
+            AlbumManager.deleteInAlbum(asset as! PHAsset)
+          }
         }
-      } else {
-        
       }
     }
   }
