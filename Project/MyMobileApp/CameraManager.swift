@@ -198,7 +198,7 @@ class CameraManager {
     unlink(pathToMovie.UTF8String)
     self.movieURL = NSURL.fileURLWithPath(pathToMovie as String)
       
-    self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(480, 320))
+    self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(640, 480))
     self.movieWritertemp.encodingLiveVideo = true
     self.filterOperation.filter.addTarget(self.movieWritertemp)
     self.camera.audioEncodingTarget = self.movieWritertemp
@@ -213,7 +213,7 @@ class CameraManager {
       }
     })
   }
-
+  
   /*
   Stop Video Recording
   */

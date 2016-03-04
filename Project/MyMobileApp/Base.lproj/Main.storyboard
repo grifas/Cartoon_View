@@ -74,6 +74,12 @@
                                             <action selector="updateFilter:" destination="BYZ-38-t0r" eventType="valueChanged" id="zj5-0J-YHF"/>
                                         </connections>
                                     </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aN-fb-Xar">
+                                        <rect key="frame" x="288.5" y="456" width="23.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -81,6 +87,8 @@
                                     <constraint firstAttribute="bottom" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="BYJ-IA-wYB"/>
                                     <constraint firstItem="a13-3i-UGq" firstAttribute="leading" secondItem="KFQ-ww-sFy" secondAttribute="leading" constant="15" id="C9A-CE-Qh0"/>
                                     <constraint firstItem="lPe-sW-Bwr" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="Ht0-eI-6Ge"/>
+                                    <constraint firstItem="esT-D9-tdg" firstAttribute="top" secondItem="2aN-fb-Xar" secondAttribute="bottom" constant="15" id="KKr-iW-hZt"/>
+                                    <constraint firstItem="2aN-fb-Xar" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="QbN-uC-wxh"/>
                                     <constraint firstAttribute="bottom" secondItem="a13-3i-UGq" secondAttribute="bottom" constant="8" id="W76-I3-K6t"/>
                                     <constraint firstAttribute="bottom" secondItem="esT-D9-tdg" secondAttribute="bottom" constant="15" id="b0X-ye-Lka"/>
                                     <constraint firstItem="hqF-gw-5HR" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="top" constant="8" id="c7G-6f-5rW"/>
@@ -106,6 +114,7 @@
                         <outlet property="lastImageView" destination="x0q-sD-MEN" id="ae7-mx-xSh"/>
                         <outlet property="recordButton" destination="esT-D9-tdg" id="T1g-CM-Dgw"/>
                         <outlet property="swapCameraButton" destination="lPe-sW-Bwr" id="Wey-GO-lUK"/>
+                        <outlet property="timerVideo" destination="2aN-fb-Xar" id="hHT-ga-1vY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

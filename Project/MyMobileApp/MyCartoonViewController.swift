@@ -12,7 +12,10 @@ class MyCartoonViewController: UIViewController {
   @IBOutlet weak var lastImageView: UIImageView!
   @IBOutlet weak var flashButton: UIButton!
   @IBOutlet weak var filterSlide: UISlider!
+  @IBOutlet weak var timerVideo: UILabel!
   
+  var timer = NSTimer()
+  var time = 10
   var flashBool = false
   let actionSheet: [String]! = ["Envoyer", "Delete"]
   
@@ -35,6 +38,25 @@ class MyCartoonViewController: UIViewController {
     CameraManager.sharedInstance.stopCameraCapture()
   }
   
+  func updateRotate() {
+    // Map UIDeviceOrientation to UIInterfaceOrientation.
+    var orient = UIInterfaceOrientation.Portrait
+    
+    switch UIDevice.currentDevice().orientation {
+    case UIDeviceOrientation.LandscapeLeft:
+      orient = UIInterfaceOrientation.LandscapeLeft
+    case UIDeviceOrientation.LandscapeRight:
+      orient = UIInterfaceOrientation.LandscapeRight
+    case UIDeviceOrientation.Portrait:
+      orient = UIInterfaceOrientation.Portrait
+    case UIDeviceOrientation.PortraitUpsideDown:
+      orient = UIInterfaceOrientation.PortraitUpsideDown
+    default:
+      orient = interfaceOrientation
+    }
+    CameraManager.sharedInstance.camera.outputImageOrientation = orient
+  }
+  
   /*
   Enable/Disable Flash/Torch
   */
@@ -55,6 +77,10 @@ class MyCartoonViewController: UIViewController {
     CameraManager.sharedInstance.rotateCamera()
   }
   
+  @IBAction func updateFilter(sender: UISlider) {
+    CameraManager.sharedInstance.updateSliderWith(self.filterSlide.value)
+  }
+  
   /*
   This function is called each time the app appears to screen
   */
@@ -64,11 +90,7 @@ class MyCartoonViewController: UIViewController {
     // Load the last picture
     self.fetchLastPicture()
   }
-  
-  @IBAction func updateFilter(sender: UISlider) {
-    CameraManager.sharedInstance.updateSliderWith(self.filterSlide.value)
-  }
-  
+
   /*
   This function is called each time the app disappears to screen
   */
@@ -84,6 +106,8 @@ class MyCartoonViewController: UIViewController {
     CameraManager.sharedInstance.applyFiltertoView(self.filterView)
     CameraManager.sharedInstance.setSlider(self.filterSlide)
     self.recordButton.delegate = self
+    
+    self.timerVideo.hidden = true
     
     // Config the miniature
     self.lastImageView.layer.borderWidth = 1
@@ -127,15 +151,35 @@ class MyCartoonViewController: UIViewController {
       }
     }
   }
+  
+  func timerAction() {
+    self.time--
+    self.timerVideo.text = "\(self.time)"
+    
+    if self.time == 0 {
+      self.timerVideo.hidden = true
+      CameraManager.sharedInstance.stopRecording()
+      self.timer.invalidate()
+    }
+  }
+  
 }
 
 extension MyCartoonViewController: LongPressRecordButtonDelegate {
   
   func longPressRecordButtonDidStartLongPress(button: LongPressRecordButton) {
+    self.timerVideo.hidden = false
+    self.timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerAction", userInfo: nil, repeats: true)
+    
     CameraManager.sharedInstance.startRecording(self.flashBool)
   }
   
   func longPressRecordButtonDidStopLongPress(button: LongPressRecordButton) {
+    self.timerVideo.hidden = true
+    self.time = 10
+    self.timerVideo.text = "10"
+    self.timer.invalidate()
+    
     CameraManager.sharedInstance.stopRecording()
   }
   
