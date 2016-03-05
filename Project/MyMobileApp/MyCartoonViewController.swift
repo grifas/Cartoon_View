@@ -13,6 +13,7 @@ class MyCartoonViewController: UIViewController {
   @IBOutlet weak var flashButton: UIButton!
   @IBOutlet weak var filterSlide: UISlider!
   @IBOutlet weak var timerVideo: UILabel!
+  @IBOutlet weak var noCameraLabel: UILabel!
   
   var timer = NSTimer()
   var time = 10
@@ -36,7 +37,7 @@ class MyCartoonViewController: UIViewController {
     
     CameraManager.sharedInstance.stopCameraCapture()
   }
-  
+    
   func updateRotate() {
     // Map UIDeviceOrientation to UIInterfaceOrientation.
     var orient = UIInterfaceOrientation.Portrait
@@ -89,7 +90,7 @@ class MyCartoonViewController: UIViewController {
     // Load the last picture
     self.fetchLastPicture()
   }
-
+  
   /*
   This function is called each time the app disappears to screen
   */
@@ -102,11 +103,6 @@ class MyCartoonViewController: UIViewController {
   Setup the app
   */
   func setup() {
-    CameraManager.sharedInstance.applyFiltertoView(self.filterView)
-    CameraManager.sharedInstance.setSlider(self.filterSlide)
-    self.recordButton.delegate = self
-    
-    self.timerVideo.hidden = true
     
     // Config the miniature
     self.lastImageView.layer.borderWidth = 1
@@ -116,8 +112,18 @@ class MyCartoonViewController: UIViewController {
     self.lastImageView.userInteractionEnabled = true
     self.lastImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("goToAlbum:")))
     
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didBecomeActive:"), name: UIApplicationDidBecomeActiveNotification, object: nil)
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didEnterBackground:"), name: UIApplicationDidEnterBackgroundNotification, object: nil)
+    if CameraManager.sharedInstance.camera == nil {
+      self.noCameraLabel.hidden = false
+      self.fetchLastPicture()
+    } else {
+      self.noCameraLabel.hidden = true
+      CameraManager.sharedInstance.applyFiltertoView(self.filterView)
+      CameraManager.sharedInstance.setSlider(self.filterSlide)
+      self.recordButton.delegate = self
+      
+      NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didBecomeActive:"), name: UIApplicationDidBecomeActiveNotification, object: nil)
+      NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("didEnterBackground:"), name: UIApplicationDidEnterBackgroundNotification, object: nil)
+    }
   }
   
   /*
@@ -125,10 +131,10 @@ class MyCartoonViewController: UIViewController {
   */
   func goToAlbum(gesture: UITapGestureRecognizer) {
     let mediaPicker: WPMediaPickerViewController = WPMediaPickerViewController()
+    
     mediaPicker.delegate = self
     mediaPicker.allowCaptureOfMedia = false
     self.presentViewController(mediaPicker, animated: true, completion:nil)
-    
   }
   
   /*
@@ -156,9 +162,10 @@ class MyCartoonViewController: UIViewController {
     self.timerVideo.text = "\(self.time)"
     
     if self.time == 0 {
-      self.timerVideo.hidden = true
-      CameraManager.sharedInstance.stopRecording()
-      self.timer.invalidate()
+      longPressRecordButtonDidStopLongPress(recordButton)
+//      self.timerVideo.hidden = true
+//      CameraManager.sharedInstance.stopRecording()
+//      self.timer.invalidate()
     }
   }
   
@@ -174,12 +181,14 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
   }
   
   func longPressRecordButtonDidStopLongPress(button: LongPressRecordButton) {
+    if self.timer.valid == true {
+      CameraManager.sharedInstance.stopRecording()
+    }
+    
     self.timerVideo.hidden = true
     self.time = 10
     self.timerVideo.text = "10"
     self.timer.invalidate()
-    
-    CameraManager.sharedInstance.stopRecording()
   }
   
   func longPressRecordButtonShouldShowToolTip(button: LongPressRecordButton) -> Bool {
@@ -191,7 +200,7 @@ extension MyCartoonViewController: LongPressRecordButtonDelegate {
 extension MyCartoonViewController: WPMediaPickerViewControllerDelegate {
   
   func mediaPickerControllerDidCancel(picker: WPMediaPickerViewController) {
-   self.dismissViewControllerAnimated(true, completion: nil)
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
   
   func mediaPickerController(picker: WPMediaPickerViewController, didFinishPickingAssets assets: [AnyObject]) {

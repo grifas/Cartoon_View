@@ -23,7 +23,7 @@ class CameraManager {
     return Static.instance!
   }
   
-  let camera: GPUImageStillCamera
+  let camera: GPUImageStillCamera!
     
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
@@ -36,12 +36,16 @@ class CameraManager {
   Init Camera and Create folder if needed
   */
   init() {
-    self.camera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back)
-    self.camera.outputImageOrientation = .Portrait
-    self.camera.horizontallyMirrorFrontFacingCamera = true
-    self.camera.horizontallyMirrorRearFacingCamera = false
-    
-    AlbumManager.createFolder()
+    if let camera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .Back) {
+      self.camera = camera
+      self.camera.outputImageOrientation = .Portrait
+      self.camera.horizontallyMirrorFrontFacingCamera = true
+      self.camera.horizontallyMirrorRearFacingCamera = false
+      
+      AlbumManager.createFolder()
+    } else {
+      self.camera = nil
+    }
   }
   
   /*
@@ -75,21 +79,27 @@ class CameraManager {
   Start Camera Capture
   */
   func startCameraCapture() {
-    self.camera.startCameraCapture()
+    if self.camera != nil {
+      self.camera.startCameraCapture()
+    }
   }
   
   /*
   Stop Camera Capture
   */
   func stopCameraCapture() {
+    if self.camera != nil {
     self.camera.stopCameraCapture()
+    }
   }
   
   /*
   Rotate Camera
   */
   func rotateCamera() {
+    if self.camera != nil {
     self.camera.rotateCamera()
+    }
   }
   
   /*

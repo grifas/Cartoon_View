@@ -74,14 +74,14 @@
                                             <action selector="updateFilter:" destination="BYZ-38-t0r" eventType="valueChanged" id="zj5-0J-YHF"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aN-fb-Xar">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aN-fb-Xar">
                                         <rect key="frame" x="288.5" y="456" width="23.5" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="esT-D9-tdg" firstAttribute="centerX" secondItem="KFQ-ww-sFy" secondAttribute="centerX" id="3eZ-LS-d58"/>
                                     <constraint firstAttribute="bottom" secondItem="x0q-sD-MEN" secondAttribute="bottom" constant="8" id="BYJ-IA-wYB"/>
@@ -98,11 +98,19 @@
                                     <constraint firstItem="esT-D9-tdg" firstAttribute="leading" secondItem="a13-3i-UGq" secondAttribute="trailing" constant="50" id="r1u-AL-Vq4"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Camera Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCL-bD-8Dl">
+                                <rect key="frame" x="221" y="290.5" width="158" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="KFQ-ww-sFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6sB-DN-YiA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KFQ-ww-sFy" secondAttribute="bottom" id="80o-sk-KM0"/>
                             <constraint firstItem="KFQ-ww-sFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KBC-UN-vHm"/>
+                            <constraint firstItem="WCL-bD-8Dl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MRZ-Cg-kGx"/>
+                            <constraint firstItem="WCL-bD-8Dl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2r-Wk-Kex"/>
                             <constraint firstAttribute="trailing" secondItem="KFQ-ww-sFy" secondAttribute="trailing" id="ehh-1C-Psp"/>
                         </constraints>
                     </view>
@@ -112,6 +120,7 @@
                         <outlet property="filterView" destination="KFQ-ww-sFy" id="tw2-LK-4CN"/>
                         <outlet property="flashButton" destination="hqF-gw-5HR" id="Q0t-lg-CdT"/>
                         <outlet property="lastImageView" destination="x0q-sD-MEN" id="ae7-mx-xSh"/>
+                        <outlet property="noCameraLabel" destination="WCL-bD-8Dl" id="Abk-tV-f5H"/>
                         <outlet property="recordButton" destination="esT-D9-tdg" id="T1g-CM-Dgw"/>
                         <outlet property="swapCameraButton" destination="lPe-sW-Bwr" id="Wey-GO-lUK"/>
                         <outlet property="timerVideo" destination="2aN-fb-Xar" id="hHT-ga-1vY"/>

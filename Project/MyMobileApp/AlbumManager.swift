@@ -9,13 +9,13 @@
 import Photos
 
 class AlbumManager {
- 
+  
   // To Create Folder
   static var assetCollection: PHAssetCollection!
   static var albumFound : Bool = false
   static var photosAsset: PHFetchResult!
   static var assetCollectionPlaceholder: PHObjectPlaceholder!
-
+  
   /*
   Create the Cartoon Folder
   */
@@ -76,25 +76,23 @@ class AlbumManager {
         }
     })
   }
-
+  
   /*
   Delete Photo and Video in Cartoon Folder
   */
   static func deleteInAlbum(asset: PHAsset) {
-    PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-      self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
-      
-      if let request = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
-        request.removeAssets([asset])
-      }
-      }, completionHandler: {success, error in
-        if success {
-          AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+    if self.assetCollection != nil {
+      PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+        self.photosAsset = PHAsset.fetchAssetsInAssetCollection(self.assetCollection, options: nil)
+        
+        if let request = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photosAsset) {
+          request.removeAssets([asset])
         }
-    })
-    
+        }, completionHandler: {success, error in
+          if success {
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+          }
+      })
+    }
   }
-
-
-
 }
