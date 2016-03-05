@@ -2,9 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
 use_frameworks!
-xcodeproj 'MyMobileApp.xcodeproj'
+xcodeproj 'Cartoon View.xcodeproj'
 
-target 'MyMobileApp' do
+target 'Cartoon View' do
   pod 'LongPressRecordButton'
   pod 'WPMediaPicker'
 end

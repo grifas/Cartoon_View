@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/Orel/Desktop/my_cartoon_view/Project/Cartoon View.xcodeproj">
+      location = "group:Cartoon View.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

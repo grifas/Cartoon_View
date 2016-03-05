@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-MyMobileApp/LongPressRecordButton.framework"
-  install_framework "Pods-MyMobileApp/WPMediaPicker.framework"
+  install_framework "Pods-Cartoon View/LongPressRecordButton.framework"
+  install_framework "Pods-Cartoon View/WPMediaPicker.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-MyMobileApp/LongPressRecordButton.framework"
-  install_framework "Pods-MyMobileApp/WPMediaPicker.framework"
+  install_framework "Pods-Cartoon View/LongPressRecordButton.framework"
+  install_framework "Pods-Cartoon View/WPMediaPicker.framework"
 fi

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A915AC449099A9A26C1C9DE9 /* Pods_MyMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */; };
+		A33D9F20A65E566000A4748D /* Pods_Cartoon_View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5046C8AFCF63BA6E0727C154 /* Pods_Cartoon_View.framework */; };
 		B90864801C74EB68007451BB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908647F1C74EB68007451BB /* CameraManager.swift */; };
 		B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; };
 		B911A0C11C6D0BB600F66F18 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,6 +70,9 @@
 
 /* Begin PBXFileReference section */
 		06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5046C8AFCF63BA6E0727C154 /* Pods_Cartoon_View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cartoon_View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		682EE765AD99E5DB57D02B00 /* Pods-Cartoon View.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cartoon View.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cartoon View/Pods-Cartoon View.debug.xcconfig"; sourceTree = "<group>"; };
+		A380070F737FD639EF3215CE /* Pods-Cartoon View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cartoon View.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cartoon View/Pods-Cartoon View.release.xcconfig"; sourceTree = "<group>"; };
 		B908647F1C74EB68007451BB /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B94E50371C79F5AE006B503E /* ActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetManager.swift; sourceTree = "<group>"; };
@@ -109,7 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */,
-				A915AC449099A9A26C1C9DE9 /* Pods_MyMobileApp.framework in Frameworks */,
+				A33D9F20A65E566000A4748D /* Pods_Cartoon_View.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				06E4A3DA26277900EE9ABAC8 /* Pods_MyMobileApp.framework */,
+				5046C8AFCF63BA6E0727C154 /* Pods_Cartoon_View.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,6 +212,8 @@
 			children = (
 				BAA2DC02B2FA116DC56AF59C /* Pods-MyMobileApp.debug.xcconfig */,
 				DBC2CE73407424B1DA0300EC /* Pods-MyMobileApp.release.xcconfig */,
+				682EE765AD99E5DB57D02B00 /* Pods-Cartoon View.debug.xcconfig */,
+				A380070F737FD639EF3215CE /* Pods-Cartoon View.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -355,7 +361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cartoon View/Pods-Cartoon View-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5B428614EAD6E8EE385A67ED /* Check Pods Manifest.lock */ = {
@@ -385,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMobileApp/Pods-MyMobileApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cartoon View/Pods-Cartoon View-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -549,7 +555,7 @@
 		};
 		B98A0FD81C64FA25005F925A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAA2DC02B2FA116DC56AF59C /* Pods-MyMobileApp.debug.xcconfig */;
+			baseConfigurationReference = 682EE765AD99E5DB57D02B00 /* Pods-Cartoon View.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
@@ -562,7 +568,7 @@
 		};
 		B98A0FD91C64FA25005F925A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC2CE73407424B1DA0300EC /* Pods-MyMobileApp.release.xcconfig */;
+			baseConfigurationReference = A380070F737FD639EF3215CE /* Pods-Cartoon View.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
