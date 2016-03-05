@@ -11,13 +11,13 @@
 		B90864801C74EB68007451BB /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B908647F1C74EB68007451BB /* CameraManager.swift */; };
 		B911A0C01C6D0BB600F66F18 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; };
 		B911A0C11C6D0BB600F66F18 /* GPUImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B911A0BF1C6D0BA100F66F18 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B928F2F71C8B04BB00257A0E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B928F2F61C8B04BB00257A0E /* Info.plist */; };
 		B94E50381C79F5AE006B503E /* ActionSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94E50371C79F5AE006B503E /* ActionSheetManager.swift */; };
 		B94E50411C7A2DFA006B503E /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94E50401C7A2DFA006B503E /* AlbumManager.swift */; };
 		B98A0FC91C64FA25005F925A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FC81C64FA25005F925A /* AppDelegate.swift */; };
 		B98A0FCB1C64FA25005F925A /* MyCartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */; };
 		B98A0FCE1C64FA25005F925A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FCC1C64FA25005F925A /* Main.storyboard */; };
 		B98A0FD01C64FA25005F925A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FCF1C64FA25005F925A /* Assets.xcassets */; };
-		B98A0FD31C64FA25005F925A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FD11C64FA25005F925A /* LaunchScreen.storyboard */; };
 		B98A0FEA1C64FB8A005F925A /* FilterOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FE91C64FB8A005F925A /* FilterOperations.swift */; };
 		B98A0FEC1C64FBA4005F925A /* FilterOperationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98A0FEB1C64FBA4005F925A /* FilterOperationTypes.swift */; };
 		B98A0FF51C64FD5F005F925A /* lookup_amatorka.png in Resources */ = {isa = PBXBuildFile; fileRef = B98A0FED1C64FD5F005F925A /* lookup_amatorka.png */; };
@@ -75,6 +75,7 @@
 		A380070F737FD639EF3215CE /* Pods-Cartoon View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cartoon View.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cartoon View/Pods-Cartoon View.release.xcconfig"; sourceTree = "<group>"; };
 		B908647F1C74EB68007451BB /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = Submodules/framework/GPUImage.xcodeproj; sourceTree = SOURCE_ROOT; };
+		B928F2F61C8B04BB00257A0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B94E50371C79F5AE006B503E /* ActionSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetManager.swift; sourceTree = "<group>"; };
 		B94E50401C7A2DFA006B503E /* AlbumManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
 		B96B388D1C77CAF1009578D3 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +84,6 @@
 		B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartoonViewController.swift; sourceTree = "<group>"; };
 		B98A0FCD1C64FA25005F925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B98A0FCF1C64FA25005F925A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B98A0FD21C64FA25005F925A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B98A0FD41C64FA25005F925A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B98A0FE91C64FB8A005F925A /* FilterOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOperations.swift; sourceTree = "<group>"; };
 		B98A0FEB1C64FBA4005F925A /* FilterOperationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOperationTypes.swift; sourceTree = "<group>"; };
 		B98A0FED1C64FD5F005F925A /* lookup_amatorka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_amatorka.png; sourceTree = "<group>"; };
@@ -154,8 +153,6 @@
 				B98A0FFF1C65074F005F925A /* Controllers */,
 				B98A0FFD1C6506DD005F925A /* GPUImage */,
 				B911A0B61C6D0BA100F66F18 /* GPUImage.xcodeproj */,
-				B98A0FD41C64FA25005F925A /* Info.plist */,
-				B98A0FD11C64FA25005F925A /* LaunchScreen.storyboard */,
 				B98A0FCC1C64FA25005F925A /* Main.storyboard */,
 				B98A0FFE1C650729005F925A /* Resources */,
 			);
@@ -194,6 +191,7 @@
 				B98A0FCA1C64FA25005F925A /* MyCartoonViewController.swift */,
 				B94E50371C79F5AE006B503E /* ActionSheetManager.swift */,
 				B94E50401C7A2DFA006B503E /* AlbumManager.swift */,
+				B928F2F61C8B04BB00257A0E /* Info.plist */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -332,7 +330,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98A0FD31C64FA25005F925A /* LaunchScreen.storyboard in Resources */,
 				B98A0FFB1C64FD5F005F925A /* mask.png in Resources */,
 				B98A0FD01C64FA25005F925A /* Assets.xcassets in Resources */,
 				B98A0FFC1C64FD5F005F925A /* WID-small.jpg in Resources */,
@@ -341,6 +338,7 @@
 				B98A0FF81C64FD5F005F925A /* lookup_soft_elegance_2.png in Resources */,
 				B98A0FF71C64FD5F005F925A /* lookup_soft_elegance_1.png in Resources */,
 				B98A0FF51C64FD5F005F925A /* lookup_amatorka.png in Resources */,
+				B928F2F71C8B04BB00257A0E /* Info.plist in Resources */,
 				B98A0FFA1C64FD5F005F925A /* voroni_points2.png in Resources */,
 				B98A0FF61C64FD5F005F925A /* lookup_miss_etikate.png in Resources */,
 			);
@@ -435,14 +433,6 @@
 				B98A0FCD1C64FA25005F925A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B98A0FD11C64FA25005F925A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B98A0FD21C64FA25005F925A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -558,10 +548,11 @@
 			baseConfigurationReference = 682EE765AD99E5DB57D02B00 /* Pods-Cartoon View.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "cartoon-view";
 				PRODUCT_NAME = "Cartoon View";
 			};
 			name = Debug;
@@ -571,10 +562,11 @@
 			baseConfigurationReference = A380070F737FD639EF3215CE /* Pods-Cartoon View.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyMobileApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = aurelien.grifasi.MyMobileApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "cartoon-view";
 				PRODUCT_NAME = "Cartoon View";
 			};
 			name = Release;

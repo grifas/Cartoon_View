@@ -37,7 +37,7 @@ class MyCartoonViewController: UIViewController {
     
     CameraManager.sharedInstance.stopCameraCapture()
   }
-    
+  
   func updateRotate() {
     // Map UIDeviceOrientation to UIInterfaceOrientation.
     var orient = UIInterfaceOrientation.Portrait
