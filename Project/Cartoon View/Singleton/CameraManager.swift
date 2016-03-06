@@ -1,6 +1,6 @@
 //
 //  CameraManager.swift
-//  MyMobileApp
+//  Cartoon View
 //
 //  Created by Aurelien Grifasi on 17/02/16.
 //  Copyright © 2016 aurelien.grifasi. All rights reserved.
@@ -11,6 +11,7 @@ import GPUImage
 
 class CameraManager {
   
+  // Singleton
   class var sharedInstance: CameraManager {
     struct Static {
       static var instance: CameraManager?
@@ -28,9 +29,9 @@ class CameraManager {
   //To Filter
   let filterOperation: FilterOperationInterface = filterOperations[0]
   
-  // To Video
+  // To Record
   var movieURL: NSURL!
-  var movieWritertemp: GPUImageMovieWriter!
+  var movieWriter: GPUImageMovieWriter!
 
   /*
   Init Camera and Create folder if needed
@@ -203,19 +204,20 @@ class CameraManager {
   Start Video Recording
   */
   func startRecording(hasTorch: Bool = false) {
-    let pathToMovie: NSString = NSHomeDirectory().stringByAppendingString("/Documents/mymobileapp.m4v")
+    
+    let pathToMovie: NSString = NSHomeDirectory().stringByAppendingString("/Documents/cartoonview.m4v")
 
     unlink(pathToMovie.UTF8String)
     self.movieURL = NSURL.fileURLWithPath(pathToMovie as String)
       
-    self.movieWritertemp = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(640, 480))
-    self.movieWritertemp.encodingLiveVideo = true
-    self.filterOperation.filter.addTarget(self.movieWritertemp)
-    self.camera.audioEncodingTarget = self.movieWritertemp
+    self.movieWriter = GPUImageMovieWriter.init(movieURL: movieURL, size: CGSizeMake(480, 640))
+    self.movieWriter.encodingLiveVideo = true
+    self.filterOperation.filter.addTarget(self.movieWriter)
+    self.camera.audioEncodingTarget = self.movieWriter
     
     let startTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
     dispatch_after(startTime, dispatch_get_main_queue(), { () -> Void in
-      self.movieWritertemp.startRecording()
+      self.movieWriter.startRecording()
       if hasTorch == true {
         self.enableTorch()
       } else {
@@ -230,9 +232,9 @@ class CameraManager {
   func stopRecording() {
     let stopTime: dispatch_time_t = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
     dispatch_after(stopTime, dispatch_get_main_queue(), { () -> Void in
-      self.filterOperation.filter.removeTarget(self.movieWritertemp)
+      self.filterOperation.filter.removeTarget(self.movieWriter)
       self.camera.audioEncodingTarget = nil
-      self.movieWritertemp.finishRecording()
+      self.movieWriter.finishRecording()
       AlbumManager.saveVideo(self.movieURL)
     })
   }

@@ -1,6 +1,6 @@
 //
 //  ActionSheetManager.swift
-//  MyMobileApp
+//  Cartoon View
 //
 //  Created by Aurelien Grifasi on 21/02/16.
 //  Copyright © 2016 aurelien.grifasi. All rights reserved.
@@ -30,8 +30,8 @@ class ActionSheetManager {
     
     // Handle popover on iPhone and iPad
 //    let popOver = optionMenu.popoverPresentationController
-//    popOver?.sourceView  = (sender as! UIView)
-//    popOver?.sourceRect = (sender as! UIView).bounds
+//    popOver?.sourceView = viewController.navigationItem.rightBarButtonItem?.customView
+//    popOver?.sourceRect = viewController.navigationItem.rightBarButtonItem!.customView!.bounds
 //    popOver?.permittedArrowDirections = UIPopoverArrowDirection.Any
     
     viewController.presentViewController(optionMenu, animated: true, completion: nil)

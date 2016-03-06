@@ -1,7 +1,7 @@
 
 //
 //  AppDelegate.swift
-//  MyMobileApp
+//  Cartoon View
 //
 //  Created by Aurelien Grifasi on 05/02/16.
 //  Copyright © 2016 aurelien.grifasi. All rights reserved.
