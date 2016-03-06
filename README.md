@@ -16,3 +16,8 @@ Bonuses:
 - Real-time preview with the cartoon effect
 - Publishing your app on a store (Google play, App store ...)
 - Implementing different algorithms
+
+# Authors
+
+- Aurélien GRIFASI
+- Alexandre OSIKA
