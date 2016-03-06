@@ -1,0 +1,13 @@
+PODS:
+  - LongPressRecordButton (1.0.2)
+  - WPMediaPicker (0.8.2)
+
+DEPENDENCIES:
+  - LongPressRecordButton
+  - WPMediaPicker
+
+SPEC CHECKSUMS:
+  LongPressRecordButton: 25f93cfb1b8ea09ab40aff5a1267a13eb7d6b671
+  WPMediaPicker: 29d9b97e11c872f62fc36a268a4c23b18ed53525
+
+COCOAPODS: 0.39.0
